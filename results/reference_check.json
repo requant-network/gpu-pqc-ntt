@@ -1,0 +1,25 @@
+{
+ "utc": "2026-11-19T16:15:47Z",
+ "env": {
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "compute_cap": "12.0",
+  "driver_version": 13030,
+  "cuda_runtime_version": 13030,
+  "cublas_version": 130600,
+  "nvidia_smi_driver": "610.43.03",
+  "python": "3.12.3"
+ },
+ "source_hashes": {
+  "cuda/pqc_ntt.cu": "57928dc5335928207cd9c235c3cddd0fe1d187a1db190712d18fd62440e0bd8e",
+  "reference.py": "e5a9d3bf1d60bcca172d34dde53b5c134a882c5bac7bd89355a0d4971a8947c0",
+  "run.py": "d8e6eb9108097cbd7bb02b004b3a8e2daf9873dc89ef7e91c2ba2dbea8ce6179",
+  "tests/test_reference.py": "f4d610606419cc2658be40baa9542ce2cc84fe138e9653250c07b03f987c175a",
+  "build/pqc_ntt": "4bef2fb8e5c07c13b33e7baa4c27545200df142e4094572e3db3fa5d1cb548f4"
+ },
+ "selftest_ok": true,
+ "seeds": [
+  20261119,
+  987654321
+ ],
+ "note": "schoolbook negacyclic ground truth; NTT+pointwise+INTT; matrix and limb-GEMM cross-checks; edge cases"
+}

@@ -1,0 +1,978 @@
+{
+ "utc": "2026-11-19T16:16:28Z",
+ "env": {
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "compute_cap": "12.0",
+  "driver_version": 13030,
+  "cuda_runtime_version": 13030,
+  "cublas_version": 130600,
+  "nvidia_smi_driver": "610.43.03",
+  "python": "3.12.3"
+ },
+ "source_hashes": {
+  "cuda/pqc_ntt.cu": "57928dc5335928207cd9c235c3cddd0fe1d187a1db190712d18fd62440e0bd8e",
+  "reference.py": "e5a9d3bf1d60bcca172d34dde53b5c134a882c5bac7bd89355a0d4971a8947c0",
+  "run.py": "d8e6eb9108097cbd7bb02b004b3a8e2daf9873dc89ef7e91c2ba2dbea8ce6179",
+  "tests/test_reference.py": "f4d610606419cc2658be40baa9542ce2cc84fe138e9653250c07b03f987c175a",
+  "build/pqc_ntt": "4bef2fb8e5c07c13b33e7baa4c27545200df142e4094572e3db3fa5d1cb548f4"
+ },
+ "seeds": [
+  20261119,
+  987654321
+ ],
+ "batches": [
+  1,
+  16,
+  256
+ ],
+ "cases": [
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 16,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 256,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "zero",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "max",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "delta0",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "max_top",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "alternating",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 16,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 256,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "zero",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "max",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "delta0",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "max_top",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "kyber",
+   "q": 3329,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "alternating",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 16,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 256,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "zero",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "max",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "delta0",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "max_top",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 20261119,
+   "B": 1,
+   "cohort": "alternating",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 16,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 4096,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 256,
+   "cohort": "random",
+   "simt_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 65536,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "zero",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "max",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "delta0",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "max_top",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  },
+  {
+   "prime": "dilithium",
+   "q": 8380417,
+   "seed": 987654321,
+   "B": 1,
+   "cohort": "alternating",
+   "simt_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "simt_conv": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_cublas_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "gemm_mma_ntt": {
+    "coefficients": 256,
+    "mismatches": 0,
+    "exact": true
+   },
+   "all_exact": true
+  }
+ ],
+ "negative_controls": [
+  {
+   "prime": "kyber",
+   "control": "simt_badzeta",
+   "coefficients": 4096,
+   "mismatches": 4096,
+   "exact": false,
+   "rejected": true
+  },
+  {
+   "prime": "kyber",
+   "control": "gemm_cublas_badbase",
+   "coefficients": 4096,
+   "mismatches": 4096,
+   "exact": false,
+   "rejected": true
+  },
+  {
+   "prime": "kyber",
+   "control": "gemm_mma_badbase",
+   "coefficients": 4096,
+   "mismatches": 4096,
+   "exact": false,
+   "rejected": true
+  },
+  {
+   "prime": "dilithium",
+   "control": "simt_badzeta",
+   "coefficients": 4096,
+   "mismatches": 4096,
+   "exact": false,
+   "rejected": true
+  },
+  {
+   "prime": "dilithium",
+   "control": "gemm_cublas_badbase",
+   "coefficients": 4096,
+   "mismatches": 4096,
+   "exact": false,
+   "rejected": true
+  },
+  {
+   "prime": "dilithium",
+   "control": "gemm_mma_badbase",
+   "coefficients": 4096,
+   "mismatches": 4096,
+   "exact": false,
+   "rejected": true
+  }
+ ],
+ "total_coefficients_checked": 1138688,
+ "all_exact": true
+}

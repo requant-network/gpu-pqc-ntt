@@ -1,0 +1,95 @@
+{
+ "probe": [
+  {
+   "B": 1,
+   "cublas_status": 0,
+   "cublas_exact": true,
+   "mma_exact": true,
+   "simt_control_exact": true,
+   "cublas_us": 10.304,
+   "mma_us": 3.52,
+   "simt_control_us": 27.68
+  },
+  {
+   "B": 2,
+   "cublas_status": 0,
+   "cublas_exact": true,
+   "mma_exact": true,
+   "simt_control_exact": true,
+   "cublas_us": 8.192,
+   "mma_us": 3.616,
+   "simt_control_us": 27.776
+  },
+  {
+   "B": 4,
+   "cublas_status": 0,
+   "cublas_exact": true,
+   "mma_exact": true,
+   "simt_control_exact": true,
+   "cublas_us": 9.504,
+   "mma_us": 4.32,
+   "simt_control_us": 27.648
+  },
+  {
+   "B": 8,
+   "cublas_status": 0,
+   "cublas_exact": true,
+   "mma_exact": true,
+   "simt_control_exact": true,
+   "cublas_us": 10.208,
+   "mma_us": 5.728,
+   "simt_control_us": 27.808
+  },
+  {
+   "B": 16,
+   "cublas_status": 0,
+   "cublas_exact": true,
+   "mma_exact": true,
+   "simt_control_exact": true,
+   "cublas_us": 9.408,
+   "mma_us": 5.504,
+   "simt_control_us": 27.552
+  },
+  {
+   "B": 256,
+   "cublas_status": 0,
+   "cublas_exact": true,
+   "mma_exact": true,
+   "simt_control_exact": true,
+   "cublas_us": 10.88,
+   "mma_us": 8.384,
+   "simt_control_us": 197.056
+  },
+  {
+   "B": 4096,
+   "cublas_status": 0,
+   "cublas_exact": true,
+   "mma_exact": true,
+   "simt_control_exact": true,
+   "cublas_us": 19.68,
+   "mma_us": 68.736,
+   "simt_control_us": 2760.192
+  }
+ ],
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "compute_cap": "12.0",
+ "driver_version": 13030,
+ "cuda_runtime_version": 13030,
+ "utc": "2026-11-19T16:15:48Z",
+ "env": {
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "compute_cap": "12.0",
+  "driver_version": 13030,
+  "cuda_runtime_version": 13030,
+  "cublas_version": 130600,
+  "nvidia_smi_driver": "610.43.03",
+  "python": "3.12.3"
+ },
+ "source_hashes": {
+  "cuda/pqc_ntt.cu": "57928dc5335928207cd9c235c3cddd0fe1d187a1db190712d18fd62440e0bd8e",
+  "reference.py": "e5a9d3bf1d60bcca172d34dde53b5c134a882c5bac7bd89355a0d4971a8947c0",
+  "run.py": "d8e6eb9108097cbd7bb02b004b3a8e2daf9873dc89ef7e91c2ba2dbea8ce6179",
+  "tests/test_reference.py": "f4d610606419cc2658be40baa9542ce2cc84fe138e9653250c07b03f987c175a",
+  "build/pqc_ntt": "4bef2fb8e5c07c13b33e7baa4c27545200df142e4094572e3db3fa5d1cb548f4"
+ }
+}
