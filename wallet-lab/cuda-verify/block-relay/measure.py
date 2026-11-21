@@ -15,7 +15,6 @@ from run import Session, process, rpc, verify_blocks, wait_for
 
 
 PIPES = dict(stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, bufsize=1)
-MODES = ("cpu", "cuda", "fallback")
 
 
 def fixture(conn):
@@ -46,15 +45,19 @@ def signatures(log, mode):
             expected, count = "cpu", 0
         elif row["height"] <= 4:
             expected, count = "cpu-no-pq", 0
+        elif mode == "cuda":
+            expected, count = "cuda", 64
+        elif mode == "retry" or row["height"] == 5:
+            expected, count = "cpu-fallback", 0
         else:
-            expected, count = ("cuda", 64) if mode == "cuda" else ("cpu-fallback", 0)
+            expected, count = "cpu-unavailable", 0
         assert (row["backend"], row["gpu_verified"]) == (expected, count), (mode, row)
     return rows
 
 
 def sync(binary, directory, peer, mode, env, blocks, audit):
     settings = {**env, "REQUANT_PQC_BLOCK_LAB": "cpu" if mode == "cpu" else "cuda"}
-    if mode == "fallback":
+    if mode in ("fallback", "retry"):
         settings["CUDA_VISIBLE_DEVICES"] = ""
     log = directory.with_suffix(".log")
     with log.open("wb") as stderr:
@@ -84,7 +87,7 @@ def sync(binary, directory, peer, mode, env, blocks, audit):
             "encoded_blocks_verified": len(blocks), "reopen_audit_match": True}
 
 
-def run(binary):
+def run(binary, retry_binary):
     env = dict(os.environ)
     env.pop("REQUANT_PQC_BLOCK_LAB", None)
     with tempfile.TemporaryDirectory(prefix="requant-pqc-gpu-relay-") as tmp:
@@ -101,9 +104,11 @@ def run(binary):
             assert rpc(ready["rpc"], "auditsupply") == audit
             peer = f"127.0.0.1:{ready['p2p']}"
             trials = []
-            for i in range(3):
-                for mode in MODES[i:] + MODES[:i]:
-                    row = sync(binary, root / f"{i}-{mode}", peer, mode, env, blocks, audit)
+            modes = ("cpu", "cuda", "fallback", "retry") if retry_binary else ("cpu", "cuda", "fallback")
+            for i in range(len(modes)):
+                for mode in modes[i:] + modes[:i]:
+                    child = retry_binary if mode == "retry" else binary
+                    row = sync(child, root / f"{i}-{mode}", peer, mode, env, blocks, audit)
                     trials.append({"trial": i + 1, **row})
                     print(f"{i + 1} {mode}: reached height 64 in {row['sync_seconds']:.3f} s, "
                           f"warm signatures {row['warm_block_signature_ms']:.3f} ms/block", flush=True)
@@ -115,8 +120,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("binary", type=lambda path: Path(path).resolve())
     parser.add_argument("output", type=Path)
+    parser.add_argument("--retry-binary", type=lambda path: Path(path).resolve())
     args = parser.parse_args()
-    report = run(args.binary)
+    report = run(args.binary, args.retry_binary)
     with args.output.open("x", encoding="utf-8") as out:
         json.dump(report, out, indent=2)
         out.write("\n")

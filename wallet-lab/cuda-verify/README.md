@@ -66,8 +66,9 @@ measured throughput baseline for this CUDA backend. A [follow-up trial](mixed/RE
 measures mixed signature classes, per-wire rejection and CPU fallback when
 the GPU is unavailable. Production integration still needs queue latency,
 resource-contention measurements and an operating policy for device failure.
-This batch verifier is a separate wallet-lab path, outside native block
-acceptance or deployment.
+The [native block relay follow-up](block-relay/README.md) applies
+the batch verifier inside the isolated chain's acceptance path and
+measures receiver synchronization with an unavailable GPU.
 
 ## Reproduce
 

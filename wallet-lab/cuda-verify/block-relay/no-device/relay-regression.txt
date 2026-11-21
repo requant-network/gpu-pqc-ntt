@@ -1,0 +1,10 @@
+   Compiling requant-node v0.18.3 (/data2/worknet-ci/research/pqc-native-block-cuda.2IMk9LMN/native/crates/node)
+    Finished `release` profile [optimized] target(s) in 1.38s
+     Running tests/two_nodes.rs (/data2/worknet-ci/research/pqc-mixed-verify/native/target/release/deps/two_nodes-1ebbb7f6cde28d77)
+
+running 1 test
+replayed 5 blocks, height 5
+relay_transport=loopback_tcp nodes=2 ml_dsa_wire_bytes=3924 ed25519_wire_bytes=179 confirmed_height=5 refused=2 reopened_tip=matched
+test pqc_native_relay::pqc_mixed_block_relay ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 8 filtered out; finished in 0.23s

@@ -1,0 +1,16 @@
+   Compiling requant-consensus v0.1.0 (/data2/worknet-ci/research/pqc-native-block-cuda.2IMk9LMN/native/crates/consensus)
+    Finished `release` profile [optimized] target(s) in 4.29s
+     Running tests/pqc_wallet.rs (/data2/worknet-ci/research/pqc-mixed-verify/native/target/release/deps/pqc_wallet-7e9c1d9921233a6d)
+
+running 1 test
+PQC_BLOCK_SIGS height=1 backend=cpu gpu_verified=0 signatures_ok=true elapsed_us=1
+PQC_BLOCK_SIGS height=2 backend=cpu gpu_verified=0 signatures_ok=true elapsed_us=1
+PQC_BLOCK_SIGS height=3 backend=cpu gpu_verified=0 signatures_ok=true elapsed_us=1
+PQC_BLOCK_SIGS height=4 backend=cpu gpu_verified=0 signatures_ok=true elapsed_us=49
+PQC_BLOCK_SIGS height=5 backend=cpu gpu_verified=0 signatures_ok=false elapsed_us=329
+PQC_BLOCK_SIGS height=5 backend=cpu gpu_verified=0 signatures_ok=true elapsed_us=316
+PQC_BLOCK_SIGS height=5 backend=cpu gpu_verified=0 signatures_ok=true elapsed_us=359
+block_controls=altered_signature_rejected,duplicate_spend_rejected,same_block_dependency_accepted
+test block_checks::ml_dsa_batch_preserves_block_signature_and_utxo_rules ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.01s

@@ -4,6 +4,7 @@ This isolated ReQuant lab uses the native block acceptance path
 to validate Ed25519 and ML-DSA-44 transactions on one loopback
 chain. It measures the signature phase inside the block path and
 the time for a receiver to reach the same encoded native tip.
+The GPU selector is an opt-in in the disposable source overlay.
 
 ## Protocol
 
@@ -28,6 +29,11 @@ CPU path and check the same wires and audit again. Record signature
 times per block and separate the first mixed block from the warm
 blocks.
 
+The follow-up rotates four paths over one regenerated chain. It
+adds the older receiver that retries CUDA at every mixed block
+when no device is visible. Both binaries use the same CUDA
+library and native chain revision.
+
 ## Initial results
 
 | Path | First mixed signature check | Warm signatures per block | Startup through exact tip |
@@ -50,6 +56,41 @@ three paths.
 [CPU control](baseline/controls-cpu.txt) · [CUDA control](baseline/controls-cuda.txt) ·
 [Fallback control](baseline/controls-fallback.txt)
 
+## Missing-device handling
+
+The updated receiver records `cudaErrorNoDevice` as a permanent
+condition for that process and switches to the ordinary CPU
+checks. An invalid signature or a different CUDA error leaves
+later GPU attempts available.
+
+| Same block stream, four receivers per mode | First mixed signature check | Warm signatures per block | Startup through exact tip |
+| --- | ---: | ---: | ---: |
+| CPU | 10.54 ms | 10.41 ms | 1.253 s |
+| CUDA | 170.36 ms | 7.46 ms | 1.234 s |
+| Device hidden, CPU after the first failure | 48.95 ms | 10.41 ms | 1.287 s |
+| Device hidden, repeated attempts | 50.40 ms | 13.77 ms | 1.451 s |
+
+Each updated receiver with the device hidden attempted CUDA on
+the first mixed block and verified the remaining 59 mixed blocks
+directly on CPU. CUDA reduced warm signature time by 28.3% on the
+active RTX. The first GPU call accounts for most of the difference
+between the warm signature speedup and the whole-sync timing.
+The experiment covers one prebuilt backlog served by loopback
+TCP on one host.
+
+All 16 receivers matched all 64 block encodings and the same
+UTXO supply audit before and after reopening. The altered
+signature and duplicate spend remained refused. The valid
+parent-and-child block still confirmed. Thirty CPU consensus
+regressions, the two-node PQC relay regression and an ordinary
+regtest relay with the lab selector set passed.
+[Measurements](no-device/latched-report.json) · [Run output](no-device/latched-campaign.txt) ·
+[CPU control](no-device/latched-control-cpu.txt) · [CUDA control](no-device/latched-control-cuda.txt) ·
+[Device-hidden control](no-device/latched-control-fallback.txt) ·
+[Consensus regression](no-device/consensus-regression.txt) ·
+[PQC relay regression](no-device/relay-regression.txt) · [Ordinary regtest](no-device/regtest-gate.txt) ·
+[Toolchain and input pins](no-device/environment.txt)
+
 ## Reproduce
 
 Prepare the disposable [CUDA wallet lab](../README.md#reproduce)
@@ -69,6 +110,11 @@ flock /tmp/requant-new-studies-gpu.lock taskset -c 0,1,2,3 python3 -B \
     "$STUDY/wallet-lab/cuda-verify/block-relay/measure.py" \
     "$NATIVE/target/release/examples/relay_lab" new-report.json
 ```
+
+For the four-mode comparison, add
+`--retry-binary /path/to/a037734-relay-lab`. Build that receiver
+from the [initial experiment revision](https://github.com/requant-network/gpu-pqc-ntt/tree/a0377341ae35c90dc02b48ab87e6a5170e2e69dd/wallet-lab/cuda-verify/block-relay)
+with the same native base and CUDA library.
 
 Use the CUDA library and linker paths from the wallet lab
 instructions. Keep all processes on loopback. The consensus

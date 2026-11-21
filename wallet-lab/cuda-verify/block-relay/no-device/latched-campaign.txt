@@ -1,0 +1,16 @@
+1 cpu: reached height 64 in 1.255 s, warm signatures 10.407 ms/block
+1 cuda: reached height 64 in 1.228 s, warm signatures 7.454 ms/block
+1 fallback: reached height 64 in 1.290 s, warm signatures 10.420 ms/block
+1 retry: reached height 64 in 1.460 s, warm signatures 13.761 ms/block
+2 cuda: reached height 64 in 1.247 s, warm signatures 7.465 ms/block
+2 fallback: reached height 64 in 1.262 s, warm signatures 10.409 ms/block
+2 retry: reached height 64 in 1.434 s, warm signatures 13.725 ms/block
+2 cpu: reached height 64 in 1.306 s, warm signatures 10.404 ms/block
+3 fallback: reached height 64 in 1.309 s, warm signatures 10.412 ms/block
+3 retry: reached height 64 in 1.479 s, warm signatures 13.839 ms/block
+3 cpu: reached height 64 in 1.225 s, warm signatures 10.404 ms/block
+3 cuda: reached height 64 in 1.239 s, warm signatures 7.465 ms/block
+4 retry: reached height 64 in 1.442 s, warm signatures 13.769 ms/block
+4 cpu: reached height 64 in 1.250 s, warm signatures 10.415 ms/block
+4 cuda: reached height 64 in 1.203 s, warm signatures 7.355 ms/block
+4 fallback: reached height 64 in 1.283 s, warm signatures 10.396 ms/block

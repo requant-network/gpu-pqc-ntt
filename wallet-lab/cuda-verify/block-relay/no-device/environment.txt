@@ -1,0 +1,20 @@
+rustc 1.98.1 (48a229cea 2026-09-01)
+Python 3.12.3
+Cuda compilation tools, release 13.3, V13.3.73
+Build cuda_13.3.r13.3/compiler.38244171_0
+Model name:                              AMD Ryzen 5 5500
+NVIDIA GeForce RTX 5060 Ti, 610.43.03
+Native base: 967ce1831a37b56832bda4d52ddd29c428a18f9b
+Retry-each-block research base: a0377341ae35c90dc02b48ab87e6a5170e2e69dd
+    cudaErrorNoDevice                     =     100,
+85951736ed273207a80cf2cd2ec972dd750f976d3f8e1324e3c547e8dab05ac2  relay_lab
+e1b4ca3d35929de1ad99c73d7cd875c9e06847cde999e07455011cc5d0dc3090  relay_latched
+6a82ceea55a29bb7284888fa3c5a610d97328993712a9a9085244b0e30583b91  /data2/worknet-ci/research/pqc-gpu-verify/libpqc_verify_lab.so
+91e0e5847174903da03e6b0094b22a3f6d7e491d3404bff43da7a98ac9994713  native/Cargo.lock
+807e46486cf0701bad2beab5a60c83818339c0c9b646d341a3572a7d547e2f40  native/crates/consensus/src/chain.rs
+1eade787c9c0b53aea7867332e0d50ed1a9494c207a5be4db59b1ef49f0aff84  native/crates/consensus/src/block_signature_lab.rs
+cff216ce27140f64d68c28accd89e8cf6c7345c6a5575faee8d9b2e4bbe764f5  cuda-verify/block-relay/install.py
+66644dd85accde08b4faf7568a07fba75085397fecc789b88444d93b74316519  cuda-verify/block-relay/measure.py
+2f40588c7c97c485ad45547197de137157a5c3f4a54b13ea06a5aa983dcf2925  cuda-verify/block-relay/block_checks.rs
+5ed1cbaf3bde961e25de1bd97267f34c4ef6e1ca78396dacea88fb458df0c768  native-relay/cross-host/relay_lab.rs
+072f93dcd80c7642d268e097af2e5797cda5e4d1935d2516f3030d995080d1c7  native-relay/cross-host/run.py

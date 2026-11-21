@@ -1,0 +1,6848 @@
+{
+  "blocks": [
+    {
+      "block_bytes": 292,
+      "block_sha256": "9c3d5f8c3df44aee4cd5f5b788b09f3fe83a2e832dfa3e5c0c8d0edf2a4c190e",
+      "height": 1,
+      "peers": 0,
+      "tip": "4cbcd6ac3a5bff2b1b98ea2f0ad257496b1ef5af70546a69b61a892d81ff2265",
+      "transfers": 0
+    },
+    {
+      "block_bytes": 292,
+      "block_sha256": "65715248a3e0378d4fd4c56509c56d9894ee819049d071c02ad893ca2870ce2d",
+      "height": 2,
+      "peers": 0,
+      "tip": "e167db3228254cf99a8533b11c1c4afaa35bddf6be3228610d22a3562724cc92",
+      "transfers": 0
+    },
+    {
+      "block_bytes": 292,
+      "block_sha256": "b971e5a251a6398163ac6f02bb29cc93ae6b7312392d1bfcbcc1408ee6702a23",
+      "height": 3,
+      "peers": 0,
+      "tip": "03e0766defa2d382edb33c309f1300570225ef5b59be3042bebc7ea9408f763b",
+      "transfers": 0
+    },
+    {
+      "block_bytes": 3631,
+      "block_sha256": "8d7eef0ac8f54172c65f51b6d5f391f389fd3756b546fd403a769a12d5cd5a43",
+      "height": 4,
+      "peers": 0,
+      "tip": "c5df6081d54487dca97867dfd73a87af19ef52e7d20d8fdc31ed528650eee0ae",
+      "transfers": 1
+    },
+    {
+      "block_bytes": 254292,
+      "block_sha256": "1ce27f9ae17089aed407eba9f2255bfbf75d5034fc83d010f0e491df8f962520",
+      "height": 5,
+      "peers": 0,
+      "tip": "a755a1cf80f62d2271cb43df131f4807fb7fb2a6d704947216d2085a35d4c3b8",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254292,
+      "block_sha256": "6adabe534dd97ab7b359203579ee830483501b58369d27a170e5711bf7ed25ee",
+      "height": 6,
+      "peers": 0,
+      "tip": "24219850cb7879712e3b48aa80b0d13ded357e46058ee9ab19ec6d670387d947",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254292,
+      "block_sha256": "3bb5522a5025e0f12a77998411d470cff657f14a98373d1c47a878a90ce3add4",
+      "height": 7,
+      "peers": 0,
+      "tip": "437a7c10de356484acb662dc06c70fed467128d681e8e2dd862d5dec16df0bf5",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254292,
+      "block_sha256": "97a49d04b6bfe689dc68f1c8fad7fa5ef7bc08e1828e2f22167a447807993947",
+      "height": 8,
+      "peers": 0,
+      "tip": "e0d62404f087f49d5f4e563ffaef4b43d3e4683666bd84ec063db359c8406ad8",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "cd5e3aa2ac8d5307f4a7c24f465fa4936d3bfd396ed0813673067773ff06bf16",
+      "height": 9,
+      "peers": 0,
+      "tip": "63a0f88f8916c4bba4410361758cfbdaf8ad563a942aecd4b5e651dc8047d8a3",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "35bd3a3d3a069cdcb6f19070da365e86a8ecf36321703d643146524d4f1b3820",
+      "height": 10,
+      "peers": 0,
+      "tip": "cc7c31fc61036ca9984f150771e5c9684283b78226bdcd5ac7972da90918b012",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "9701b7fff7890f8915c60f436aa31ab1ec7297f3cb1cf857a6cc6d1469a59438",
+      "height": 11,
+      "peers": 0,
+      "tip": "d43475e31d0521a967319768da133b4e27ee41c1b9d9634607fc980561bc991d",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "f49663f28514188bf316184d1a6bddef4f2c7d5a4cccd924c36dcfaaa73dc069",
+      "height": 12,
+      "peers": 0,
+      "tip": "cca7f2e2624ccd602d52321cc919813706a1b64a5f53e52e7c20ae2fe25eb246",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "7b62d5a10ed91fed1696ebfa7003689365d9f6b9705c85244671b0309c272724",
+      "height": 13,
+      "peers": 0,
+      "tip": "584e1babb62cc271e6efc5275cc9fea58af485fba913c400ba36445a14671aae",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "8fc732b58d694b3b95f87f9d310fe1291880b09f48d0abac353090ee30d38f0f",
+      "height": 14,
+      "peers": 0,
+      "tip": "8de5dfaaed7fe5ba28941138c3402f30cbfbbebdddd484b91fb93ad19890f048",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "bf318b877286bb17335535190ea1b91c7fac4e8664f8efa79bbea4eec2b7dc70",
+      "height": 15,
+      "peers": 0,
+      "tip": "17ea16c8c35e71176ee58bb4efae39a11ec52e364d45d65c7f3b691fedc32a66",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "2a96d1351b29179f13f1e22097416ebe42c76f807f257268183256db724899e9",
+      "height": 16,
+      "peers": 0,
+      "tip": "c477686b6af135dbe144117fc6747517ab1285f0248d58960eb1987a97a786de",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "47a41a88d4c383b76197f87576f7d7414018e0a16250c5f86f79b4cbc5678664",
+      "height": 17,
+      "peers": 0,
+      "tip": "f5fc3d4cd5ef6e816a209de8ffee1d6092c3b7b4dc88d3a0d8c576567965eb01",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "909867741d38b1a64dd395ede3e0164402c4e4a1587944107631178079fbe58e",
+      "height": 18,
+      "peers": 0,
+      "tip": "246f08ef9a8292bc2bdaa3274e6a06a5a5737b2b3fb37af8e46dc2afea1f0d64",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "0f16903a27aa7a5c2d32c19e108d4a14db94e02243e48403ad742e9ccf6d59c6",
+      "height": 19,
+      "peers": 0,
+      "tip": "21d63da82b395425a24b1c724e693afbe5bad78c2f470573eee2d5a3e9f1b8cc",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "eac186fc7df541ee1fcb06fd610d152349da996c59ead2f84b6ecadf83941109",
+      "height": 20,
+      "peers": 0,
+      "tip": "250abbc02c1d6c3cd17a2f3d3e3bb69a082b2daeb0ba0a1acadd45952fcba9bb",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "7939f8ba3bbfa242895aa6f62eb37709ecaaeb7dc950d842df15ce73ec86f37d",
+      "height": 21,
+      "peers": 0,
+      "tip": "4a039494ae272dba2fe8c8f62e942a376ded6c47d8e1fbb436698666e2dbb5c9",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "0b50457211de591b3bf36f8920c24dcce81a28fb421f6daf05384b0b72285193",
+      "height": 22,
+      "peers": 0,
+      "tip": "c2ec3c9da2407670cad5e279705b497c9219e4b4a84bf0ebc2c75c5320a929c2",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "89bdd8ecd76053b99487607f94369f71d460ef7f81b183b4069a150ca8ecefa3",
+      "height": 23,
+      "peers": 0,
+      "tip": "83a0866e2af6c6fb39bad871a0d55286709c1c28c8ae8eb504a4909218dc5b0c",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "029baa7e528aeacf513e7c5b118d8466d12d29ad1a033d1453ea79ceddab118b",
+      "height": 24,
+      "peers": 0,
+      "tip": "d357879a7210d64134491339c69b6e00ca8ebfe18292a59caa86c43da165eae2",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "de66c56d71ef48e461ffe934f7b28bc298f1569bd3659bc589219f5aa0f7ded2",
+      "height": 25,
+      "peers": 0,
+      "tip": "b1fe74af54bc70ebd6aa482c833c32198f7be13f080c2beb1446fff01803adbc",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "576e3cab0524ff13b3bac047882a901fb3e028cc3087551260994cb69a9b05c9",
+      "height": 26,
+      "peers": 0,
+      "tip": "f0acb76496a6271df071b24c925977f62383dcd8ea38e72c42103bf8f2879fa3",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "5b8b2daa777473976c90f91aa65fa9257a6e2ba032c26263ba26a95819fb506c",
+      "height": 27,
+      "peers": 0,
+      "tip": "5f271ad29d21635fc8c561b278fa6d7bf1ad248b0ca06ab36afa098b5cf1ddfb",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "bc763adec016c1a2afd97ed73037eeace15e21cee2f9b310d62197eb084f3953",
+      "height": 28,
+      "peers": 0,
+      "tip": "3f0cfea8b07d2067218dc4aa2242b69a13e381631dcd2a2c7eab5baf957cc67a",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "2b69f9f782fd8f275360d7f8a99884d7e4dfbbd96dbb78d7734e83ac929dcfec",
+      "height": 29,
+      "peers": 0,
+      "tip": "bd49edf3a49c312b4a95c7155043bea6ec506cf177ce02e46a6f4401f0feb921",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "3ef0221fb53c1c7cc46bdab28179e0ba8d490ad65ecea675a2c2891a772d2816",
+      "height": 30,
+      "peers": 0,
+      "tip": "9726e772418fed146b5d10a73ece5c2f4859d536441fd5e1a280c13ebc003df7",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "89f6478c34337fb6087cf9c30cb452fa0b6d62b7e4a0536a97435a36a1130d00",
+      "height": 31,
+      "peers": 0,
+      "tip": "a423d0a52e6f501ef136d1609e8228a5bd96700c26be3f60d27e004c6c5dd754",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "c4fe46e23e52f97d6e5764b4418d998e98c9737d6eaec57d70783578c5fbe834",
+      "height": 32,
+      "peers": 0,
+      "tip": "9e20e0801412462f9a6acb76af2b8e6e2e17b3403e211894521faf14650381e9",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "0edd039e54526517270f95392adc0861de5497adbec8f2951674cffae0199688",
+      "height": 33,
+      "peers": 0,
+      "tip": "3c6fdf35677fb74624c946422e732d8c595b8b4da8fcfadaee24395345fb4795",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "aa25448de8b9d77e4226d51af206609fb59a0f361a4831674dcf42c1c5375a38",
+      "height": 34,
+      "peers": 0,
+      "tip": "bb8bdf0139765e4d952def3d16817237c9236d3b0f857bb739852c2aa7a2d147",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "18069f4ecd10d28e2a11712355be8f67ce05004ce44641026c2f2f56336cda1c",
+      "height": 35,
+      "peers": 0,
+      "tip": "882e9101aef970e49ff758b4f6798621e4748710cc4bad11e35580fe42ac052c",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "730cd251eb21dc2c719f8596372d439c9f8eca9070f3f50deaa1d5c5f7d38b37",
+      "height": 36,
+      "peers": 0,
+      "tip": "56f9d6781bac8e412d4ac1ff5ffcad258f9d5a77ca576da07e68a60b3ee9b07f",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "2088c02d58d1dc180276fa5dd0d27f812c7726a5b856444d49eb17a0c45b975a",
+      "height": 37,
+      "peers": 0,
+      "tip": "818ba5bef0e6e7b58b492a129767d42c45ad71a3df37c6c32d17b8efa83af0c7",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "b8af3dc9cc65f5c5ae7ce88d772f4dde17e6946d6d1088e48a38784e92b3169a",
+      "height": 38,
+      "peers": 0,
+      "tip": "280863de4984622b22f4635e44028b6cbc9b292acee3e68077307312e24a8925",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "1d35d36e2a9149fac818f6e3648bd22950ac432a343ecd4e8def3dcf9e556715",
+      "height": 39,
+      "peers": 0,
+      "tip": "2a6c2015e99e2420b95631b27bdc22c279eacfc3e1bd93607cb68a7c86791e7f",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "31bb71d2e3e2faee9945672e27ce0915f8f054cca381a5290cc215b699dd3480",
+      "height": 40,
+      "peers": 0,
+      "tip": "d5642fc2780e6564c21e0803c44c241f199e3ee4cac99809343a464ca19b0874",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "92c5990864c6983b6dea5ae42070df12000c31aa9df03cf87080daf52f6320e3",
+      "height": 41,
+      "peers": 0,
+      "tip": "4ad5f0574c35b7942bc05b94533a2804effad861f276a134c5cf829731f87912",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "4b6a026df5d0e454d883aa6c047315178ad30654f3d37bbd569089dcf7a18ca1",
+      "height": 42,
+      "peers": 0,
+      "tip": "09f0f68603d6ec31b0497f751ec700fbf33ee37592defb86b17ae4cd749490e3",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "9ab7b8d9434a1623cbdd6d75c1a32aaeb046a50df19bc92be888dea6972e8f48",
+      "height": 43,
+      "peers": 0,
+      "tip": "4e2d1224db5f8da7f2b2fe958c588fe8780ff7ed5e951b1b62bf01a5fb6a9a40",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "4aad2d08b1fb2b34cf42242d3507f5b63f7e86223245277ec80055888c65f7b7",
+      "height": 44,
+      "peers": 0,
+      "tip": "2750a63880dd1800153b216271aeb3a57138e63ba9419973b3d390aa49667e12",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "7599d7031bf8d39b937ac009230633372d014ba8c8db49ccb1511466b2b1e6ca",
+      "height": 45,
+      "peers": 0,
+      "tip": "30254da44b2b099bbe4b2379d12b3000c47a95cadcace61fc20d40d45796a0ea",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "5703fe09090595cd1e106e913947a667fe1f535e8200795925af3c90c9594cda",
+      "height": 46,
+      "peers": 0,
+      "tip": "94a13fe48a2885e0acd39978c3a2da8c8eef9051df824ab26f6baf405e3230dd",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "8f529f353c705362227ce912795d04a55cac1ec40222fcfd32282112c7c58716",
+      "height": 47,
+      "peers": 0,
+      "tip": "dee76b756b7f459ed2148f9b1394226ac3c4f1b194a9ef51a058b2578ce9333d",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "15b77e571c00d14b9d85c913b5bfc4459f3eeca70bedd5cc2293993c4e1e9218",
+      "height": 48,
+      "peers": 0,
+      "tip": "bd91793ec725f41451826d8207895963c69d0d01162e91d94ada716320ceb64f",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "5c69418da53cc9f873f8498454a30ae3770619bda2ae1c97bbdeda4caa10c903",
+      "height": 49,
+      "peers": 0,
+      "tip": "b0fec5596c9050338d0cc0174cd59d0ef044e3eb457bcdd34f746c25efb582ee",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "81c0e9ebaf2f606e4ce8e1e15ef266eb8820021f39f82462355f1abe5498c10a",
+      "height": 50,
+      "peers": 0,
+      "tip": "96d0b57f00b06fef73c98705efc6de17d4eb838e4b14ce286840b210a3e0e1e0",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "f6043aac9a24fe5b851b99a81ef445a8365118a34e0bc095ef42f8e31e1bdc3b",
+      "height": 51,
+      "peers": 0,
+      "tip": "9264ab4a32e38aed49c7580830fb00b7b6d52323129f3e88c61cd8aeed1a824b",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "2061d69950776f42da8db432a9e9cd0145717743ee48b5d4c02e7f94ca9e01c5",
+      "height": 52,
+      "peers": 0,
+      "tip": "c1cd58a096d41055c2f146f8c4c592c7a8e0cba44ae8dcaca0ce1d721192bca2",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "3992790f1e4c72cea7ec80ad38ae55a3aedbe4ec5caf09c643d3f86e94eae2e6",
+      "height": 53,
+      "peers": 0,
+      "tip": "92f87c65bcefc06afb516530fb0307b8509b397a9813c56e437a26197802c04e",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "bb40b9a68d65f843850114e7f18d5cf0f4dea2bfae451266f211608ea62911f4",
+      "height": 54,
+      "peers": 0,
+      "tip": "9bb76a5d291ba8e629a307f407d6311a68d3d0f4ecfd2d935510a9e71dc0f60b",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "5223228ffad5d7e0b3e0fb3efd4483446b5af87a6133fad894337a99babc638e",
+      "height": 55,
+      "peers": 0,
+      "tip": "b88dcf5bbaddf5959d312b88bea5c7f5516016e2a9cad74e12baecd14f1fb0d2",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "efc6ebf6ab80e12202fddf498a526569380fa7645a77cea33ca536e96247738e",
+      "height": 56,
+      "peers": 0,
+      "tip": "07163d06fe7ffde70da69633bf543e1d5f12cf760df28fc27b270548b43b478f",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "df3024132029a95e6ea93fb6018bb91d3a042ff211d61e2c9285ce07dca0fa06",
+      "height": 57,
+      "peers": 0,
+      "tip": "de12f2a431382b39619a2cf4e13d634b48950ec76544ca2beae8d63d4cc34192",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "8b9bec8194de567a404c77974bc0551cb95897aab36b81a8dc4655cc74ca929f",
+      "height": 58,
+      "peers": 0,
+      "tip": "c54053df626506352cee0191cca8d58231e399853d22acd1ba0fa7d96f28b17d",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "fa69fb28e2812c2f5893c384c3c68c709fd22faa3762b92bb0c504a0d5c76851",
+      "height": 59,
+      "peers": 0,
+      "tip": "7f192c537df1d9608eeab84012a5a78924a9377137d85c456f046b3ff95ddacb",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "a7f5957df705a1352dc63005129b89fb9d899e83f9e6fee3b8e0c53373cac47c",
+      "height": 60,
+      "peers": 0,
+      "tip": "00b53bef0e2fcaf8071b97e39833f5f1f78cbcea5aeff99ec3a6c1f3e18db2b1",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "317da21a08f30a1355253767102e3451d7bce502790296eff0707ab45c0d1585",
+      "height": 61,
+      "peers": 0,
+      "tip": "ab08535e664843ace9233676e5e021fd20021f0f6060d7cb24628b4cd7f12b52",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "f8873c482e4a28190f230ade504b9d3b5aed2896c1c4828f27fc1d3490e93461",
+      "height": 62,
+      "peers": 0,
+      "tip": "c4e29b6e4719caf4a8d6607d30be301958e30a37561cfe090113f5c4fd2a271f",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "15d8d42e511c0399c7ed12448756eae0a3c72b9740a4e56f5ee0e72943eee425",
+      "height": 63,
+      "peers": 0,
+      "tip": "8e596af83e720a8e57011142c97caeabbf11444fe9ea44f7a689811e61c636bf",
+      "transfers": 80
+    },
+    {
+      "block_bytes": 254252,
+      "block_sha256": "2d65e3128036f931e086e58c990cdc754c953c73e63e53dc1c23c98430d09527",
+      "height": 64,
+      "peers": 0,
+      "tip": "1c12cd17c03f573e8f15c42bb615635c55d17f98641dee510f3682727701f65e",
+      "transfers": 80
+    }
+  ],
+  "audit": {
+    "height": 64,
+    "issued_atoms": 25599807708,
+    "ok": true,
+    "tip": "1c12cd17c03f573e8f15c42bb615635c55d17f98641dee510f3682727701f65e",
+    "total_atoms": 25599807708,
+    "unclaimed_atoms": 0,
+    "utxo_hash": "b9d3a023c0567227252e52f7e411cfd9b0e5ee75447172f24a39c0f3c394a77e",
+    "utxos": 151
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "mode": "cpu",
+      "sync_seconds": 1.2550489059940446,
+      "signature_checks": [
+        {
+          "backend": "cpu",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 86
+        },
+        {
+          "backend": "cpu",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10407
+        },
+        {
+          "backend": "cpu",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10390
+        },
+        {
+          "backend": "cpu",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10388
+        },
+        {
+          "backend": "cpu",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10600
+        },
+        {
+          "backend": "cpu",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10394
+        },
+        {
+          "backend": "cpu",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10502
+        },
+        {
+          "backend": "cpu",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 10443
+        },
+        {
+          "backend": "cpu",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 10422
+        },
+        {
+          "backend": "cpu",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10434
+        },
+        {
+          "backend": "cpu",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10433
+        },
+        {
+          "backend": "cpu",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10445
+        },
+        {
+          "backend": "cpu",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10417
+        },
+        {
+          "backend": "cpu",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10703
+        },
+        {
+          "backend": "cpu",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10440
+        },
+        {
+          "backend": "cpu",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10428
+        },
+        {
+          "backend": "cpu",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10432
+        },
+        {
+          "backend": "cpu",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10481
+        },
+        {
+          "backend": "cpu",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10432
+        },
+        {
+          "backend": "cpu",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10413
+        },
+        {
+          "backend": "cpu",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10431
+        },
+        {
+          "backend": "cpu",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10463
+        },
+        {
+          "backend": "cpu",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10417
+        },
+        {
+          "backend": "cpu",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10431
+        },
+        {
+          "backend": "cpu",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10391
+        },
+        {
+          "backend": "cpu",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10443
+        },
+        {
+          "backend": "cpu",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10409
+        },
+        {
+          "backend": "cpu",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10423
+        },
+        {
+          "backend": "cpu",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        },
+        {
+          "backend": "cpu",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10417
+        },
+        {
+          "backend": "cpu",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10434
+        },
+        {
+          "backend": "cpu",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10387
+        },
+        {
+          "backend": "cpu",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10384
+        },
+        {
+          "backend": "cpu",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10391
+        },
+        {
+          "backend": "cpu",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10372
+        },
+        {
+          "backend": "cpu",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10378
+        },
+        {
+          "backend": "cpu",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10359
+        },
+        {
+          "backend": "cpu",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10343
+        },
+        {
+          "backend": "cpu",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10379
+        },
+        {
+          "backend": "cpu",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10382
+        },
+        {
+          "backend": "cpu",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10377
+        },
+        {
+          "backend": "cpu",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10370
+        },
+        {
+          "backend": "cpu",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10383
+        }
+      ],
+      "first_mixed_signature_ms": 10.408,
+      "warm_block_signature_ms": 10.407,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 1,
+      "mode": "cuda",
+      "sync_seconds": 1.2281783790094778,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 102
+        },
+        {
+          "backend": "cuda",
+          "height": 5,
+          "gpu_verified": 64,
+          "elapsed_us": 168804
+        },
+        {
+          "backend": "cuda",
+          "height": 6,
+          "gpu_verified": 64,
+          "elapsed_us": 7274
+        },
+        {
+          "backend": "cuda",
+          "height": 7,
+          "gpu_verified": 64,
+          "elapsed_us": 7319
+        },
+        {
+          "backend": "cuda",
+          "height": 8,
+          "gpu_verified": 64,
+          "elapsed_us": 7280
+        },
+        {
+          "backend": "cuda",
+          "height": 9,
+          "gpu_verified": 64,
+          "elapsed_us": 7285
+        },
+        {
+          "backend": "cuda",
+          "height": 10,
+          "gpu_verified": 64,
+          "elapsed_us": 7334
+        },
+        {
+          "backend": "cuda",
+          "height": 11,
+          "gpu_verified": 64,
+          "elapsed_us": 7291
+        },
+        {
+          "backend": "cuda",
+          "height": 12,
+          "gpu_verified": 64,
+          "elapsed_us": 7284
+        },
+        {
+          "backend": "cuda",
+          "height": 13,
+          "gpu_verified": 64,
+          "elapsed_us": 7324
+        },
+        {
+          "backend": "cuda",
+          "height": 14,
+          "gpu_verified": 64,
+          "elapsed_us": 7280
+        },
+        {
+          "backend": "cuda",
+          "height": 15,
+          "gpu_verified": 64,
+          "elapsed_us": 7324
+        },
+        {
+          "backend": "cuda",
+          "height": 16,
+          "gpu_verified": 64,
+          "elapsed_us": 7303
+        },
+        {
+          "backend": "cuda",
+          "height": 17,
+          "gpu_verified": 64,
+          "elapsed_us": 7293
+        },
+        {
+          "backend": "cuda",
+          "height": 18,
+          "gpu_verified": 64,
+          "elapsed_us": 7280
+        },
+        {
+          "backend": "cuda",
+          "height": 19,
+          "gpu_verified": 64,
+          "elapsed_us": 7343
+        },
+        {
+          "backend": "cuda",
+          "height": 20,
+          "gpu_verified": 64,
+          "elapsed_us": 7482
+        },
+        {
+          "backend": "cuda",
+          "height": 21,
+          "gpu_verified": 64,
+          "elapsed_us": 7525
+        },
+        {
+          "backend": "cuda",
+          "height": 22,
+          "gpu_verified": 64,
+          "elapsed_us": 7480
+        },
+        {
+          "backend": "cuda",
+          "height": 23,
+          "gpu_verified": 64,
+          "elapsed_us": 7309
+        },
+        {
+          "backend": "cuda",
+          "height": 24,
+          "gpu_verified": 64,
+          "elapsed_us": 7453
+        },
+        {
+          "backend": "cuda",
+          "height": 25,
+          "gpu_verified": 64,
+          "elapsed_us": 7449
+        },
+        {
+          "backend": "cuda",
+          "height": 26,
+          "gpu_verified": 64,
+          "elapsed_us": 7551
+        },
+        {
+          "backend": "cuda",
+          "height": 27,
+          "gpu_verified": 64,
+          "elapsed_us": 7579
+        },
+        {
+          "backend": "cuda",
+          "height": 28,
+          "gpu_verified": 64,
+          "elapsed_us": 7437
+        },
+        {
+          "backend": "cuda",
+          "height": 29,
+          "gpu_verified": 64,
+          "elapsed_us": 7456
+        },
+        {
+          "backend": "cuda",
+          "height": 30,
+          "gpu_verified": 64,
+          "elapsed_us": 7485
+        },
+        {
+          "backend": "cuda",
+          "height": 31,
+          "gpu_verified": 64,
+          "elapsed_us": 7509
+        },
+        {
+          "backend": "cuda",
+          "height": 32,
+          "gpu_verified": 64,
+          "elapsed_us": 7481
+        },
+        {
+          "backend": "cuda",
+          "height": 33,
+          "gpu_verified": 64,
+          "elapsed_us": 7470
+        },
+        {
+          "backend": "cuda",
+          "height": 34,
+          "gpu_verified": 64,
+          "elapsed_us": 7463
+        },
+        {
+          "backend": "cuda",
+          "height": 35,
+          "gpu_verified": 64,
+          "elapsed_us": 7426
+        },
+        {
+          "backend": "cuda",
+          "height": 36,
+          "gpu_verified": 64,
+          "elapsed_us": 7487
+        },
+        {
+          "backend": "cuda",
+          "height": 37,
+          "gpu_verified": 64,
+          "elapsed_us": 7382
+        },
+        {
+          "backend": "cuda",
+          "height": 38,
+          "gpu_verified": 64,
+          "elapsed_us": 7472
+        },
+        {
+          "backend": "cuda",
+          "height": 39,
+          "gpu_verified": 64,
+          "elapsed_us": 7457
+        },
+        {
+          "backend": "cuda",
+          "height": 40,
+          "gpu_verified": 64,
+          "elapsed_us": 7451
+        },
+        {
+          "backend": "cuda",
+          "height": 41,
+          "gpu_verified": 64,
+          "elapsed_us": 7415
+        },
+        {
+          "backend": "cuda",
+          "height": 42,
+          "gpu_verified": 64,
+          "elapsed_us": 7467
+        },
+        {
+          "backend": "cuda",
+          "height": 43,
+          "gpu_verified": 64,
+          "elapsed_us": 7466
+        },
+        {
+          "backend": "cuda",
+          "height": 44,
+          "gpu_verified": 64,
+          "elapsed_us": 7355
+        },
+        {
+          "backend": "cuda",
+          "height": 45,
+          "gpu_verified": 64,
+          "elapsed_us": 7869
+        },
+        {
+          "backend": "cuda",
+          "height": 46,
+          "gpu_verified": 64,
+          "elapsed_us": 7470
+        },
+        {
+          "backend": "cuda",
+          "height": 47,
+          "gpu_verified": 64,
+          "elapsed_us": 7447
+        },
+        {
+          "backend": "cuda",
+          "height": 48,
+          "gpu_verified": 64,
+          "elapsed_us": 7429
+        },
+        {
+          "backend": "cuda",
+          "height": 49,
+          "gpu_verified": 64,
+          "elapsed_us": 7612
+        },
+        {
+          "backend": "cuda",
+          "height": 50,
+          "gpu_verified": 64,
+          "elapsed_us": 7589
+        },
+        {
+          "backend": "cuda",
+          "height": 51,
+          "gpu_verified": 64,
+          "elapsed_us": 7485
+        },
+        {
+          "backend": "cuda",
+          "height": 52,
+          "gpu_verified": 64,
+          "elapsed_us": 7452
+        },
+        {
+          "backend": "cuda",
+          "height": 53,
+          "gpu_verified": 64,
+          "elapsed_us": 7423
+        },
+        {
+          "backend": "cuda",
+          "height": 54,
+          "gpu_verified": 64,
+          "elapsed_us": 7473
+        },
+        {
+          "backend": "cuda",
+          "height": 55,
+          "gpu_verified": 64,
+          "elapsed_us": 7467
+        },
+        {
+          "backend": "cuda",
+          "height": 56,
+          "gpu_verified": 64,
+          "elapsed_us": 7541
+        },
+        {
+          "backend": "cuda",
+          "height": 57,
+          "gpu_verified": 64,
+          "elapsed_us": 7502
+        },
+        {
+          "backend": "cuda",
+          "height": 58,
+          "gpu_verified": 64,
+          "elapsed_us": 7433
+        },
+        {
+          "backend": "cuda",
+          "height": 59,
+          "gpu_verified": 64,
+          "elapsed_us": 7485
+        },
+        {
+          "backend": "cuda",
+          "height": 60,
+          "gpu_verified": 64,
+          "elapsed_us": 7483
+        },
+        {
+          "backend": "cuda",
+          "height": 61,
+          "gpu_verified": 64,
+          "elapsed_us": 7454
+        },
+        {
+          "backend": "cuda",
+          "height": 62,
+          "gpu_verified": 64,
+          "elapsed_us": 7480
+        },
+        {
+          "backend": "cuda",
+          "height": 63,
+          "gpu_verified": 64,
+          "elapsed_us": 7321
+        },
+        {
+          "backend": "cuda",
+          "height": 64,
+          "gpu_verified": 64,
+          "elapsed_us": 7463
+        }
+      ],
+      "first_mixed_signature_ms": 168.804,
+      "warm_block_signature_ms": 7.454,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 1,
+      "mode": "fallback",
+      "sync_seconds": 1.2904296749911737,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 88
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 42894
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10391
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10390
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10389
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10355
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10682
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 11002
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 11340
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10406
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10385
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10421
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10433
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10468
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10420
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10426
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10431
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10442
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10463
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10629
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10597
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10442
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10663
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 10766
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10749
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10449
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10438
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10384
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10477
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10370
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10407
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10409
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10455
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10431
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10424
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10462
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10426
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        }
+      ],
+      "first_mixed_signature_ms": 42.894,
+      "warm_block_signature_ms": 10.42,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 1,
+      "mode": "retry",
+      "sync_seconds": 1.459706585999811,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 87
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 50445
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 14097
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 13834
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 13872
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 13864
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 13862
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 13849
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 13868
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 13872
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 13856
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 13940
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 13892
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 13722
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 13836
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 13806
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 13694
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 13775
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 13727
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 13807
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 13748
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 13740
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 13880
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 13876
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 13902
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 13728
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 13758
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 13795
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 13819
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 13730
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 13685
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 13760
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 13663
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 13757
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 13817
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 13781
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 13751
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 13696
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 13706
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 13824
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 13711
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 13694
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 13688
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 13685
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 13689
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 13838
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 13820
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 13701
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 13674
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 13709
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 13727
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 13773
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 13778
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 13838
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 13751
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 13632
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 13732
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 13754
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 13761
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 13732
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 13922
+        }
+      ],
+      "first_mixed_signature_ms": 50.445,
+      "warm_block_signature_ms": 13.761,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 2,
+      "mode": "cuda",
+      "sync_seconds": 1.2471471370081417,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 72
+        },
+        {
+          "backend": "cuda",
+          "height": 5,
+          "gpu_verified": 64,
+          "elapsed_us": 173819
+        },
+        {
+          "backend": "cuda",
+          "height": 6,
+          "gpu_verified": 64,
+          "elapsed_us": 7322
+        },
+        {
+          "backend": "cuda",
+          "height": 7,
+          "gpu_verified": 64,
+          "elapsed_us": 7486
+        },
+        {
+          "backend": "cuda",
+          "height": 8,
+          "gpu_verified": 64,
+          "elapsed_us": 7696
+        },
+        {
+          "backend": "cuda",
+          "height": 9,
+          "gpu_verified": 64,
+          "elapsed_us": 7467
+        },
+        {
+          "backend": "cuda",
+          "height": 10,
+          "gpu_verified": 64,
+          "elapsed_us": 7501
+        },
+        {
+          "backend": "cuda",
+          "height": 11,
+          "gpu_verified": 64,
+          "elapsed_us": 7452
+        },
+        {
+          "backend": "cuda",
+          "height": 12,
+          "gpu_verified": 64,
+          "elapsed_us": 7512
+        },
+        {
+          "backend": "cuda",
+          "height": 13,
+          "gpu_verified": 64,
+          "elapsed_us": 7360
+        },
+        {
+          "backend": "cuda",
+          "height": 14,
+          "gpu_verified": 64,
+          "elapsed_us": 7470
+        },
+        {
+          "backend": "cuda",
+          "height": 15,
+          "gpu_verified": 64,
+          "elapsed_us": 7486
+        },
+        {
+          "backend": "cuda",
+          "height": 16,
+          "gpu_verified": 64,
+          "elapsed_us": 7744
+        },
+        {
+          "backend": "cuda",
+          "height": 17,
+          "gpu_verified": 64,
+          "elapsed_us": 7507
+        },
+        {
+          "backend": "cuda",
+          "height": 18,
+          "gpu_verified": 64,
+          "elapsed_us": 7473
+        },
+        {
+          "backend": "cuda",
+          "height": 19,
+          "gpu_verified": 64,
+          "elapsed_us": 7631
+        },
+        {
+          "backend": "cuda",
+          "height": 20,
+          "gpu_verified": 64,
+          "elapsed_us": 7317
+        },
+        {
+          "backend": "cuda",
+          "height": 21,
+          "gpu_verified": 64,
+          "elapsed_us": 7329
+        },
+        {
+          "backend": "cuda",
+          "height": 22,
+          "gpu_verified": 64,
+          "elapsed_us": 7422
+        },
+        {
+          "backend": "cuda",
+          "height": 23,
+          "gpu_verified": 64,
+          "elapsed_us": 7612
+        },
+        {
+          "backend": "cuda",
+          "height": 24,
+          "gpu_verified": 64,
+          "elapsed_us": 7587
+        },
+        {
+          "backend": "cuda",
+          "height": 25,
+          "gpu_verified": 64,
+          "elapsed_us": 7446
+        },
+        {
+          "backend": "cuda",
+          "height": 26,
+          "gpu_verified": 64,
+          "elapsed_us": 7448
+        },
+        {
+          "backend": "cuda",
+          "height": 27,
+          "gpu_verified": 64,
+          "elapsed_us": 7321
+        },
+        {
+          "backend": "cuda",
+          "height": 28,
+          "gpu_verified": 64,
+          "elapsed_us": 7426
+        },
+        {
+          "backend": "cuda",
+          "height": 29,
+          "gpu_verified": 64,
+          "elapsed_us": 7349
+        },
+        {
+          "backend": "cuda",
+          "height": 30,
+          "gpu_verified": 64,
+          "elapsed_us": 7618
+        },
+        {
+          "backend": "cuda",
+          "height": 31,
+          "gpu_verified": 64,
+          "elapsed_us": 7346
+        },
+        {
+          "backend": "cuda",
+          "height": 32,
+          "gpu_verified": 64,
+          "elapsed_us": 7313
+        },
+        {
+          "backend": "cuda",
+          "height": 33,
+          "gpu_verified": 64,
+          "elapsed_us": 7443
+        },
+        {
+          "backend": "cuda",
+          "height": 34,
+          "gpu_verified": 64,
+          "elapsed_us": 7424
+        },
+        {
+          "backend": "cuda",
+          "height": 35,
+          "gpu_verified": 64,
+          "elapsed_us": 7499
+        },
+        {
+          "backend": "cuda",
+          "height": 36,
+          "gpu_verified": 64,
+          "elapsed_us": 7535
+        },
+        {
+          "backend": "cuda",
+          "height": 37,
+          "gpu_verified": 64,
+          "elapsed_us": 7466
+        },
+        {
+          "backend": "cuda",
+          "height": 38,
+          "gpu_verified": 64,
+          "elapsed_us": 7488
+        },
+        {
+          "backend": "cuda",
+          "height": 39,
+          "gpu_verified": 64,
+          "elapsed_us": 7477
+        },
+        {
+          "backend": "cuda",
+          "height": 40,
+          "gpu_verified": 64,
+          "elapsed_us": 7450
+        },
+        {
+          "backend": "cuda",
+          "height": 41,
+          "gpu_verified": 64,
+          "elapsed_us": 7460
+        },
+        {
+          "backend": "cuda",
+          "height": 42,
+          "gpu_verified": 64,
+          "elapsed_us": 7357
+        },
+        {
+          "backend": "cuda",
+          "height": 43,
+          "gpu_verified": 64,
+          "elapsed_us": 7449
+        },
+        {
+          "backend": "cuda",
+          "height": 44,
+          "gpu_verified": 64,
+          "elapsed_us": 7486
+        },
+        {
+          "backend": "cuda",
+          "height": 45,
+          "gpu_verified": 64,
+          "elapsed_us": 7425
+        },
+        {
+          "backend": "cuda",
+          "height": 46,
+          "gpu_verified": 64,
+          "elapsed_us": 7460
+        },
+        {
+          "backend": "cuda",
+          "height": 47,
+          "gpu_verified": 64,
+          "elapsed_us": 7441
+        },
+        {
+          "backend": "cuda",
+          "height": 48,
+          "gpu_verified": 64,
+          "elapsed_us": 7461
+        },
+        {
+          "backend": "cuda",
+          "height": 49,
+          "gpu_verified": 64,
+          "elapsed_us": 7572
+        },
+        {
+          "backend": "cuda",
+          "height": 50,
+          "gpu_verified": 64,
+          "elapsed_us": 7574
+        },
+        {
+          "backend": "cuda",
+          "height": 51,
+          "gpu_verified": 64,
+          "elapsed_us": 7465
+        },
+        {
+          "backend": "cuda",
+          "height": 52,
+          "gpu_verified": 64,
+          "elapsed_us": 7481
+        },
+        {
+          "backend": "cuda",
+          "height": 53,
+          "gpu_verified": 64,
+          "elapsed_us": 7423
+        },
+        {
+          "backend": "cuda",
+          "height": 54,
+          "gpu_verified": 64,
+          "elapsed_us": 7506
+        },
+        {
+          "backend": "cuda",
+          "height": 55,
+          "gpu_verified": 64,
+          "elapsed_us": 7495
+        },
+        {
+          "backend": "cuda",
+          "height": 56,
+          "gpu_verified": 64,
+          "elapsed_us": 7568
+        },
+        {
+          "backend": "cuda",
+          "height": 57,
+          "gpu_verified": 64,
+          "elapsed_us": 7451
+        },
+        {
+          "backend": "cuda",
+          "height": 58,
+          "gpu_verified": 64,
+          "elapsed_us": 7452
+        },
+        {
+          "backend": "cuda",
+          "height": 59,
+          "gpu_verified": 64,
+          "elapsed_us": 7452
+        },
+        {
+          "backend": "cuda",
+          "height": 60,
+          "gpu_verified": 64,
+          "elapsed_us": 7480
+        },
+        {
+          "backend": "cuda",
+          "height": 61,
+          "gpu_verified": 64,
+          "elapsed_us": 7423
+        },
+        {
+          "backend": "cuda",
+          "height": 62,
+          "gpu_verified": 64,
+          "elapsed_us": 7477
+        },
+        {
+          "backend": "cuda",
+          "height": 63,
+          "gpu_verified": 64,
+          "elapsed_us": 7519
+        },
+        {
+          "backend": "cuda",
+          "height": 64,
+          "gpu_verified": 64,
+          "elapsed_us": 7462
+        }
+      ],
+      "first_mixed_signature_ms": 173.819,
+      "warm_block_signature_ms": 7.465,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 2,
+      "mode": "fallback",
+      "sync_seconds": 1.2616631170094479,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 89
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 44920
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10430
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10423
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10411
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10411
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10389
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10384
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 10421
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 10428
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10411
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10414
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10424
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10413
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10420
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10406
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10436
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10417
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10422
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10422
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10622
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10350
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10355
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10450
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10435
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10444
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10590
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10616
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10643
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10641
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 11401
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10434
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10409
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10454
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10389
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10393
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10394
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10379
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10402
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10391
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10373
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10378
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10387
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10370
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10364
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10371
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10363
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10370
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10669
+        }
+      ],
+      "first_mixed_signature_ms": 44.92,
+      "warm_block_signature_ms": 10.409,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 2,
+      "mode": "retry",
+      "sync_seconds": 1.4342951499857008,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 84
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 50360
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 14039
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 13890
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 13952
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 14011
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 13939
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 13717
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 13729
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 13715
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 13744
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 13765
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 13724
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 13730
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 13696
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 13748
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 13740
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 13785
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 13690
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 13678
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 13691
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 13688
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 13794
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 13697
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 13802
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 13720
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 13703
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 13725
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 13671
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 13669
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 13700
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 13676
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 13692
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 13741
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 13785
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 13899
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 13974
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 13726
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 13679
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 13725
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 14016
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 13708
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 13775
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 13784
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 13795
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 13802
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 13834
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 13683
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 13696
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 13734
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 13708
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 13785
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 13673
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 13698
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 13695
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 13715
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 13684
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 13669
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 13677
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 13688
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 14032
+        }
+      ],
+      "first_mixed_signature_ms": 50.36,
+      "warm_block_signature_ms": 13.725,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 2,
+      "mode": "cpu",
+      "sync_seconds": 1.306112734018825,
+      "signature_checks": [
+        {
+          "backend": "cpu",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 91
+        },
+        {
+          "backend": "cpu",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 10472
+        },
+        {
+          "backend": "cpu",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10460
+        },
+        {
+          "backend": "cpu",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10428
+        },
+        {
+          "backend": "cpu",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10452
+        },
+        {
+          "backend": "cpu",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10389
+        },
+        {
+          "backend": "cpu",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10409
+        },
+        {
+          "backend": "cpu",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10507
+        },
+        {
+          "backend": "cpu",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 10377
+        },
+        {
+          "backend": "cpu",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 10427
+        },
+        {
+          "backend": "cpu",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10406
+        },
+        {
+          "backend": "cpu",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10394
+        },
+        {
+          "backend": "cpu",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10390
+        },
+        {
+          "backend": "cpu",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10795
+        },
+        {
+          "backend": "cpu",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10417
+        },
+        {
+          "backend": "cpu",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10382
+        },
+        {
+          "backend": "cpu",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10386
+        },
+        {
+          "backend": "cpu",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10381
+        },
+        {
+          "backend": "cpu",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10389
+        },
+        {
+          "backend": "cpu",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10384
+        },
+        {
+          "backend": "cpu",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10367
+        },
+        {
+          "backend": "cpu",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10473
+        },
+        {
+          "backend": "cpu",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10422
+        },
+        {
+          "backend": "cpu",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10461
+        },
+        {
+          "backend": "cpu",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10444
+        },
+        {
+          "backend": "cpu",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10421
+        },
+        {
+          "backend": "cpu",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10464
+        },
+        {
+          "backend": "cpu",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10420
+        },
+        {
+          "backend": "cpu",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 10440
+        },
+        {
+          "backend": "cpu",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10668
+        },
+        {
+          "backend": "cpu",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10427
+        },
+        {
+          "backend": "cpu",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10622
+        },
+        {
+          "backend": "cpu",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10434
+        },
+        {
+          "backend": "cpu",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10389
+        },
+        {
+          "backend": "cpu",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10402
+        },
+        {
+          "backend": "cpu",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        },
+        {
+          "backend": "cpu",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10422
+        },
+        {
+          "backend": "cpu",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10437
+        },
+        {
+          "backend": "cpu",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10376
+        },
+        {
+          "backend": "cpu",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10361
+        },
+        {
+          "backend": "cpu",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10443
+        },
+        {
+          "backend": "cpu",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10361
+        },
+        {
+          "backend": "cpu",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10368
+        },
+        {
+          "backend": "cpu",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10363
+        },
+        {
+          "backend": "cpu",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10376
+        },
+        {
+          "backend": "cpu",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10374
+        },
+        {
+          "backend": "cpu",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10390
+        },
+        {
+          "backend": "cpu",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10381
+        },
+        {
+          "backend": "cpu",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10374
+        }
+      ],
+      "first_mixed_signature_ms": 10.472,
+      "warm_block_signature_ms": 10.404,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 3,
+      "mode": "fallback",
+      "sync_seconds": 1.3092409359815065,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 87
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 68222
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10388
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10388
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10393
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10372
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10377
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10347
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 10375
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10447
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10375
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10383
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10374
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10401
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10370
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10402
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10507
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10802
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10454
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10415
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10424
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10434
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10451
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10420
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10427
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10434
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10427
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 10406
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10449
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10433
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10428
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10443
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10438
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10403
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10393
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10505
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10443
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10416
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10427
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10430
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10493
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10677
+        }
+      ],
+      "first_mixed_signature_ms": 68.222,
+      "warm_block_signature_ms": 10.412,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 3,
+      "mode": "retry",
+      "sync_seconds": 1.4791527210036293,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 86
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 68111
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 14042
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 13814
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 13775
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 13870
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 13875
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 13857
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 13868
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 13876
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 13848
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 13907
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 13896
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 13845
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 13894
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 13839
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 13841
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 13873
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 13820
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 13853
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 14190
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 13857
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 13939
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 13798
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 14231
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 13788
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 13756
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 13741
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 13734
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 13826
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 13721
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 13982
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 13749
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 13801
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 13732
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 14124
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 13869
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 13848
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 13821
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 13865
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 13854
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 13866
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 13839
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 13817
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 13750
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 14336
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 13853
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 13943
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 13768
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 13750
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 13750
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 13734
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 13754
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 13724
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 13715
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 13748
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 13712
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 13714
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 13813
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 13684
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 13701
+        }
+      ],
+      "first_mixed_signature_ms": 68.111,
+      "warm_block_signature_ms": 13.839,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 3,
+      "mode": "cpu",
+      "sync_seconds": 1.2253939420043025,
+      "signature_checks": [
+        {
+          "backend": "cpu",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 88
+        },
+        {
+          "backend": "cpu",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 10711
+        },
+        {
+          "backend": "cpu",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10609
+        },
+        {
+          "backend": "cpu",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10407
+        },
+        {
+          "backend": "cpu",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10394
+        },
+        {
+          "backend": "cpu",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10423
+        },
+        {
+          "backend": "cpu",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10382
+        },
+        {
+          "backend": "cpu",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10402
+        },
+        {
+          "backend": "cpu",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10441
+        },
+        {
+          "backend": "cpu",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 10414
+        },
+        {
+          "backend": "cpu",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        },
+        {
+          "backend": "cpu",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10387
+        },
+        {
+          "backend": "cpu",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10381
+        },
+        {
+          "backend": "cpu",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10375
+        },
+        {
+          "backend": "cpu",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10378
+        },
+        {
+          "backend": "cpu",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10545
+        },
+        {
+          "backend": "cpu",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        },
+        {
+          "backend": "cpu",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10375
+        },
+        {
+          "backend": "cpu",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10379
+        },
+        {
+          "backend": "cpu",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10374
+        },
+        {
+          "backend": "cpu",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10452
+        },
+        {
+          "backend": "cpu",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10444
+        },
+        {
+          "backend": "cpu",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10359
+        },
+        {
+          "backend": "cpu",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10364
+        },
+        {
+          "backend": "cpu",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10383
+        },
+        {
+          "backend": "cpu",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10426
+        },
+        {
+          "backend": "cpu",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10421
+        },
+        {
+          "backend": "cpu",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10435
+        },
+        {
+          "backend": "cpu",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10413
+        },
+        {
+          "backend": "cpu",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10533
+        },
+        {
+          "backend": "cpu",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10403
+        },
+        {
+          "backend": "cpu",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10440
+        },
+        {
+          "backend": "cpu",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10416
+        },
+        {
+          "backend": "cpu",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10436
+        },
+        {
+          "backend": "cpu",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10416
+        },
+        {
+          "backend": "cpu",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10379
+        },
+        {
+          "backend": "cpu",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10385
+        },
+        {
+          "backend": "cpu",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10414
+        },
+        {
+          "backend": "cpu",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10434
+        },
+        {
+          "backend": "cpu",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10388
+        },
+        {
+          "backend": "cpu",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10390
+        },
+        {
+          "backend": "cpu",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10393
+        }
+      ],
+      "first_mixed_signature_ms": 10.711,
+      "warm_block_signature_ms": 10.404,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 3,
+      "mode": "cuda",
+      "sync_seconds": 1.2393940619949717,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 87
+        },
+        {
+          "backend": "cuda",
+          "height": 5,
+          "gpu_verified": 64,
+          "elapsed_us": 171925
+        },
+        {
+          "backend": "cuda",
+          "height": 6,
+          "gpu_verified": 64,
+          "elapsed_us": 7308
+        },
+        {
+          "backend": "cuda",
+          "height": 7,
+          "gpu_verified": 64,
+          "elapsed_us": 7378
+        },
+        {
+          "backend": "cuda",
+          "height": 8,
+          "gpu_verified": 64,
+          "elapsed_us": 7502
+        },
+        {
+          "backend": "cuda",
+          "height": 9,
+          "gpu_verified": 64,
+          "elapsed_us": 7508
+        },
+        {
+          "backend": "cuda",
+          "height": 10,
+          "gpu_verified": 64,
+          "elapsed_us": 7495
+        },
+        {
+          "backend": "cuda",
+          "height": 11,
+          "gpu_verified": 64,
+          "elapsed_us": 7652
+        },
+        {
+          "backend": "cuda",
+          "height": 12,
+          "gpu_verified": 64,
+          "elapsed_us": 7467
+        },
+        {
+          "backend": "cuda",
+          "height": 13,
+          "gpu_verified": 64,
+          "elapsed_us": 7513
+        },
+        {
+          "backend": "cuda",
+          "height": 14,
+          "gpu_verified": 64,
+          "elapsed_us": 7469
+        },
+        {
+          "backend": "cuda",
+          "height": 15,
+          "gpu_verified": 64,
+          "elapsed_us": 7481
+        },
+        {
+          "backend": "cuda",
+          "height": 16,
+          "gpu_verified": 64,
+          "elapsed_us": 7561
+        },
+        {
+          "backend": "cuda",
+          "height": 17,
+          "gpu_verified": 64,
+          "elapsed_us": 7507
+        },
+        {
+          "backend": "cuda",
+          "height": 18,
+          "gpu_verified": 64,
+          "elapsed_us": 7465
+        },
+        {
+          "backend": "cuda",
+          "height": 19,
+          "gpu_verified": 64,
+          "elapsed_us": 7362
+        },
+        {
+          "backend": "cuda",
+          "height": 20,
+          "gpu_verified": 64,
+          "elapsed_us": 7295
+        },
+        {
+          "backend": "cuda",
+          "height": 21,
+          "gpu_verified": 64,
+          "elapsed_us": 7344
+        },
+        {
+          "backend": "cuda",
+          "height": 22,
+          "gpu_verified": 64,
+          "elapsed_us": 7293
+        },
+        {
+          "backend": "cuda",
+          "height": 23,
+          "gpu_verified": 64,
+          "elapsed_us": 7326
+        },
+        {
+          "backend": "cuda",
+          "height": 24,
+          "gpu_verified": 64,
+          "elapsed_us": 7374
+        },
+        {
+          "backend": "cuda",
+          "height": 25,
+          "gpu_verified": 64,
+          "elapsed_us": 7562
+        },
+        {
+          "backend": "cuda",
+          "height": 26,
+          "gpu_verified": 64,
+          "elapsed_us": 7444
+        },
+        {
+          "backend": "cuda",
+          "height": 27,
+          "gpu_verified": 64,
+          "elapsed_us": 7460
+        },
+        {
+          "backend": "cuda",
+          "height": 28,
+          "gpu_verified": 64,
+          "elapsed_us": 7672
+        },
+        {
+          "backend": "cuda",
+          "height": 29,
+          "gpu_verified": 64,
+          "elapsed_us": 7479
+        },
+        {
+          "backend": "cuda",
+          "height": 30,
+          "gpu_verified": 64,
+          "elapsed_us": 7443
+        },
+        {
+          "backend": "cuda",
+          "height": 31,
+          "gpu_verified": 64,
+          "elapsed_us": 7464
+        },
+        {
+          "backend": "cuda",
+          "height": 32,
+          "gpu_verified": 64,
+          "elapsed_us": 7469
+        },
+        {
+          "backend": "cuda",
+          "height": 33,
+          "gpu_verified": 64,
+          "elapsed_us": 7475
+        },
+        {
+          "backend": "cuda",
+          "height": 34,
+          "gpu_verified": 64,
+          "elapsed_us": 7626
+        },
+        {
+          "backend": "cuda",
+          "height": 35,
+          "gpu_verified": 64,
+          "elapsed_us": 7939
+        },
+        {
+          "backend": "cuda",
+          "height": 36,
+          "gpu_verified": 64,
+          "elapsed_us": 7334
+        },
+        {
+          "backend": "cuda",
+          "height": 37,
+          "gpu_verified": 64,
+          "elapsed_us": 7522
+        },
+        {
+          "backend": "cuda",
+          "height": 38,
+          "gpu_verified": 64,
+          "elapsed_us": 7451
+        },
+        {
+          "backend": "cuda",
+          "height": 39,
+          "gpu_verified": 64,
+          "elapsed_us": 7321
+        },
+        {
+          "backend": "cuda",
+          "height": 40,
+          "gpu_verified": 64,
+          "elapsed_us": 7311
+        },
+        {
+          "backend": "cuda",
+          "height": 41,
+          "gpu_verified": 64,
+          "elapsed_us": 7324
+        },
+        {
+          "backend": "cuda",
+          "height": 42,
+          "gpu_verified": 64,
+          "elapsed_us": 7336
+        },
+        {
+          "backend": "cuda",
+          "height": 43,
+          "gpu_verified": 64,
+          "elapsed_us": 7301
+        },
+        {
+          "backend": "cuda",
+          "height": 44,
+          "gpu_verified": 64,
+          "elapsed_us": 7477
+        },
+        {
+          "backend": "cuda",
+          "height": 45,
+          "gpu_verified": 64,
+          "elapsed_us": 7327
+        },
+        {
+          "backend": "cuda",
+          "height": 46,
+          "gpu_verified": 64,
+          "elapsed_us": 7416
+        },
+        {
+          "backend": "cuda",
+          "height": 47,
+          "gpu_verified": 64,
+          "elapsed_us": 7481
+        },
+        {
+          "backend": "cuda",
+          "height": 48,
+          "gpu_verified": 64,
+          "elapsed_us": 7494
+        },
+        {
+          "backend": "cuda",
+          "height": 49,
+          "gpu_verified": 64,
+          "elapsed_us": 7654
+        },
+        {
+          "backend": "cuda",
+          "height": 50,
+          "gpu_verified": 64,
+          "elapsed_us": 7646
+        },
+        {
+          "backend": "cuda",
+          "height": 51,
+          "gpu_verified": 64,
+          "elapsed_us": 7514
+        },
+        {
+          "backend": "cuda",
+          "height": 52,
+          "gpu_verified": 64,
+          "elapsed_us": 7442
+        },
+        {
+          "backend": "cuda",
+          "height": 53,
+          "gpu_verified": 64,
+          "elapsed_us": 7433
+        },
+        {
+          "backend": "cuda",
+          "height": 54,
+          "gpu_verified": 64,
+          "elapsed_us": 7498
+        },
+        {
+          "backend": "cuda",
+          "height": 55,
+          "gpu_verified": 64,
+          "elapsed_us": 7481
+        },
+        {
+          "backend": "cuda",
+          "height": 56,
+          "gpu_verified": 64,
+          "elapsed_us": 7424
+        },
+        {
+          "backend": "cuda",
+          "height": 57,
+          "gpu_verified": 64,
+          "elapsed_us": 7453
+        },
+        {
+          "backend": "cuda",
+          "height": 58,
+          "gpu_verified": 64,
+          "elapsed_us": 7451
+        },
+        {
+          "backend": "cuda",
+          "height": 59,
+          "gpu_verified": 64,
+          "elapsed_us": 7475
+        },
+        {
+          "backend": "cuda",
+          "height": 60,
+          "gpu_verified": 64,
+          "elapsed_us": 7487
+        },
+        {
+          "backend": "cuda",
+          "height": 61,
+          "gpu_verified": 64,
+          "elapsed_us": 7469
+        },
+        {
+          "backend": "cuda",
+          "height": 62,
+          "gpu_verified": 64,
+          "elapsed_us": 7365
+        },
+        {
+          "backend": "cuda",
+          "height": 63,
+          "gpu_verified": 64,
+          "elapsed_us": 7456
+        },
+        {
+          "backend": "cuda",
+          "height": 64,
+          "gpu_verified": 64,
+          "elapsed_us": 7452
+        }
+      ],
+      "first_mixed_signature_ms": 171.925,
+      "warm_block_signature_ms": 7.465,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 4,
+      "mode": "retry",
+      "sync_seconds": 1.4418111749982927,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 87
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 43161
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 14063
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 13875
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 13785
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 13843
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 13720
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 13714
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 13825
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 13965
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 13747
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 13768
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 13782
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 13713
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 13731
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 13761
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 13736
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 13748
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 13741
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 13769
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 13747
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 13739
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 13891
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 13728
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 13820
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 13705
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 13703
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 13698
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 13672
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 13707
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 13693
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 13695
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 13706
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 13786
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 14031
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 13938
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 13897
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 13928
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 13884
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 14170
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 13845
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 13837
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 13979
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 13823
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 13839
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 13968
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 14018
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 13955
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 13776
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 13860
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 13793
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 13802
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 13702
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 13717
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 13701
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 13852
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 13732
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 13758
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 13732
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 13731
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 13768
+        }
+      ],
+      "first_mixed_signature_ms": 43.161,
+      "warm_block_signature_ms": 13.769,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 4,
+      "mode": "cpu",
+      "sync_seconds": 1.25001957200584,
+      "signature_checks": [
+        {
+          "backend": "cpu",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 91
+        },
+        {
+          "backend": "cpu",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 10603
+        },
+        {
+          "backend": "cpu",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10403
+        },
+        {
+          "backend": "cpu",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10416
+        },
+        {
+          "backend": "cpu",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10444
+        },
+        {
+          "backend": "cpu",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 10441
+        },
+        {
+          "backend": "cpu",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 10411
+        },
+        {
+          "backend": "cpu",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10445
+        },
+        {
+          "backend": "cpu",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10407
+        },
+        {
+          "backend": "cpu",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10417
+        },
+        {
+          "backend": "cpu",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10375
+        },
+        {
+          "backend": "cpu",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10415
+        },
+        {
+          "backend": "cpu",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10384
+        },
+        {
+          "backend": "cpu",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        },
+        {
+          "backend": "cpu",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10446
+        },
+        {
+          "backend": "cpu",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10430
+        },
+        {
+          "backend": "cpu",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10385
+        },
+        {
+          "backend": "cpu",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10409
+        },
+        {
+          "backend": "cpu",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10390
+        },
+        {
+          "backend": "cpu",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10414
+        },
+        {
+          "backend": "cpu",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10425
+        },
+        {
+          "backend": "cpu",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 10416
+        },
+        {
+          "backend": "cpu",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10503
+        },
+        {
+          "backend": "cpu",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10510
+        },
+        {
+          "backend": "cpu",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10419
+        },
+        {
+          "backend": "cpu",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10391
+        },
+        {
+          "backend": "cpu",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10401
+        },
+        {
+          "backend": "cpu",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10431
+        },
+        {
+          "backend": "cpu",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10638
+        },
+        {
+          "backend": "cpu",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        },
+        {
+          "backend": "cpu",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10401
+        },
+        {
+          "backend": "cpu",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10420
+        },
+        {
+          "backend": "cpu",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10443
+        },
+        {
+          "backend": "cpu",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10404
+        },
+        {
+          "backend": "cpu",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10426
+        },
+        {
+          "backend": "cpu",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10440
+        },
+        {
+          "backend": "cpu",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10415
+        },
+        {
+          "backend": "cpu",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10423
+        },
+        {
+          "backend": "cpu",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10428
+        },
+        {
+          "backend": "cpu",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10436
+        },
+        {
+          "backend": "cpu",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10415
+        },
+        {
+          "backend": "cpu",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10465
+        },
+        {
+          "backend": "cpu",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10408
+        },
+        {
+          "backend": "cpu",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10398
+        }
+      ],
+      "first_mixed_signature_ms": 10.603,
+      "warm_block_signature_ms": 10.415,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 4,
+      "mode": "cuda",
+      "sync_seconds": 1.202944482996827,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 1
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 87
+        },
+        {
+          "backend": "cuda",
+          "height": 5,
+          "gpu_verified": 64,
+          "elapsed_us": 151115
+        },
+        {
+          "backend": "cuda",
+          "height": 6,
+          "gpu_verified": 64,
+          "elapsed_us": 7393
+        },
+        {
+          "backend": "cuda",
+          "height": 7,
+          "gpu_verified": 64,
+          "elapsed_us": 7381
+        },
+        {
+          "backend": "cuda",
+          "height": 8,
+          "gpu_verified": 64,
+          "elapsed_us": 7371
+        },
+        {
+          "backend": "cuda",
+          "height": 9,
+          "gpu_verified": 64,
+          "elapsed_us": 7363
+        },
+        {
+          "backend": "cuda",
+          "height": 10,
+          "gpu_verified": 64,
+          "elapsed_us": 7309
+        },
+        {
+          "backend": "cuda",
+          "height": 11,
+          "gpu_verified": 64,
+          "elapsed_us": 7442
+        },
+        {
+          "backend": "cuda",
+          "height": 12,
+          "gpu_verified": 64,
+          "elapsed_us": 7328
+        },
+        {
+          "backend": "cuda",
+          "height": 13,
+          "gpu_verified": 64,
+          "elapsed_us": 7338
+        },
+        {
+          "backend": "cuda",
+          "height": 14,
+          "gpu_verified": 64,
+          "elapsed_us": 7347
+        },
+        {
+          "backend": "cuda",
+          "height": 15,
+          "gpu_verified": 64,
+          "elapsed_us": 7449
+        },
+        {
+          "backend": "cuda",
+          "height": 16,
+          "gpu_verified": 64,
+          "elapsed_us": 7479
+        },
+        {
+          "backend": "cuda",
+          "height": 17,
+          "gpu_verified": 64,
+          "elapsed_us": 7424
+        },
+        {
+          "backend": "cuda",
+          "height": 18,
+          "gpu_verified": 64,
+          "elapsed_us": 7458
+        },
+        {
+          "backend": "cuda",
+          "height": 19,
+          "gpu_verified": 64,
+          "elapsed_us": 7418
+        },
+        {
+          "backend": "cuda",
+          "height": 20,
+          "gpu_verified": 64,
+          "elapsed_us": 7355
+        },
+        {
+          "backend": "cuda",
+          "height": 21,
+          "gpu_verified": 64,
+          "elapsed_us": 7447
+        },
+        {
+          "backend": "cuda",
+          "height": 22,
+          "gpu_verified": 64,
+          "elapsed_us": 7440
+        },
+        {
+          "backend": "cuda",
+          "height": 23,
+          "gpu_verified": 64,
+          "elapsed_us": 7473
+        },
+        {
+          "backend": "cuda",
+          "height": 24,
+          "gpu_verified": 64,
+          "elapsed_us": 7334
+        },
+        {
+          "backend": "cuda",
+          "height": 25,
+          "gpu_verified": 64,
+          "elapsed_us": 7302
+        },
+        {
+          "backend": "cuda",
+          "height": 26,
+          "gpu_verified": 64,
+          "elapsed_us": 7406
+        },
+        {
+          "backend": "cuda",
+          "height": 27,
+          "gpu_verified": 64,
+          "elapsed_us": 7331
+        },
+        {
+          "backend": "cuda",
+          "height": 28,
+          "gpu_verified": 64,
+          "elapsed_us": 7419
+        },
+        {
+          "backend": "cuda",
+          "height": 29,
+          "gpu_verified": 64,
+          "elapsed_us": 7388
+        },
+        {
+          "backend": "cuda",
+          "height": 30,
+          "gpu_verified": 64,
+          "elapsed_us": 7306
+        },
+        {
+          "backend": "cuda",
+          "height": 31,
+          "gpu_verified": 64,
+          "elapsed_us": 7304
+        },
+        {
+          "backend": "cuda",
+          "height": 32,
+          "gpu_verified": 64,
+          "elapsed_us": 7292
+        },
+        {
+          "backend": "cuda",
+          "height": 33,
+          "gpu_verified": 64,
+          "elapsed_us": 7292
+        },
+        {
+          "backend": "cuda",
+          "height": 34,
+          "gpu_verified": 64,
+          "elapsed_us": 7285
+        },
+        {
+          "backend": "cuda",
+          "height": 35,
+          "gpu_verified": 64,
+          "elapsed_us": 7274
+        },
+        {
+          "backend": "cuda",
+          "height": 36,
+          "gpu_verified": 64,
+          "elapsed_us": 7303
+        },
+        {
+          "backend": "cuda",
+          "height": 37,
+          "gpu_verified": 64,
+          "elapsed_us": 7455
+        },
+        {
+          "backend": "cuda",
+          "height": 38,
+          "gpu_verified": 64,
+          "elapsed_us": 7335
+        },
+        {
+          "backend": "cuda",
+          "height": 39,
+          "gpu_verified": 64,
+          "elapsed_us": 7270
+        },
+        {
+          "backend": "cuda",
+          "height": 40,
+          "gpu_verified": 64,
+          "elapsed_us": 7280
+        },
+        {
+          "backend": "cuda",
+          "height": 41,
+          "gpu_verified": 64,
+          "elapsed_us": 7277
+        },
+        {
+          "backend": "cuda",
+          "height": 42,
+          "gpu_verified": 64,
+          "elapsed_us": 7304
+        },
+        {
+          "backend": "cuda",
+          "height": 43,
+          "gpu_verified": 64,
+          "elapsed_us": 7289
+        },
+        {
+          "backend": "cuda",
+          "height": 44,
+          "gpu_verified": 64,
+          "elapsed_us": 7288
+        },
+        {
+          "backend": "cuda",
+          "height": 45,
+          "gpu_verified": 64,
+          "elapsed_us": 7266
+        },
+        {
+          "backend": "cuda",
+          "height": 46,
+          "gpu_verified": 64,
+          "elapsed_us": 7283
+        },
+        {
+          "backend": "cuda",
+          "height": 47,
+          "gpu_verified": 64,
+          "elapsed_us": 7283
+        },
+        {
+          "backend": "cuda",
+          "height": 48,
+          "gpu_verified": 64,
+          "elapsed_us": 7290
+        },
+        {
+          "backend": "cuda",
+          "height": 49,
+          "gpu_verified": 64,
+          "elapsed_us": 7473
+        },
+        {
+          "backend": "cuda",
+          "height": 50,
+          "gpu_verified": 64,
+          "elapsed_us": 7450
+        },
+        {
+          "backend": "cuda",
+          "height": 51,
+          "gpu_verified": 64,
+          "elapsed_us": 7409
+        },
+        {
+          "backend": "cuda",
+          "height": 52,
+          "gpu_verified": 64,
+          "elapsed_us": 7287
+        },
+        {
+          "backend": "cuda",
+          "height": 53,
+          "gpu_verified": 64,
+          "elapsed_us": 7289
+        },
+        {
+          "backend": "cuda",
+          "height": 54,
+          "gpu_verified": 64,
+          "elapsed_us": 7282
+        },
+        {
+          "backend": "cuda",
+          "height": 55,
+          "gpu_verified": 64,
+          "elapsed_us": 7283
+        },
+        {
+          "backend": "cuda",
+          "height": 56,
+          "gpu_verified": 64,
+          "elapsed_us": 7373
+        },
+        {
+          "backend": "cuda",
+          "height": 57,
+          "gpu_verified": 64,
+          "elapsed_us": 7477
+        },
+        {
+          "backend": "cuda",
+          "height": 58,
+          "gpu_verified": 64,
+          "elapsed_us": 7512
+        },
+        {
+          "backend": "cuda",
+          "height": 59,
+          "gpu_verified": 64,
+          "elapsed_us": 7480
+        },
+        {
+          "backend": "cuda",
+          "height": 60,
+          "gpu_verified": 64,
+          "elapsed_us": 7424
+        },
+        {
+          "backend": "cuda",
+          "height": 61,
+          "gpu_verified": 64,
+          "elapsed_us": 7608
+        },
+        {
+          "backend": "cuda",
+          "height": 62,
+          "gpu_verified": 64,
+          "elapsed_us": 7463
+        },
+        {
+          "backend": "cuda",
+          "height": 63,
+          "gpu_verified": 64,
+          "elapsed_us": 7472
+        },
+        {
+          "backend": "cuda",
+          "height": 64,
+          "gpu_verified": 64,
+          "elapsed_us": 7523
+        }
+      ],
+      "first_mixed_signature_ms": 151.115,
+      "warm_block_signature_ms": 7.355,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    },
+    {
+      "trial": 4,
+      "mode": "fallback",
+      "sync_seconds": 1.2831323260033969,
+      "signature_checks": [
+        {
+          "backend": "cpu-no-pq",
+          "height": 1,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 2,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 3,
+          "gpu_verified": 0,
+          "elapsed_us": 2
+        },
+        {
+          "backend": "cpu-no-pq",
+          "height": 4,
+          "gpu_verified": 0,
+          "elapsed_us": 88
+        },
+        {
+          "backend": "cpu-fallback",
+          "height": 5,
+          "gpu_verified": 0,
+          "elapsed_us": 52971
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 6,
+          "gpu_verified": 0,
+          "elapsed_us": 10459
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 7,
+          "gpu_verified": 0,
+          "elapsed_us": 10403
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 8,
+          "gpu_verified": 0,
+          "elapsed_us": 10407
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 9,
+          "gpu_verified": 0,
+          "elapsed_us": 10385
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 10,
+          "gpu_verified": 0,
+          "elapsed_us": 10384
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 11,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 12,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 13,
+          "gpu_verified": 0,
+          "elapsed_us": 10405
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 14,
+          "gpu_verified": 0,
+          "elapsed_us": 10415
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 15,
+          "gpu_verified": 0,
+          "elapsed_us": 10403
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 16,
+          "gpu_verified": 0,
+          "elapsed_us": 10423
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 17,
+          "gpu_verified": 0,
+          "elapsed_us": 10483
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 18,
+          "gpu_verified": 0,
+          "elapsed_us": 10421
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 19,
+          "gpu_verified": 0,
+          "elapsed_us": 10438
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 20,
+          "gpu_verified": 0,
+          "elapsed_us": 10465
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 21,
+          "gpu_verified": 0,
+          "elapsed_us": 10420
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 22,
+          "gpu_verified": 0,
+          "elapsed_us": 10429
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 23,
+          "gpu_verified": 0,
+          "elapsed_us": 10436
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 24,
+          "gpu_verified": 0,
+          "elapsed_us": 10409
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 25,
+          "gpu_verified": 0,
+          "elapsed_us": 10397
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 26,
+          "gpu_verified": 0,
+          "elapsed_us": 10491
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 27,
+          "gpu_verified": 0,
+          "elapsed_us": 10431
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 28,
+          "gpu_verified": 0,
+          "elapsed_us": 10451
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 29,
+          "gpu_verified": 0,
+          "elapsed_us": 10406
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 30,
+          "gpu_verified": 0,
+          "elapsed_us": 10412
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 31,
+          "gpu_verified": 0,
+          "elapsed_us": 10410
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 32,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 33,
+          "gpu_verified": 0,
+          "elapsed_us": 10393
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 34,
+          "gpu_verified": 0,
+          "elapsed_us": 10401
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 35,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 36,
+          "gpu_verified": 0,
+          "elapsed_us": 10382
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 37,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 38,
+          "gpu_verified": 0,
+          "elapsed_us": 10399
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 39,
+          "gpu_verified": 0,
+          "elapsed_us": 10418
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 40,
+          "gpu_verified": 0,
+          "elapsed_us": 10378
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 41,
+          "gpu_verified": 0,
+          "elapsed_us": 10362
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 42,
+          "gpu_verified": 0,
+          "elapsed_us": 10371
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 43,
+          "gpu_verified": 0,
+          "elapsed_us": 10371
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 44,
+          "gpu_verified": 0,
+          "elapsed_us": 10365
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 45,
+          "gpu_verified": 0,
+          "elapsed_us": 10361
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 46,
+          "gpu_verified": 0,
+          "elapsed_us": 10365
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 47,
+          "gpu_verified": 0,
+          "elapsed_us": 10374
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 48,
+          "gpu_verified": 0,
+          "elapsed_us": 10368
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 49,
+          "gpu_verified": 0,
+          "elapsed_us": 10371
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 50,
+          "gpu_verified": 0,
+          "elapsed_us": 10380
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 51,
+          "gpu_verified": 0,
+          "elapsed_us": 10395
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 52,
+          "gpu_verified": 0,
+          "elapsed_us": 10383
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 53,
+          "gpu_verified": 0,
+          "elapsed_us": 10386
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 54,
+          "gpu_verified": 0,
+          "elapsed_us": 10393
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 55,
+          "gpu_verified": 0,
+          "elapsed_us": 10368
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 56,
+          "gpu_verified": 0,
+          "elapsed_us": 10400
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 57,
+          "gpu_verified": 0,
+          "elapsed_us": 10368
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 58,
+          "gpu_verified": 0,
+          "elapsed_us": 10362
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 59,
+          "gpu_verified": 0,
+          "elapsed_us": 10357
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 60,
+          "gpu_verified": 0,
+          "elapsed_us": 10396
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 61,
+          "gpu_verified": 0,
+          "elapsed_us": 10394
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 62,
+          "gpu_verified": 0,
+          "elapsed_us": 10382
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 63,
+          "gpu_verified": 0,
+          "elapsed_us": 10362
+        },
+        {
+          "backend": "cpu-unavailable",
+          "height": 64,
+          "gpu_verified": 0,
+          "elapsed_us": 10375
+        }
+      ],
+      "first_mixed_signature_ms": 52.971,
+      "warm_block_signature_ms": 10.396,
+      "encoded_blocks_verified": 64,
+      "reopen_audit_match": true
+    }
+  ]
+}

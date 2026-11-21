@@ -1,0 +1,43 @@
+   Compiling requant-consensus v0.1.0 (/data2/worknet-ci/research/pqc-native-block-cuda.2IMk9LMN/native/crates/consensus)
+    Finished `release` profile [optimized] target(s) in 2.14s
+     Running unittests src/lib.rs (/data2/worknet-ci/research/pqc-mixed-verify/native/target/release/deps/requant_consensus-ee1aec2d72854bdc)
+
+running 24 tests
+test address::tests::amounts ... ok
+test address::tests::bip350_vectors ... ok
+test address::tests::addresses ... ok
+test block::tests::genesis_roundtrip_and_standalone ... ok
+test block::tests::merkle_shapes ... ok
+test chain::utxo_tests::the_owner_index_follows_every_change ... ok
+test block::tests::standalone_rejections ... ok
+test codec::tests::varint_roundtrip_and_canonical ... ok
+test params::tests::networks_are_consistent ... ok
+test pow::tests::a_stall_of_any_length_counts_one_half_life ... ok
+test pow::tests::clamps ... ok
+test pow::tests::never_easier_than_genesis_after_the_switch ... ok
+test pow::tests::on_schedule_keeps_the_target ... ok
+test pow::tests::one_half_life_doubles_or_halves ... ok
+test pow::tests::relative_rule_steps_from_the_parent ... ok
+test tx::tests::shape_rules ... ok
+test u256::tests::bytes_roundtrip_and_order ... ok
+test tx::tests::roundtrip_and_hashes ... ok
+test pow::tests::fractional_steps_follow_the_bch_polynomial ... ok
+test u256::tests::division_and_work ... ok
+test u256::tests::mul_shift ... ok
+test tx::tests::signatures_bind_chain_and_content ... ok
+test pow::tests::a_returning_miner_does_not_flood_the_chain ... ok
+test pow::tests::emission_schedule ... ok
+
+test result: ok. 24 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/conditions.rs (/data2/worknet-ci/research/pqc-mixed-verify/native/target/release/deps/conditions-e97c23dcde2f65dd)
+
+running 6 tests
+test encodings_are_canonical_and_txids_exclude_signatures ... ok
+test one_way_payment_channel ... ok
+test two_of_two_needs_both_keys_in_order ... ok
+test relative_lock_counts_from_the_coins_block ... ok
+test htlc_claim_with_the_preimage_refund_after_the_timeout ... ok
+test kind_2_waits_for_the_activation_height ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s

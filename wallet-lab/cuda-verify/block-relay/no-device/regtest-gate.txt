@@ -1,0 +1,11 @@
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running tests/two_nodes.rs (/data2/worknet-ci/research/pqc-mixed-verify/native/target/release/deps/two_nodes-1ebbb7f6cde28d77)
+
+running 1 test
+snapshot: height 7, 0 more records to replay
+mempool: 2 transactions restored
+test packages_relay_and_survive_a_restart ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 8 filtered out; finished in 0.55s
+
+Ordinary regtest relay used its standard verifier with the lab CUDA setting present.
