@@ -1,0 +1,15 @@
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running tests/pqc_wallet.rs (/data2/worknet-ci/research/pqc-mixed-verify/native/target/release/deps/pqc_wallet-7e9c1d9921233a6d)
+
+running 1 test
+PQC_BLOCK_SIGS height=1 backend=cpu-no-pq gpu_verified=0 signatures_ok=true elapsed_us=1
+PQC_BLOCK_SIGS height=2 backend=cpu-no-pq gpu_verified=0 signatures_ok=true elapsed_us=2
+PQC_BLOCK_SIGS height=3 backend=cpu-no-pq gpu_verified=0 signatures_ok=true elapsed_us=1
+PQC_BLOCK_SIGS height=4 backend=cpu-no-pq gpu_verified=0 signatures_ok=true elapsed_us=47
+PQC_BLOCK_SIGS height=5 backend=cpu-fallback gpu_verified=0 signatures_ok=false elapsed_us=163931
+PQC_BLOCK_SIGS height=5 backend=cuda gpu_verified=2 signatures_ok=true elapsed_us=267
+PQC_BLOCK_SIGS height=5 backend=cuda gpu_verified=2 signatures_ok=true elapsed_us=283
+block_controls=altered_signature_rejected,duplicate_spend_rejected,same_block_dependency_accepted
+test block_checks::ml_dsa_batch_preserves_block_signature_and_utxo_rules ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.18s
