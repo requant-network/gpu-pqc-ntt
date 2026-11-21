@@ -1,0 +1,68 @@
+   Compiling typenum v1.20.1
+   Compiling version_check v0.9.5
+   Compiling generic-array v0.14.7
+   Compiling zeroize v1.9.1
+   Compiling cfg-if v1.0.5
+   Compiling subtle v2.6.1
+   Compiling libc v0.2.190
+   Compiling cmov v0.5.4
+   Compiling ctutils v0.4.8
+   Compiling crypto-common v0.1.7
+   Compiling cpufeatures v0.2.17
+   Compiling getrandom v0.4.3
+   Compiling proc-macro2 v1.0.107
+   Compiling hybrid-array v0.4.15
+   Compiling block-buffer v0.10.4
+   Compiling rand_core v0.10.1
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling digest v0.10.7
+   Compiling semver v1.0.28
+   Compiling autocfg v1.5.1
+   Compiling rustc_version v0.4.1
+   Compiling num-traits v0.2.19
+   Compiling crypto-common v0.2.2
+   Compiling const-oid v0.10.3
+   Compiling digest v0.11.3
+   Compiling syn v2.0.119
+   Compiling der v0.8.3
+   Compiling curve25519-dalek v4.1.3
+   Compiling curve25519-dalek-derive v0.1.1
+   Compiling spki v0.8.1
+   Compiling inout v0.1.4
+   Compiling keccak v0.2.2
+   Compiling sponge-cursor v0.1.0
+   Compiling signature v2.2.0
+   Compiling ed25519 v2.2.3
+   Compiling shake v0.1.0
+   Compiling cipher v0.4.4
+   Compiling module-lattice v0.2.4
+   Compiling pkcs8 v0.11.0
+   Compiling signature v3.0.0
+   Compiling sha2 v0.10.9
+   Compiling universal-hash v0.5.1
+   Compiling opaque-debug v0.3.1
+   Compiling poly1305 v0.8.0
+   Compiling ed25519-dalek v2.2.0
+   Compiling ml-dsa v0.1.2
+   Compiling chacha20 v0.9.1
+   Compiling blake2 v0.10.6
+   Compiling aead v0.5.2
+   Compiling base64ct v1.8.3
+   Compiling tnet v1.0.0 (/data2/worknet-ci/research/pqc-recovery-memory.iTCtNgeE/source/crates/tnet)
+   Compiling requant-consensus v0.1.0 (/data2/worknet-ci/research/pqc-recovery-memory.iTCtNgeE/source/crates/consensus)
+   Compiling argon2 v0.5.3
+   Compiling chacha20poly1305 v0.10.1
+   Compiling hex v0.4.3
+    Finished `release` profile [optimized] target(s) in 14.08s
+     Running tests/pqc_wallet.rs (target/release/deps/pqc_wallet-0bb85020c4e22c24)
+
+running 3 tests
+test portable_backup::portable_child ... ignored, cross-host fixture requires a private recovery code on stdin
+native_size_bytes ed25519=179 ml_dsa_44=3924
+native_migration=accepted restored_spend=accepted same_block_legacy=accepted negative_controls=18
+test restored_wallet_spends_after_legacy_migration ... ok
+portable_backup_refusals=11
+test portable_backup::portable_backup_rejects_bad_input ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.39s

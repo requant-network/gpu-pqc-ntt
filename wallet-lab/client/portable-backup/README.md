@@ -42,6 +42,10 @@ wallet and transaction files are removed at the end of the run.
 The pinned NIST ACVP vector checks passed on both hosts, covering 25
 key-generation, 15 deterministic signing and 15 verification cases.
 
+The [Linux memory-limit trial](MEMORY_LIMITS.md) made workspace
+allocation fallible, tested recovery at fixed process and container limits,
+and confirmed compatibility with the earlier Windows exporter.
+
 ## Reproduce
 
 Prepare disposable Windows and Linux source copies at native ReQuant

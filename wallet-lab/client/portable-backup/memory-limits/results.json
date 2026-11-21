@@ -1,0 +1,57 @@
+{
+  "image": "sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55",
+  "workspace_mib": 64,
+  "trials": [
+    {
+      "envelope_bytes": 129,
+      "confirmed_wire_bytes": 3924,
+      "wire_sha256": "0d30c0420e9c9838a170b0f5d40f76275a01c5596c606dc02ac8e4b210338acc",
+      "original_address_64_exit": -6,
+      "fixed_address_64_export_exit": 101,
+      "fixed_address_64_restore_exit": 101,
+      "address_96_wrong_code_exit": 101,
+      "address_96_peak_rss_kib": 68224,
+      "address_96_restore_ms": 122.601,
+      "container_64_exit": 137,
+      "container_64_oom": true,
+      "container_96_restore_ms": 121.949,
+      "container_96_host_wall_s": 0.2828446490166243,
+      "same_backup_and_wire": true
+    },
+    {
+      "envelope_bytes": 129,
+      "confirmed_wire_bytes": 3924,
+      "wire_sha256": "666fdbb6a4c4a2c5607d120e7474c452628b7937fa5be479e676503cc72caaf0",
+      "original_address_64_exit": null,
+      "fixed_address_64_export_exit": 101,
+      "fixed_address_64_restore_exit": 101,
+      "address_96_wrong_code_exit": 101,
+      "address_96_peak_rss_kib": 68352,
+      "address_96_restore_ms": 121.364,
+      "container_64_exit": 137,
+      "container_64_oom": true,
+      "container_96_restore_ms": 123.364,
+      "container_96_host_wall_s": 0.27511504202266224,
+      "same_backup_and_wire": true
+    },
+    {
+      "envelope_bytes": 129,
+      "confirmed_wire_bytes": 3924,
+      "wire_sha256": "4c3aa3424e74bea499164375c9cc8d938d9e815c257faf5849e9a71cd8cdea78",
+      "original_address_64_exit": null,
+      "fixed_address_64_export_exit": 101,
+      "fixed_address_64_restore_exit": 101,
+      "address_96_wrong_code_exit": 101,
+      "address_96_peak_rss_kib": 68352,
+      "address_96_restore_ms": 122.884,
+      "container_64_exit": 137,
+      "container_64_oom": true,
+      "container_96_restore_ms": 121.816,
+      "container_96_host_wall_s": 0.2835776519787032,
+      "same_backup_and_wire": true
+    }
+  ],
+  "median_address_restore_ms": 122.601,
+  "median_container_restore_ms": 121.949,
+  "median_address_rss_kib": 68352
+}

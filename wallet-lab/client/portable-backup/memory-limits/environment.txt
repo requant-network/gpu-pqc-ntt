@@ -1,0 +1,13 @@
+rustc 1.98.1 (48a229cea 2026-09-01)
+Python 3.12.3
+cgroup=2
+Model name:                              AMD Ryzen 5 5500
+Native fixture source revision: 967ce1831a37b56832bda4d52ddd29c428a18f9b
+Research base: 04f902e
+84332dea503bd7d6c752ccef636bcda79c64cad54f7cf5530dd99714db2f15f8  portable_backup.rs
+13a574a28983dae4ea17d39ff77a050576012bb76bd2eee39e535d3961eb2bd3  memory_limits.py
+058b6dc8d53fe7282d94afacd1c2f5cba24bf0e2dd8f35143fed1c9a08903465  run.py
+c6a34528ffb700e98508d7950f7e15cb325509898281b2580557d64745e40fd7  MEMORY_LIMITS.md
+8f88d7ef1befd4da35d2ff04a7cb5f3a7d76ba9519a34817b3d4b549980f656f  original-pqc-wallet
+dd694e6de3c38dd6ca07177541366e8c0c26a4bcdf4c4d5bc47f6cbc31a20f04  updated-pqc-wallet
+198999cd0220594fc6f03b68542415eebda766d87cd3a2e0bda356ac66b165b8  original-windows-pqc-wallet.exe

@@ -28,7 +28,12 @@ fn wallet_owner(key: &SigningKey<MlDsa44>) -> Hash {
 
 fn cipher(code: &[u8; 32], salt: &[u8]) -> io::Result<XChaCha20Poly1305> {
     let params = Params::new(MEMORY_KIB, 3, 4, Some(32)).unwrap();
-    let mut memory = Zeroizing::new(vec![ArgonBlock::default(); params.block_count()]);
+    let block_count = params.block_count();
+    let mut memory = Zeroizing::new(Vec::new());
+    memory.try_reserve_exact(block_count).map_err(|_| {
+        io::Error::new(io::ErrorKind::OutOfMemory, "Argon2id workspace unavailable")
+    })?;
+    memory.resize_with(block_count, ArgonBlock::default);
     let mut key = Zeroizing::new([0; 32]);
     Argon2::new(Algorithm::Argon2id, Version::V0x13, params)
         .hash_password_into_with_memory(code, salt, &mut key[..], &mut memory[..])
