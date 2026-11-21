@@ -16,7 +16,6 @@ use std::{
     io::{self, BufRead},
     net::SocketAddr,
     path::PathBuf,
-    sync::atomic::Ordering,
     time::{Duration, Instant},
 };
 
@@ -212,5 +211,5 @@ fn main() {
         drive(&node, &mut commands);
     }
     assert_eq!(commands.next().unwrap().unwrap(), "stop");
-    node.stop.store(true, Ordering::Relaxed);
+    node.shutdown();
 }

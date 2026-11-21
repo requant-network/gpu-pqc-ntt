@@ -29,7 +29,9 @@ the production CLI network selector.
 
 The [cross-host follow-up](cross-host/README.md) exercised 60 load
 blocks, a 12-block communication outage and receiver storage reopen in
-three trials across distinct Windows and Linux processes.
+three trials across distinct Windows and Linux processes. The [mixed-version
+trial](mixed-version/README.md) measured where the baseline wire decoder
+stops and validated an in-place upgrade from the same data directory.
 
 ## Linux RPC fixture
 

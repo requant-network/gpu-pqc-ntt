@@ -1,0 +1,32 @@
+{
+  "legacy_accepted_prefix_height": 4,
+  "mixed_block_height": 5,
+  "first_mixed_block_sha256": "c59ef493e1d5e58df87d0472d80456aa909703de1782823472dee24dfbf1e342",
+  "legacy_headers_height_before_upgrade": 33,
+  "legacy_peer_log_malformed_block_messages": 56,
+  "legacy_audit_unchanged_after_mixed_blocks": {
+    "height": 4,
+    "issued_atoms": 1599999426,
+    "ok": true,
+    "tip": "f377a9652af11b14af8d01c12aa6a8eadab405e2d7d15c1901ee15ce06511517",
+    "total_atoms": 1599999426,
+    "unclaimed_atoms": 0,
+    "utxo_hash": "a6572547b408d811d9d7ef57c3cad97f91076b8c7af8c9e617c56ce00e913b6a",
+    "utxos": 87
+  },
+  "upgrade_bootstrap_height": 4,
+  "upgrade_matched_tip_height": 34,
+  "upgrade_elapsed_ms": 577.515,
+  "legacy_raw_store_replay_height": 4,
+  "upgraded_wire_matches": 64,
+  "upgraded_audit_after_reopen": {
+    "height": 64,
+    "issued_atoms": 25599807708,
+    "ok": true,
+    "tip": "752d8f214aaf9341c66a84011081192b0a898de29c57f93cfc5b44522f5c843c",
+    "total_atoms": 25599807708,
+    "unclaimed_atoms": 0,
+    "utxo_hash": "b9d3a023c0567227252e52f7e411cfd9b0e5ee75447172f24a39c0f3c394a77e",
+    "utxos": 151
+  }
+}

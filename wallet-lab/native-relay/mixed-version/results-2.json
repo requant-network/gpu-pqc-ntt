@@ -1,0 +1,32 @@
+{
+  "legacy_accepted_prefix_height": 4,
+  "mixed_block_height": 5,
+  "first_mixed_block_sha256": "5ab12b1384d14abd8c5be654d2704b271a9df0cc165b1aed2f9faa0725bbeb2c",
+  "legacy_headers_height_before_upgrade": 33,
+  "legacy_peer_log_malformed_block_messages": 57,
+  "legacy_audit_unchanged_after_mixed_blocks": {
+    "height": 4,
+    "issued_atoms": 1599999426,
+    "ok": true,
+    "tip": "14e0aa5af972848c3d0703097c6e6be24a9365dd9b41835646b2d19db8d7418c",
+    "total_atoms": 1599999426,
+    "unclaimed_atoms": 0,
+    "utxo_hash": "a6572547b408d811d9d7ef57c3cad97f91076b8c7af8c9e617c56ce00e913b6a",
+    "utxos": 87
+  },
+  "upgrade_bootstrap_height": 4,
+  "upgrade_matched_tip_height": 34,
+  "upgrade_elapsed_ms": 582.826,
+  "legacy_raw_store_replay_height": 4,
+  "upgraded_wire_matches": 64,
+  "upgraded_audit_after_reopen": {
+    "height": 64,
+    "issued_atoms": 25599807708,
+    "ok": true,
+    "tip": "d951b1b70341dbe4623fda7915575e8a819a2b57e24fbef3d6b0cfb030c57660",
+    "total_atoms": 25599807708,
+    "unclaimed_atoms": 0,
+    "utxo_hash": "b9d3a023c0567227252e52f7e411cfd9b0e5ee75447172f24a39c0f3c394a77e",
+    "utxos": 151
+  }
+}

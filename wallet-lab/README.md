@@ -107,5 +107,7 @@ wallets on Linux. The [two-node relay trial](native-relay/README.md)
 confirmed both signature types in one block on Windows and Linux.
 The [cross-host relay trial](native-relay/cross-host/README.md) carried
 60 mixed blocks per run between separate processes and verified catch-up
-after a 12-block partition. Cross-account storage isolation, larger and
-more varied network loads, and a deployed migration remain open.
+after a 12-block partition. The [mixed-version trial](native-relay/mixed-version/README.md)
+found that the baseline node stopped accepting block bodies at the first
+ML-DSA spend and recovered after an in-place upgrade. Cross-account storage
+isolation, larger and more varied network loads, and a deployed migration remain open.

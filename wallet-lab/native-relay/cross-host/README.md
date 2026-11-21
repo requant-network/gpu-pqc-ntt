@@ -41,6 +41,10 @@ per second at the configured cadence. The sampled lag on the connected
 windows reached one block in each trial. The 12-block catch-up median
 was 614.446 ms.
 
+A separate regression after switching the fixture to the native shutdown
+routine matched all 64 encoded blocks and the final audit again. The
+receiver reported its height-64 snapshot on reopen.
+
 Catch-up time uses the Windows monotonic performance counter from
 starting the replacement forward through the first RPC observation of
 the exact recovered tip. It includes SSH startup, node reconnection, P2P
