@@ -1,0 +1,298 @@
+   Compiling requant-node v0.18.3 (/data2/worknet-ci/research/pqc-wallet/native/crates/node)
+   Compiling requant-consensus v0.1.0 (/data2/worknet-ci/research/pqc-wallet/native/crates/consensus)
+   Compiling requant-wallet v0.10.0 (/data2/worknet-ci/research/pqc-wallet/native/crates/wallet)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.37s
+     Running unittests src/lib.rs (target/debug/deps/requant_consensus-dbf5eaabf2fcd977)
+
+running 24 tests
+test address::tests::amounts ... ok
+test address::tests::bip350_vectors ... ok
+test chain::utxo_tests::the_owner_index_follows_every_change ... ok
+test block::tests::merkle_shapes ... ok
+test codec::tests::varint_roundtrip_and_canonical ... ok
+test address::tests::addresses ... ok
+test block::tests::genesis_roundtrip_and_standalone ... ok
+test block::tests::standalone_rejections ... ok
+test pow::tests::a_stall_of_any_length_counts_one_half_life ... ok
+test pow::tests::never_easier_than_genesis_after_the_switch ... ok
+test params::tests::networks_are_consistent ... ok
+test pow::tests::relative_rule_steps_from_the_parent ... ok
+test u256::tests::bytes_roundtrip_and_order ... ok
+test pow::tests::on_schedule_keeps_the_target ... ok
+test pow::tests::clamps ... ok
+test pow::tests::one_half_life_doubles_or_halves ... ok
+test u256::tests::mul_shift ... ok
+test u256::tests::division_and_work ... ok
+test tx::tests::shape_rules ... ok
+test tx::tests::roundtrip_and_hashes ... ok
+test pow::tests::fractional_steps_follow_the_bch_polynomial ... ok
+test tx::tests::signatures_bind_chain_and_content ... ok
+test pow::tests::emission_schedule ... ok
+test pow::tests::a_returning_miner_does_not_flood_the_chain ... ok
+
+test result: ok. 24 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/chain.rs (target/debug/deps/chain-2d6e467f74337fde)
+
+running 17 tests
+test cheap_checks_come_first ... ok
+test mine_and_spend ... ok
+test issuance_matches_the_formula ... ok
+test reorg_limit_waits_for_min_chain_work ... ok
+test double_spend_and_wrong_key ... ok
+test rejections ... ok
+test reorg_limit_refuses_deep_forks ... ok
+test development_fund_share_and_sunset ... ok
+test a_restored_snapshot_equals_the_chain_and_keeps_working ... ok
+test reorg_to_more_work_and_back_on_invalid ... ok
+test supply_audit_and_utxo_hash ... ok
+test undo_restores_exactly_after_reorg_and_failed_connect ... ok
+test epochs_change_the_weights ... ok
+test trusted_replay_locator_and_spend_checks ... ok
+test upcoming_epochs_are_announced_after_the_anchor ... ok
+test old_bodies_leave_memory_and_a_deep_reorg_reads_them_back ... ok
+test headers_first ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.55s
+
+     Running tests/conditions.rs (target/debug/deps/conditions-7a772eaa1ba0be80)
+
+running 6 tests
+test encodings_are_canonical_and_txids_exclude_signatures ... ok
+test one_way_payment_channel ... ok
+test relative_lock_counts_from_the_coins_block ... ok
+test htlc_claim_with_the_preimage_refund_after_the_timeout ... ok
+test two_of_two_needs_both_keys_in_order ... ok
+test kind_2_waits_for_the_activation_height ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests/contracts.rs (target/debug/deps/contracts-592a3856e6d0a3d1)
+
+running 5 tests
+test encodings_round_trip_and_flags_ride_in_the_unlock_byte ... ok
+test revocable_htlc_paths_and_their_delays ... ok
+test contracts_wait_for_their_activation_height ... ok
+test revocable_output_owner_waits_revoker_does_not ... ok
+test anyone_can_pay_lets_others_add_inputs_but_not_change_outputs ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/fuzz.rs (target/debug/deps/fuzz-5d67a45c21e2a83e)
+
+running 2 tests
+test mutated_blocks_are_refused_without_panicking ... ok
+test decoders_never_panic ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.83s
+
+     Running tests/pqc_vectors.rs (target/debug/deps/pqc_vectors-8cfd321c27da3a81)
+
+running 1 test
+test nist_ml_dsa_44 ... ignored, requires PQC_ACVP_TSV prepared from the pinned NIST files
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pqc_wallet.rs (target/debug/deps/pqc_wallet-54c5bdff0a26a822)
+
+running 1 test
+test restored_wallet_spends_after_legacy_migration ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.25s
+
+     Running unittests src/lib.rs (target/debug/deps/requant_node-ab4e99f399ffc299)
+
+running 14 tests
+test explorer::faucet_proxy_tests::forwarded_identity_requires_an_exact_trusted_peer ... ok
+test explorer::tests::dates_and_units ... ok
+test addrbook::tests::routing_backoff_and_persistence ... ok
+test msg::compat::hello_tolerates_extensions ... ok
+test node::tests::inbound_limits_count_networks ... ok
+test node::tests::misbehaviour_points ... ok
+test node::tests::newer_peers_and_solicited_messages ... ok
+test msg::tests::roundtrip_and_rejections ... ok
+test node::tests::bans_last_only_within_one_version ... ok
+test release::tests::a_failing_update_is_rolled_back_after_three_starts ... ok
+test store::tests::bodies_read_back_by_id ... ok
+test store::tests::records_survive_reopen_and_torn_tail_is_cut ... ok
+test release::tests::manifests_verify_and_roundtrip ... ok
+test epochs::tests::weights_file_checks_like_memory_and_is_rebuilt_when_damaged ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s
+
+     Running unittests src/main.rs (target/debug/deps/requantd-0bd68f60d193c238)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/api.rs (target/debug/deps/api-bf5fdd78182a3e06)
+
+running 1 test
+test public_api ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.43s
+
+     Running tests/epoch_files.rs (target/debug/deps/epoch_files-21e8219fdfdeeac6)
+
+running 1 test
+test epochs_change_with_weights_in_files ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 18.43s
+
+     Running tests/faucet.rs (target/debug/deps/faucet-83337fa953478bfb)
+
+running 1 test
+test faucet_sends_once_a_day ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.78s
+
+     Running tests/fuzz_msg.rs (target/debug/deps/fuzz_msg-29c3480f69fa58cd)
+
+running 1 test
+test message_decoder_never_panics ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/mempool.rs (target/debug/deps/mempool-2441eed02ac58672)
+
+running 10 tests
+test dust_in_a_valid_block_is_still_consensus_valid_and_can_be_spent ... ok
+test fee_estimate_follows_the_queue ... ok
+test dust_policy_is_opt_in_and_packages_cannot_bypass_it ... ok
+test replace_by_fee_rules ... ok
+test package_relay_a_child_pays_for_a_parent_below_the_minimum ... ok
+test time_locked_transactions_wait_outside_the_pool ... ok
+test blocks_take_the_best_package_child_pays_for_parent ... ok
+test a_parent_nothing_pays_for_leaves_the_pool ... ok
+test minimum_fee_eviction_by_rate_and_descendants ... ok
+test a_well_paying_child_protects_its_parent_from_eviction ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests/pool.rs (target/debug/deps/pool-a491e99d25823bae)
+
+running 1 test
+test pool_shares_blocks_and_payouts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.76s
+
+     Running tests/rpc.rs (target/debug/deps/rpc-c4868f79d96c515d)
+
+running 2 tests
+test an_rpc_open_to_other_machines_needs_a_token ... ok
+test rpc_formats_methods_long_poll_and_cookie ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s
+
+     Running tests/snapshot.rs (target/debug/deps/snapshot-56f7038f779d1a8c)
+
+running 1 test
+test restart_from_snapshot_replays_only_the_tail ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.91s
+
+     Running tests/two_nodes.rs (target/debug/deps/two_nodes-b5a32f1afbbedb73)
+
+running 8 tests
+test junk_body_does_not_kill_a_valid_header ... ok
+test orphan_pool_is_bounded ... ok
+test getwork_submitwork_roundtrip ... ok
+test signed_releases_spread_and_persist ... ok
+test discovery_history_and_unconfirmed_change ... ok
+test packages_relay_and_survive_a_restart ... ok
+test sync_relay_mine_and_restart ... ok
+test headers_first_sync_from_two_peers ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.33s
+
+     Running unittests src/lib.rs (target/debug/deps/requant_wallet-fa0fbb1bff47a07f)
+
+running 31 tests
+test btc::tests::basic_auth_encoding ... ok
+test backend::tls_tests::an_https_api_address_goes_over_tls ... ok
+test fund::test_network_fund_address ... ok
+test hd::tests::hmac_sha512_rfc4231_case_2 ... ok
+test contracts::tests::a_tampered_condition_file_is_refused ... ok
+test btc::tests::wrong_keys_secrets_and_amounts_are_refused ... ok
+test hd::tests::slip10_ed25519_vector_1 ... ok
+test hd::tests::word_list_is_the_bip39_one ... ok
+test btc::tests::script_address_and_both_paths ... ok
+test import_and_dust_limits::dust_change_boundaries_preserve_payments_and_exact_fees ... ok
+test import_and_dust_limits::import_cost_is_rejected_before_argon2_allocation ... ok
+test maker::tests::the_fee_budget_counts_a_day_of_trx_given_away ... ok
+test swap::tests::prices_confirmations_and_time_locks ... ok
+test ln::tests::decodes_a_regtest_hold_invoice_from_lnd ... ok
+test tests::change_too_small_to_spend_goes_to_the_fee ... ok
+test tron::tests::addresses_and_known_ids ... ok
+test tron::tests::revert_reasons ... ok
+test swap::tests::the_taker_checks_the_offer ... ok
+test swap::tests::the_taker_checks_a_usdt_offer ... ok
+test hd::tests::phrases_are_checked_and_forgiving_about_form ... ok
+test tron::tests::protobuf_matches_a_known_transaction ... ok
+test tests::transfer_building ... ok
+test channel::tests::forged_files_and_states_are_refused ... ok
+test contracts::tests::every_path_unlocks_its_condition_and_signs ... ok
+test channel::tests::a_channel_from_opening_to_closing ... ok
+test tests::payments_fees_and_sweeps ... ok
+test wallet::tests::offline_payment_is_checked_against_the_seed ... ok
+test wallet::tests::restore_scan_finds_used_addresses_past_gaps ... ok
+test hd::tests::bip39_vectors ... ok
+test wallet::tests::file_roundtrip_watch_copy_and_encryption ... ok
+test keyfile::encrypted_key_files ... ok
+
+test result: ok. 31 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.68s
+
+     Running unittests src/bin/requant-maker.rs (target/debug/deps/requant_maker-b57b0a3e81c1f013)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/requant_wallet-3793655024ecb55e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/btc_regtest.rs (target/debug/deps/btc_regtest-7290d24debdfd817)
+
+running 1 test
+test htlc_claim_and_refund_on_bitcoind_regtest ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cli.rs (target/debug/deps/cli-5ff4e6f072d9a9c8)
+
+running 3 tests
+test wallet_end_to_end ... ok
+test a_payment_channel_closed_by_the_server_and_one_refunded ... ok
+test conditions_from_the_wallet_htlc_and_two_of_two ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 17.37s
+
+     Running tests/tron_nile.rs (target/debug/deps/tron_nile-947dddeb2deb6d16)
+
+running 2 tests
+test lend_energy_and_take_it_back_on_nile ... ok
+test transfers_and_a_contract_call_on_nile ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests requant_consensus
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests requant_node
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests requant_wallet
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

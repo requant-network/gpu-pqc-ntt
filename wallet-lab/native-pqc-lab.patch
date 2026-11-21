@@ -1,0 +1,1125 @@
+diff --git a/Cargo.lock b/Cargo.lock
+index 7767910..6698edc 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -8,7 +8,7 @@ version = "0.5.2"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "d122413f284cf2d62fb1b7db97e02edb8cda96d769b16e443a4f6195e35662b0"
+ dependencies = [
+- "crypto-common",
++ "crypto-common 0.1.7",
+  "generic-array",
+ ]
+ 
+@@ -20,7 +20,7 @@ checksum = "3c3610892ee6e0cbce8ae2700349fcf8f98adb0dbfbee85aec3c9179d29cc072"
+ dependencies = [
+  "base64ct",
+  "blake2",
+- "cpufeatures",
++ "cpufeatures 0.2.17",
+  "password-hash",
+ ]
+ 
+@@ -30,6 +30,12 @@ version = "0.7.8"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "d3fb67a6e08acf24fdeccbac2cb6ac4305825bd1f117462e0e6f2f193345ad56"
+ 
++[[package]]
++name = "autocfg"
++version = "1.5.1"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
++
+ [[package]]
+ name = "base58ck"
+ version = "0.1.101"
+@@ -124,7 +130,7 @@ version = "0.10.6"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "46502ad458c9a52b69d4d4d32775c788b7a1b85e8bc9d482d92250fc0e3f8efe"
+ dependencies = [
+- "digest",
++ "digest 0.10.7",
+ ]
+ 
+ [[package]]
+@@ -136,6 +142,16 @@ dependencies = [
+  "generic-array",
+ ]
+ 
++[[package]]
++name = "block-buffer"
++version = "0.12.1"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "d2f6c7dbe95a6ed67ad9f18e57daf93a2f034c524b99fd2b76d18fdfeb6660aa"
++dependencies = [
++ "hybrid-array",
++ "zeroize",
++]
++
+ [[package]]
+ name = "cc"
+ version = "1.7.0"
+@@ -160,7 +176,7 @@ checksum = "c3613f74bd2eac03dad61bd53dbe620703d4371614fe0bc3b9f04dd36fe4e818"
+ dependencies = [
+  "cfg-if",
+  "cipher",
+- "cpufeatures",
++ "cpufeatures 0.2.17",
+ ]
+ 
+ [[package]]
+@@ -182,17 +198,29 @@ version = "0.4.4"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "773f3b9af64447d2ce9850330c473515014aa235e6a783b02db81ff39e4a3dad"
+ dependencies = [
+- "crypto-common",
++ "crypto-common 0.1.7",
+  "inout",
+  "zeroize",
+ ]
+ 
++[[package]]
++name = "cmov"
++version = "0.5.4"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "0c9ea0ac24bc397ab3c98583a3c9ba74fa56b09a4449bbe172b9b1ddb016027a"
++
+ [[package]]
+ name = "const-oid"
+ version = "0.9.6"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "c2459377285ad874054d797f3ccebf984978aa39129f6eafde5cdc8315b612f8"
+ 
++[[package]]
++name = "const-oid"
++version = "0.10.3"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "be95d4a884358a21a199689323c29e9256b4a1b315e22f183d155422041d3a9a"
++
+ [[package]]
+ name = "cpufeatures"
+ version = "0.2.17"
+@@ -202,6 +230,15 @@ dependencies = [
+  "libc",
+ ]
+ 
++[[package]]
++name = "cpufeatures"
++version = "0.3.1"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "5ca28b0ae3115b884660db4118d803791fd6756b6e88f39c0f3f7859060d7566"
++dependencies = [
++ "libc",
++]
++
+ [[package]]
+ name = "crypto-common"
+ version = "0.1.7"
+@@ -209,10 +246,30 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a"
+ dependencies = [
+  "generic-array",
+- "rand_core",
++ "rand_core 0.6.4",
+  "typenum",
+ ]
+ 
++[[package]]
++name = "crypto-common"
++version = "0.2.2"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "ce6e4c961d6cd6c9a86db418387425e8bdeaf05b3c8bc1411e6dca4c252f1453"
++dependencies = [
++ "getrandom 0.4.3",
++ "hybrid-array",
++ "rand_core 0.10.1",
++]
++
++[[package]]
++name = "ctutils"
++version = "0.4.8"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "261af4dc7a06ea8a527a8717d8cbba3417530d6ea14e1edb3de6b67806be474f"
++dependencies = [
++ "cmov",
++]
++
+ [[package]]
+ name = "curve25519-dalek"
+ version = "4.1.3"
+@@ -220,9 +277,9 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "97fb8b7c4503de7d6ae7b42ab72a5a59857b4c937ec27a3d4539dba95b5ab2be"
+ dependencies = [
+  "cfg-if",
+- "cpufeatures",
++ "cpufeatures 0.2.17",
+  "curve25519-dalek-derive",
+- "digest",
++ "digest 0.10.7",
+  "fiat-crypto",
+  "rustc_version",
+  "subtle",
+@@ -246,7 +303,17 @@ version = "0.7.10"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "e7c1832837b905bbfb5101e07cc24c8deddf52f93225eee6ead5f4d63d53ddcb"
+ dependencies = [
+- "const-oid",
++ "const-oid 0.9.6",
++ "zeroize",
++]
++
++[[package]]
++name = "der"
++version = "0.8.3"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "6a996a108feb8b427a6e12fcf6af4aa83409b79d72c15337d7741368131ee004"
++dependencies = [
++ "const-oid 0.10.3",
+  "zeroize",
+ ]
+ 
+@@ -256,11 +323,22 @@ version = "0.10.7"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292"
+ dependencies = [
+- "block-buffer",
+- "crypto-common",
++ "block-buffer 0.10.4",
++ "crypto-common 0.1.7",
+  "subtle",
+ ]
+ 
++[[package]]
++name = "digest"
++version = "0.11.3"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "f1dd6dbb5841937940781866fa1281a1ff7bd3bf827091440879f9994983d5c2"
++dependencies = [
++ "block-buffer 0.12.1",
++ "crypto-common 0.2.2",
++ "zeroize",
++]
++
+ [[package]]
+ name = "displaydoc"
+ version = "0.2.7"
+@@ -278,8 +356,8 @@ version = "2.2.3"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "115531babc129696a58c64a4fef0a8bf9e9698629fb97e9e40767d235cfbcd53"
+ dependencies = [
+- "pkcs8",
+- "signature",
++ "pkcs8 0.10.2",
++ "signature 2.2.0",
+ ]
+ 
+ [[package]]
+@@ -338,6 +416,24 @@ dependencies = [
+  "wasi",
+ ]
+ 
++[[package]]
++name = "getrandom"
++version = "0.4.3"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099"
++dependencies = [
++ "cfg-if",
++ "libc",
++ "r-efi",
++ "rand_core 0.10.1",
++]
++
++[[package]]
++name = "hex"
++version = "0.4.3"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
++
+ [[package]]
+ name = "hex-conservative"
+ version = "0.2.3"
+@@ -362,6 +458,17 @@ version = "0.1.1"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "3011d1213f159867b13cfd6ac92d2cd5f1345762c63be3554e84092d85a50bbd"
+ 
++[[package]]
++name = "hybrid-array"
++version = "0.4.15"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "27f864f10dfb56725ce5ce5472bc52252c8f93a4ab86327122cebf62c5f59a17"
++dependencies = [
++ "ctutils",
++ "typenum",
++ "zeroize",
++]
++
+ [[package]]
+ name = "icu_collections"
+ version = "2.3.0"
+@@ -487,7 +594,17 @@ version = "0.1.6"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "cb26cec98cce3a3d96cbb7bced3c4b16e3d13f27ec56dbd62cbc8f39cfb9d653"
+ dependencies = [
+- "cpufeatures",
++ "cpufeatures 0.2.17",
++]
++
++[[package]]
++name = "keccak"
++version = "0.2.2"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "d8f198d1db720e4940b5a493201d199d9f24f568f8f746bd13706243a2f71598"
++dependencies = [
++ "cfg-if",
++ "cpufeatures 0.3.1",
+ ]
+ 
+ [[package]]
+@@ -514,6 +631,44 @@ version = "2.8.3"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+ 
++[[package]]
++name = "ml-dsa"
++version = "0.1.2"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "6f6d49c3f3f0e10e18ca975ffda66f8da0ec36521c1d911adcbc521bf0743f5c"
++dependencies = [
++ "const-oid 0.10.3",
++ "crypto-common 0.2.2",
++ "ctutils",
++ "hybrid-array",
++ "module-lattice",
++ "pkcs8 0.11.0",
++ "shake",
++ "signature 3.0.0",
++ "zeroize",
++]
++
++[[package]]
++name = "module-lattice"
++version = "0.2.4"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "c4a1e412c8ee83a1c678f427806219c49c96b2511b9f07497514f0e43fb26155"
++dependencies = [
++ "ctutils",
++ "hybrid-array",
++ "num-traits",
++ "zeroize",
++]
++
++[[package]]
++name = "num-traits"
++version = "0.2.19"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
++dependencies = [
++ "autocfg",
++]
++
+ [[package]]
+ name = "once_cell"
+ version = "1.21.4"
+@@ -533,7 +688,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "346f04948ba92c43e8469c1ee6736c7563d71012b17d40745260fe106aac2166"
+ dependencies = [
+  "base64ct",
+- "rand_core",
++ "rand_core 0.6.4",
+  "subtle",
+ ]
+ 
+@@ -549,8 +704,18 @@ version = "0.10.2"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "f950b2377845cebe5cf8b5165cb3cc1a5e0fa5cfa3e1f7f55707d8fd82e0a7b7"
+ dependencies = [
+- "der",
+- "spki",
++ "der 0.7.10",
++ "spki 0.7.3",
++]
++
++[[package]]
++name = "pkcs8"
++version = "0.11.0"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "451913da69c775a56034ea8d9003d27ee8948e12443eae7c038ba100a4f21cb7"
++dependencies = [
++ "der 0.8.3",
++ "spki 0.8.1",
+ ]
+ 
+ [[package]]
+@@ -559,7 +724,7 @@ version = "0.8.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "8159bd90725d2df49889a078b54f4f79e87f1f8a8444194cdca81d38f5393abf"
+ dependencies = [
+- "cpufeatures",
++ "cpufeatures 0.2.17",
+  "opaque-debug",
+  "universal-hash",
+ ]
+@@ -591,21 +756,37 @@ dependencies = [
+  "proc-macro2",
+ ]
+ 
++[[package]]
++name = "r-efi"
++version = "6.0.0"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf"
++
+ [[package]]
+ name = "rand_core"
+ version = "0.6.4"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
+ dependencies = [
+- "getrandom",
++ "getrandom 0.2.15",
+ ]
+ 
++[[package]]
++name = "rand_core"
++version = "0.10.1"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69"
++
+ [[package]]
+ name = "requant-consensus"
+ version = "0.1.0"
+ dependencies = [
+  "ed25519-dalek",
++ "getrandom 0.4.3",
++ "hex",
++ "ml-dsa",
+  "tnet",
++ "zeroize",
+ ]
+ 
+ [[package]]
+@@ -613,7 +794,7 @@ name = "requant-node"
+ version = "0.18.3"
+ dependencies = [
+  "ed25519-dalek",
+- "getrandom",
++ "getrandom 0.2.15",
+  "requant-consensus",
+  "serde_json",
+  "tnet",
+@@ -627,7 +808,7 @@ dependencies = [
+  "bitcoin",
+  "chacha20poly1305",
+  "ed25519-dalek",
+- "getrandom",
++ "getrandom 0.2.15",
+  "requant-consensus",
+  "requant-node",
+  "rpassword",
+@@ -646,7 +827,7 @@ checksum = "a4689e6c2294d81e88dc6261c768b63bc4fcdb852be6d1352498b114f61383b7"
+ dependencies = [
+  "cc",
+  "cfg-if",
+- "getrandom",
++ "getrandom 0.2.15",
+  "libc",
+  "untrusted",
+  "windows-sys 0.52.0",
+@@ -797,8 +978,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "a7507d819769d01a365ab707794a4084392c824f54a7a6a7862f8c3d0892b283"
+ dependencies = [
+  "cfg-if",
+- "cpufeatures",
+- "digest",
++ "cpufeatures 0.2.17",
++ "digest 0.10.7",
+ ]
+ 
+ [[package]]
+@@ -807,8 +988,19 @@ version = "0.10.8"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "75872d278a8f37ef87fa0ddbda7802605cb18344497949862c0d4dcb291eba60"
+ dependencies = [
+- "digest",
+- "keccak",
++ "digest 0.10.7",
++ "keccak 0.1.6",
++]
++
++[[package]]
++name = "shake"
++version = "0.1.0"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "09057cb2149ad4cbd2da1e26b351f9a4c354219421229c69c3063e6f61947c4a"
++dependencies = [
++ "digest 0.11.3",
++ "keccak 0.2.2",
++ "sponge-cursor",
+ ]
+ 
+ [[package]]
+@@ -823,7 +1015,17 @@ version = "2.2.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "77549399552de45a898a580c1b41d445bf730df867cc44e6c0233bbc4b8329de"
+ dependencies = [
+- "rand_core",
++ "rand_core 0.6.4",
++]
++
++[[package]]
++name = "signature"
++version = "3.0.0"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "28d567dcbaf0049cb8ac2608a76cd95ff9e4412e1899d389ee400918ca7537f5"
++dependencies = [
++ "digest 0.11.3",
++ "rand_core 0.10.1",
+ ]
+ 
+ [[package]]
+@@ -839,7 +1041,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "d91ed6c858b01f942cd56b37a94b3e0a1798290327d1236e4d9cf4eaca44d29d"
+ dependencies = [
+  "base64ct",
+- "der",
++ "der 0.7.10",
++]
++
++[[package]]
++name = "spki"
++version = "0.8.1"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "7ef958a98b9d5da290cfc78946e9f3e61e1e62a18db0d92cac0b83cc161491a9"
++dependencies = [
++ "base64ct",
++ "der 0.8.3",
++]
++
++[[package]]
++name = "sponge-cursor"
++version = "0.1.0"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "3a0219bd7d979d58245a4f41f695e1ac9f8befdffadd7f61f1bae9e39abc6620"
++dependencies = [
++ "zeroize",
+ ]
+ 
+ [[package]]
+@@ -919,7 +1140,7 @@ version = "0.5.1"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "fc1de2c688dc15305988b563c3854064043356019f97a4b46276fe734c4f07ea"
+ dependencies = [
+- "crypto-common",
++ "crypto-common 0.1.7",
+  "subtle",
+ ]
+ 
+diff --git a/crates/consensus/Cargo.toml b/crates/consensus/Cargo.toml
+index 8d2a9a5..db7b92e 100644
+--- a/crates/consensus/Cargo.toml
++++ b/crates/consensus/Cargo.toml
+@@ -8,3 +8,9 @@ description = "Requant consensus rules (CHAIN.md) on the TNet work function."
+ [dependencies]
+ tnet = { path = "../tnet" }
+ ed25519-dalek = "=2.2.0"
++ml-dsa = { version = "=0.1.2", features = ["zeroize"] }
++
++[dev-dependencies]
++getrandom = "=0.4.3"
++hex = "=0.4.3"
++zeroize = "1"
+diff --git a/crates/consensus/src/address.rs b/crates/consensus/src/address.rs
+index 4c075df..3ccf5ee 100644
+--- a/crates/consensus/src/address.rs
++++ b/crates/consensus/src/address.rs
+@@ -71,7 +71,7 @@ pub fn bech32m_decode(s: &str) -> Result<(String, Vec<u8>), &'static str> {
+     Ok((hrp.to_string(), data[..data.len() - 6].to_vec()))
+ }
+ 
+-fn convert_bits(data: &[u8], from: u32, to: u32, pad: bool) -> Option<Vec<u8>> {
++pub(crate) fn convert_bits(data: &[u8], from: u32, to: u32, pad: bool) -> Option<Vec<u8>> {
+     let (mut acc, mut bits) = (0u32, 0u32);
+     let maxv = (1u32 << to) - 1;
+     let mut out = Vec::new();
+@@ -100,6 +100,7 @@ pub fn hrp(net: &Network) -> &'static str {
+     match net.name {
+         "test" => "trq",
+         "regtest" => "rqrt",
++        "pqc-lab" => "rqpl",
+         _ => "rq",
+     }
+ }
+diff --git a/crates/consensus/src/chain.rs b/crates/consensus/src/chain.rs
+index 999ceb3..dd7ee3e 100644
+--- a/crates/consensus/src/chain.rs
++++ b/crates/consensus/src/chain.rs
+@@ -162,6 +162,13 @@ fn read_coin(r: &mut Reader) -> Result<(OutPoint, Coin), Error> {
+ 
+ /// Kind-2 transfers only from the network's activation height (CHAIN.md §4.1).
+ pub fn check_activation(net: &Network, tx: &Tx, height: u64) -> Result<(), Error> {
++    if let Tx::Transfer { inputs, .. } = tx {
++        if inputs.iter().any(|input| matches!(input.unlock, crate::tx::Unlock::MlDsa44(_)))
++            && net.chain_id != crate::pqc::chain_id()
++        {
++            return Err(Error::Invalid("ML-DSA is disabled on this chain"));
++        }
++    }
+     if tx.is_v2() && height < net.conditions_height {
+         return Err(Error::Invalid("conditions and time locks are not active at this height"));
+     }
+diff --git a/crates/consensus/src/lib.rs b/crates/consensus/src/lib.rs
+index e618381..7a1bcc6 100644
+--- a/crates/consensus/src/lib.rs
++++ b/crates/consensus/src/lib.rs
+@@ -7,6 +7,7 @@ pub mod chain;
+ pub mod codec;
+ pub mod headers;
+ pub mod params;
++pub mod pqc;
+ pub mod pow;
+ pub mod tx;
+ pub mod u256;
+diff --git a/crates/consensus/src/params.rs b/crates/consensus/src/params.rs
+index 337d13a..05808dd 100644
+--- a/crates/consensus/src/params.rs
++++ b/crates/consensus/src/params.rs
+@@ -153,6 +153,13 @@ impl Network {
+         )
+     }
+ 
++    pub fn pqc_lab() -> Self {
++        let mut net = Self::regtest();
++        net.name = "pqc-lab";
++        net.chain_id = crate::pqc::chain_id();
++        net
++    }
++
+     pub fn by_name(name: &str) -> Option<Self> {
+         match name {
+             "test" => Some(Self::test()),
+diff --git a/crates/consensus/src/pqc.rs b/crates/consensus/src/pqc.rs
+new file mode 100644
+index 0000000..18ed155
+--- /dev/null
++++ b/crates/consensus/src/pqc.rs
+@@ -0,0 +1,82 @@
++//! Isolated wallet research. No named-node network enables this spending condition.
++
++use crate::address::{bech32m_decode, bech32m_encode, convert_bits};
++use crate::params::tagged;
++use crate::tx::{Hash, Input, OutPoint, Tx, Unlock};
++use crate::Error;
++use ml_dsa::{Keypair, MlDsa44, Signature, SigningKey, VerifyingKey};
++
++const CONTEXT: &[u8] = b"requant/pqc-lab/tx/v1";
++const ADDRESS_PREFIX: &str = "rqpl";
++
++#[derive(Clone, PartialEq, Eq, Debug)]
++pub struct Witness {
++    pub public: [u8; 1312],
++    pub signature: [u8; 2420],
++}
++
++pub(crate) fn chain_id() -> Hash {
++    tagged("requant/chain", &[b"pqc-lab"])
++}
++
++pub fn owner(public: &[u8; 1312]) -> Hash {
++    tagged("requant/pqc-lab/ml-dsa-44/v1", &[public])
++}
++
++pub fn address(key: &SigningKey<MlDsa44>) -> String {
++    let hash = owner(&key.verifying_key().encode().into());
++    let mut data = vec![1];
++    data.extend(convert_bits(&hash, 8, 5, true).unwrap());
++    bech32m_encode(ADDRESS_PREFIX, &data)
++}
++
++pub fn parse_address(address: &str) -> Result<Hash, &'static str> {
++    let (prefix, data) = bech32m_decode(address)?;
++    if prefix != ADDRESS_PREFIX || data.first() != Some(&1) {
++        return Err("unknown ML-DSA address network or version");
++    }
++    convert_bits(&data[1..], 5, 8, false)
++        .and_then(|bytes| bytes.try_into().ok())
++        .ok_or("invalid ML-DSA address")
++}
++
++pub fn input(prev: OutPoint, key: &SigningKey<MlDsa44>) -> Input {
++    let witness = Witness {
++        public: key.verifying_key().encode().into(),
++        signature: [0; 2420],
++    };
++    Input {
++        unlock: Unlock::MlDsa44(Box::new(witness)),
++        ..Input::new(prev)
++    }
++}
++
++pub fn sign(tx: &mut Tx, index: usize, key: &SigningKey<MlDsa44>) -> Result<(), Error> {
++    let sighash = Tx::sighash(&chain_id(), &tx.txid(), index as u32);
++    let Tx::Transfer { inputs, .. } = tx else {
++        return Err(Error::Invalid("not a transfer"));
++    };
++    let Some(Unlock::MlDsa44(witness)) = inputs.get_mut(index).map(|input| &mut input.unlock) else {
++        return Err(Error::Invalid("missing ML-DSA input"));
++    };
++    if witness.public != <[u8; 1312]>::from(key.verifying_key().encode()) {
++        return Err(Error::Invalid("wrong ML-DSA signing key"));
++    }
++    witness.signature = key
++        .expanded_key()
++        .sign_deterministic(&sighash, CONTEXT)
++        .map_err(|_| Error::Invalid("ML-DSA signing failed"))?
++        .encode()
++        .into();
++    Ok(())
++}
++
++pub(crate) fn verify(witness: &Witness, sighash: &Hash) -> Result<(), Error> {
++    let public = VerifyingKey::<MlDsa44>::decode(&witness.public.into());
++    let signature = Signature::<MlDsa44>::decode(&witness.signature.into())
++        .ok_or(Error::Invalid("bad ML-DSA signature encoding"))?;
++    if !public.verify_with_context(sighash, CONTEXT, &signature) {
++        return Err(Error::Invalid("bad ML-DSA signature"));
++    }
++    Ok(())
++}
+diff --git a/crates/consensus/src/tx.rs b/crates/consensus/src/tx.rs
+index 14135ab..9282e91 100644
+--- a/crates/consensus/src/tx.rs
++++ b/crates/consensus/src/tx.rs
+@@ -6,7 +6,7 @@
+ 
+ use crate::codec::{Reader, Writer};
+ use crate::params::{tagged, MAX_AMOUNT, MAX_COINBASE_EXTRA, MAX_TX_IO};
+-use crate::Error;
++use crate::{pqc, Error};
+ use ed25519_dalek::{Signature, Signer, SigningKey, VerifyingKey};
+ 
+ pub type Hash = [u8; 32];
+@@ -91,7 +91,7 @@ pub fn multi2_owner(first: &[u8; 32], second: &[u8; 32]) -> Hash {
+ }
+ 
+ /// How an input satisfies the output it spends, beyond `pubkey`/`sig`.
+-#[derive(Clone, Copy, PartialEq, Eq, Debug)]
++#[derive(Clone, PartialEq, Eq, Debug)]
+ pub enum Unlock {
+     /// The output pays `pkh(pubkey)`.
+     Key,
+@@ -111,6 +111,7 @@ pub enum Unlock {
+     RevocableRefund { h: HtlcRevocable },
+     /// The output pays `h.owner()`; `pkh(pubkey) == h.revoke`.
+     RevocableRevoke { h: HtlcRevocable },
++    MlDsa44(Box<pqc::Witness>),
+ }
+ 
+ impl Unlock {
+@@ -160,6 +161,7 @@ impl Input {
+     pub fn owner(&self) -> Result<Hash, Error> {
+         match &self.unlock {
+             Unlock::Key => Ok(pkh(&self.pubkey)),
++            Unlock::MlDsa44(witness) => Ok(pqc::owner(&witness.public)),
+             Unlock::Multi2 { pubkey2, .. } => Ok(multi2_owner(&self.pubkey, pubkey2)),
+             Unlock::HtlcClaim { htlc, preimage } => {
+                 if pkh(&self.pubkey) != htlc.claim {
+@@ -443,6 +445,17 @@ impl Tx {
+             let txid = self.txid();
+             for (k, inp) in inputs.iter().enumerate() {
+                 let sighash = self.input_sighash(chain_id, &txid, k);
++                if let Unlock::MlDsa44(witness) = &inp.unlock {
++                    if *chain_id != pqc::chain_id() {
++                        return Err(Error::Invalid("ML-DSA is disabled on this chain"));
++                    }
++                    // One encoding for this condition; the inherited Ed25519 slots are reserved.
++                    if inp.pubkey != [0; 32] || inp.sig != [0; 64] || inp.anyone_can_pay {
++                        return Err(Error::Invalid("noncanonical ML-DSA input"));
++                    }
++                    pqc::verify(witness, &sighash)?;
++                    continue;
++                }
+                 verify(&inp.pubkey, &inp.sig, &sighash)?;
+                 if let Unlock::Multi2 { pubkey2, sig2 } = &inp.unlock {
+                     verify(pubkey2, sig2, &sighash)?;
+@@ -572,6 +585,13 @@ fn encode_v2_input(w: &mut Writer, inp: &Input, with_sigs: bool) {
+             w.u8(8 | flag);
+             encode_revocable(w, h);
+         }
++        Unlock::MlDsa44(witness) => {
++            w.u8(9 | flag);
++            w.raw(&witness.public);
++            if with_sigs {
++                w.raw(&witness.signature);
++            }
++        }
+     }
+ }
+ 
+@@ -590,6 +610,10 @@ fn decode_v2_input(r: &mut Reader, inp: &mut Input) -> Result<(), Error> {
+         6 => Unlock::RevocableClaim { h: decode_revocable(r)?, preimage: r.arr32()? },
+         7 => Unlock::RevocableRefund { h: decode_revocable(r)? },
+         8 => Unlock::RevocableRevoke { h: decode_revocable(r)? },
++        9 => Unlock::MlDsa44(Box::new(pqc::Witness {
++            public: r.take(1312)?.try_into().unwrap(),
++            signature: r.take(2420)?.try_into().unwrap(),
++        })),
+         _ => return Err(Error::Decode("unlock kind")),
+     };
+     Ok(())
+diff --git a/crates/consensus/tests/contracts.rs b/crates/consensus/tests/contracts.rs
+index a1246de..73f489d 100644
+--- a/crates/consensus/tests/contracts.rs
++++ b/crates/consensus/tests/contracts.rs
+@@ -107,7 +107,7 @@ fn encodings_round_trip_and_flags_ride_in_the_unlock_byte() {
+                 pubkey: [1; 32],
+                 sig: [2; 64],
+                 after_blocks: k as u32,
+-                unlock,
++                unlock: unlock.clone(),
+                 anyone_can_pay: acp,
+                 ..Input::new(op)
+             };
+diff --git a/crates/consensus/tests/pqc_vectors.rs b/crates/consensus/tests/pqc_vectors.rs
+new file mode 100644
+index 0000000..231993d
+--- /dev/null
++++ b/crates/consensus/tests/pqc_vectors.rs
+@@ -0,0 +1,44 @@
++use ml_dsa::{ExpandedSigningKey, Keypair, MlDsa44, Signature, SigningKey, VerifyingKey};
++
++fn bytes(line: &str) -> Vec<u8> {
++    hex::decode(line).unwrap()
++}
++
++#[test]
++#[ignore = "requires PQC_ACVP_TSV prepared from the pinned NIST files"]
++#[allow(deprecated)] // ACVP sigGen supplies an expanded key.
++fn nist_ml_dsa_44() {
++    let vectors = std::fs::read_to_string(std::env::var_os("PQC_ACVP_TSV").unwrap()).unwrap();
++    let mut counts = [0; 4];
++    for line in vectors.lines() {
++        let fields: Vec<_> = line.split('\t').collect();
++        match fields.as_slice() {
++            ["key", id, seed, pk, sk] => {
++                let key = SigningKey::<MlDsa44>::from_seed(&bytes(seed).as_slice().try_into().unwrap());
++                assert_eq!(&key.verifying_key().encode()[..], bytes(pk), "keyGen {id} public");
++                assert_eq!(&key.expanded_key().to_expanded()[..], bytes(sk), "keyGen {id} private");
++                counts[0] += 1;
++            }
++            ["sign", id, sk, message, context, signature] => {
++                let key = ExpandedSigningKey::<MlDsa44>::from_expanded(&bytes(sk).as_slice().try_into().unwrap());
++                let sig = key.sign_deterministic(&bytes(message), &bytes(context)).unwrap();
++                assert_eq!(&sig.encode()[..], bytes(signature), "sigGen {id}");
++                counts[1] += 1;
++            }
++            ["verify", id, pk, message, context, sig, result] => {
++                let pk = VerifyingKey::<MlDsa44>::decode(&bytes(pk).as_slice().try_into().unwrap());
++                let signature = Signature::<MlDsa44>::decode(&bytes(sig).as_slice().try_into().unwrap());
++                let passed = signature
++                    .is_some_and(|signature| pk.verify_with_context(&bytes(message), &bytes(context), &signature));
++                assert_eq!(passed, *result == "true", "sigVer {id}");
++                counts[if passed { 2 } else { 3 }] += 1;
++            }
++            _ => panic!("unrecognized ACVP fixture"),
++        }
++    }
++    assert!(counts.iter().all(|&count| count > 0));
++    println!(
++        "NIST ACVP keyGen={} sigGen={} sigVer_valid={} sigVer_invalid={}",
++        counts[0], counts[1], counts[2], counts[3]
++    );
++}
+diff --git a/crates/consensus/tests/pqc_wallet.rs b/crates/consensus/tests/pqc_wallet.rs
+new file mode 100644
+index 0000000..5ea1939
+--- /dev/null
++++ b/crates/consensus/tests/pqc_wallet.rs
+@@ -0,0 +1,275 @@
++use ed25519_dalek::SigningKey as EdKey;
++use ml_dsa::{MlDsa44, Seed, SigningKey};
++use requant_consensus::address::{bech32m_decode, bech32m_encode, parse_address};
++use requant_consensus::block::Block;
++use requant_consensus::chain::{mine, Chain};
++use requant_consensus::params::Network;
++use requant_consensus::pqc;
++use requant_consensus::tx::{pkh, Hash, Input, OutPoint, Output, Tx, Unlock};
++use requant_consensus::Error;
++use std::{hint::black_box, time::Instant};
++use zeroize::Zeroizing;
++
++const NOW: u64 = u64::MAX / 2;
++const FEE: u64 = 1000;
++
++fn block(chain: &mut Chain, payee: &Hash, txs: Vec<Tx>) -> Block {
++    let tip = chain.tip();
++    let height = chain.height() + 1;
++    let mut block = chain.template_on(&tip, payee, txs, chain.net.genesis_time + 60 * height);
++    let seed = chain.epoch_seed(&tip, height);
++    let epoch = chain.epoch(&seed);
++    block.claim = mine(&chain.net, &epoch, &block.header, 0, 1000).unwrap();
++    block
++}
++
++fn extend(chain: &mut Chain, payee: &Hash, txs: Vec<Tx>) {
++    let block = block(chain, payee, txs);
++    chain.accept(block, NOW).unwrap();
++}
++
++fn legacy(chain_id: &Hash, key: &EdKey, prev: OutPoint, outputs: Vec<Output>) -> Tx {
++    let mut tx = Tx::Transfer {
++        inputs: vec![Input::new(prev)],
++        outputs,
++    };
++    tx.sign(chain_id, &[key]);
++    tx
++}
++
++fn sign(key: &SigningKey<MlDsa44>, prev: OutPoint, outputs: Vec<Output>) -> Tx {
++    let mut tx = Tx::Transfer {
++        inputs: vec![pqc::input(prev, key)],
++        outputs,
++    };
++    pqc::sign(&mut tx, 0, key).unwrap();
++    tx
++}
++
++fn restore(backup: &[u8]) -> Result<SigningKey<MlDsa44>, &'static str> {
++    let [1, bytes @ ..] = backup else {
++        return Err("unknown backup version");
++    };
++    let seed = Zeroizing::new(Seed::try_from(bytes).map_err(|_| "invalid seed size")?);
++    Ok(SigningKey::from_seed(&seed))
++}
++
++fn validate(chain: &Chain, wire: &[u8]) -> Result<u64, Error> {
++    let tx = Tx::decode_exact(wire)?;
++    tx.check_standalone(&chain.net.chain_id)?;
++    chain.check_spend(&tx)
++}
++
++fn inputs(tx: &mut Tx) -> &mut Vec<Input> {
++    let Tx::Transfer { inputs, .. } = tx else {
++        unreachable!()
++    };
++    inputs
++}
++
++#[test]
++fn restored_wallet_spends_after_legacy_migration() {
++    let mut backup = Zeroizing::new([0u8; 33]);
++    backup[0] = 1;
++    getrandom::fill(&mut backup[1..]).unwrap();
++    assert!(restore(&[2; 33]).is_err());
++    assert!(restore(&backup[..32]).is_err());
++
++    let legacy_key = EdKey::from_bytes(&[1; 32]);
++    let legacy_owner = pkh(&legacy_key.verifying_key().to_bytes());
++    let mut chain = Chain::new(Network::pqc_lab(), 1);
++    assert!(Network::by_name(chain.net.name).is_none());
++    let genesis = chain.tip();
++    assert_ne!(genesis, Chain::new(Network::regtest(), 1).tip());
++    let chain_id = chain.net.chain_id;
++    let first = block(&mut chain, &legacy_owner, vec![]);
++    let coin = OutPoint {
++        txid: first.txs[0].txid(),
++        vout: 0,
++    };
++    chain.accept(first, NOW).unwrap();
++    for _ in 0..chain.net.maturity {
++        extend(&mut chain, &legacy_owner, vec![]);
++    }
++
++    let original_key = restore(&backup[..]).unwrap();
++    let address = pqc::address(&original_key);
++    let pq_owner = pqc::parse_address(&address).unwrap();
++    assert!(parse_address(&Network::regtest(), &address).is_err());
++    assert!(parse_address(&chain.net, &address).is_err());
++    let legacy_address = requant_consensus::address::address(&chain.net, &legacy_owner);
++    assert_eq!(parse_address(&chain.net, &legacy_address).unwrap(), legacy_owner);
++    assert!(pqc::parse_address(&legacy_address).is_err());
++    let (prefix, mut data) = bech32m_decode(&address).unwrap();
++    data[0] = 2;
++    assert!(pqc::parse_address(&bech32m_encode(&prefix, &data)).is_err());
++
++    let value = chain.coin(&coin).unwrap().output.value;
++    let half = (value - FEE) / 2;
++    let migration = legacy(
++        &chain_id,
++        &legacy_key,
++        coin,
++        vec![
++            Output {
++                value: half,
++                pkh: pq_owner,
++            },
++            Output {
++                value: value - FEE - half,
++                pkh: legacy_owner,
++            },
++        ],
++    );
++    let pq_coin = OutPoint {
++        txid: migration.txid(),
++        vout: 0,
++    };
++    let ed_coin = OutPoint {
++        txid: migration.txid(),
++        vout: 1,
++    };
++    extend(&mut chain, &legacy_owner, vec![migration]);
++    assert_eq!(chain.coin(&pq_coin).unwrap().output.pkh, pq_owner);
++    let outputs = vec![Output {
++        value: half - FEE,
++        pkh: legacy_owner,
++    }];
++    let signed = sign(&original_key, pq_coin, outputs.clone()).encode();
++    drop(original_key);
++
++    let key = restore(&backup[..]).unwrap();
++    assert_eq!(pqc::address(&key), address);
++    let good = sign(&key, pq_coin, outputs.clone());
++    assert_eq!(good.encode(), signed);
++    assert_eq!(validate(&chain, &signed), Ok(FEE));
++    assert_eq!(
++        good.check_standalone(&Network::test().chain_id),
++        Err(Error::Invalid("ML-DSA is disabled on this chain"))
++    );
++    assert_eq!(
++        good.check_standalone(&Network::regtest().chain_id),
++        Err(Error::Invalid("ML-DSA is disabled on this chain"))
++    );
++
++    let mut changed_output = good.clone();
++    let Tx::Transfer { outputs: changed, .. } = &mut changed_output else {
++        unreachable!()
++    };
++    changed[0].value -= 1;
++    let invalid_block = block(&mut chain, &legacy_owner, vec![changed_output]);
++    assert_eq!(
++        chain.accept(invalid_block, NOW),
++        Err(Error::Invalid("bad ML-DSA signature"))
++    );
++    assert!(chain.coin(&pq_coin).is_some());
++
++    let mut changed_signature = good.clone();
++    let Unlock::MlDsa44(witness) = &mut inputs(&mut changed_signature)[0].unlock else {
++        unreachable!()
++    };
++    witness.signature[0] ^= 1;
++    assert_eq!(changed_signature.txid(), good.txid());
++    assert_ne!(changed_signature.wtxid(), good.wtxid());
++    assert!(validate(&chain, &changed_signature.encode()).is_err());
++    let mut changed_padding = good.clone();
++    inputs(&mut changed_padding)[0].sig[0] = 1;
++    assert_eq!(
++        validate(&chain, &changed_padding.encode()),
++        Err(Error::Invalid("noncanonical ML-DSA input"))
++    );
++
++    let mut unknown = signed.clone();
++    // v1 header + kind + count + outpoint + reserved Ed25519 slots + v2 locks.
++    let tag = 4 + 1 + 1 + 36 + 96 + 12;
++    assert_eq!(unknown[tag], 9);
++    unknown[tag] = 10;
++    assert_eq!(Tx::decode_exact(&unknown), Err(Error::Decode("unlock kind")));
++    unknown[tag] = 9 | 0x80;
++    assert_eq!(
++        validate(&chain, &unknown),
++        Err(Error::Invalid("noncanonical ML-DSA input"))
++    );
++    let mut unsupported = signed.clone();
++    unsupported[0] = 99;
++    assert_eq!(Tx::decode_exact(&unsupported), Err(Error::Decode("tx version")));
++    assert!(Tx::decode_exact(&signed[..signed.len() - 1]).is_err());
++
++    let wrong_owner = legacy(&chain_id, &legacy_key, pq_coin, outputs.clone());
++    assert_eq!(
++        validate(&chain, &wrong_owner.encode()),
++        Err(Error::Invalid("input key does not match the output"))
++    );
++    let mut wrong_backup = Zeroizing::new(*backup);
++    wrong_backup[32] ^= 1;
++    let wrong_key = restore(&wrong_backup[..]).unwrap();
++    let wrong_owner = sign(&wrong_key, pq_coin, outputs.clone());
++    assert_eq!(
++        validate(&chain, &wrong_owner.encode()),
++        Err(Error::Invalid("input key does not match the output"))
++    );
++
++    let ed = legacy(&chain_id, &legacy_key, ed_coin, outputs.clone());
++    assert_eq!(validate(&chain, &ed.encode()), Ok(value - FEE - 2 * half + FEE));
++    println!(
++        "native_size_bytes ed25519={} ml_dsa_44={}",
++        ed.encode().len(),
++        signed.len()
++    );
++    if std::env::var_os("PQC_BENCH").is_some() {
++        bench("ed25519", &chain, |i| {
++            legacy(
++                &chain_id,
++                &legacy_key,
++                ed_coin,
++                vec![Output {
++                    value: half - FEE - i,
++                    pkh: legacy_owner,
++                }],
++            )
++        });
++        bench("ml_dsa_44", &chain, |i| {
++            sign(
++                &key,
++                pq_coin,
++                vec![Output {
++                    value: half - FEE - i,
++                    pkh: legacy_owner,
++                }],
++            )
++        });
++    }
++    let recovered = Tx::decode_exact(&signed).unwrap();
++    let paid = OutPoint {
++        txid: recovered.txid(),
++        vout: 0,
++    };
++    extend(&mut chain, &legacy_owner, vec![ed, recovered]);
++    assert!(chain.coin(&pq_coin).is_none());
++    assert!(chain.coin(&ed_coin).is_none());
++    assert_eq!(chain.coin(&paid).unwrap().output, outputs[0]);
++    assert_eq!(validate(&chain, &signed), Err(Error::Invalid("missing or spent input")));
++    println!("native_migration=accepted restored_spend=accepted same_block_legacy=accepted negative_controls=18");
++}
++
++fn bench(name: &str, chain: &Chain, sign: impl Fn(u64) -> Tx) {
++    const N: u64 = 128;
++    for trial in 0..5 {
++        let mut wires = Vec::with_capacity(N as usize);
++        let start = Instant::now();
++        for i in 0..N {
++            wires.push(black_box(sign(trial * N + i).encode()));
++        }
++        let sign_elapsed = start.elapsed().as_secs_f64();
++        let start = Instant::now();
++        for wire in &wires {
++            black_box(validate(chain, black_box(wire)).unwrap());
++        }
++        let verify_elapsed = start.elapsed().as_secs_f64();
++        println!(
++            "bench scheme={name} trial={trial} n={N} sign_encode_us={:.3} decode_validate_us={:.3}",
++            sign_elapsed * 1e6 / N as f64,
++            verify_elapsed * 1e6 / N as f64
++        );
++    }
++}
+diff --git a/crates/node/src/rpc.rs b/crates/node/src/rpc.rs
+index 169b437..184385d 100644
+--- a/crates/node/src/rpc.rs
++++ b/crates/node/src/rpc.rs
+@@ -253,6 +253,7 @@ pub(crate) fn tx_json(st: &crate::node::State, tx: &Tx, height: Option<u64>) ->
+                     use requant_consensus::tx::Unlock;
+                     let unlock = match &i.unlock {
+                         Unlock::Key => json!({"kind": "key"}),
++                        Unlock::MlDsa44(_) => json!({"kind": "ml-dsa-44-experimental"}),
+                         Unlock::Multi2 { pubkey2, .. } => json!({"kind": "multi2", "pubkey2": hex(pubkey2)}),
+                         Unlock::HtlcClaim { htlc, preimage } => {
+                             json!({"kind": "htlc-claim", "hash": hex(&htlc.hash), "preimage": hex(preimage), "timeout": htlc.timeout})

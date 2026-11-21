@@ -2,6 +2,9 @@
 
 **Status: COMPLETE — all correctness checks exact, all timing measured on the RTX 5060 Ti (SM120).**
 
+The [native wallet lab](wallet-lab/README.md) measures full CPU transactions,
+including ML-DSA-44 migration, key restoration and validation.
+
 A bounded research spike: how fast is *exact* NTT / polynomial arithmetic for the
 NIST PQC standards ML-KEM (Kyber, q=3329, n=256) and ML-DSA (Dilithium,
 q=8380417, n=256) on Blackwell consumer silicon — shared-memory SIMT
