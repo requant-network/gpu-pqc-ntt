@@ -22,11 +22,14 @@ The run passed on the Ryzen 7 8745HS Windows host and Ryzen 5 5500 Linux
 server. All nine cases in the two-node suite passed on both machines.
 The two node instances in each trial ran inside a single test process.
 These checks cover native message serialization, mempool and block
-hand-off via local TCP, and reopening the receiving store. Separate
-processes and hosts, competing blocks, sustained traffic and mixed
-software releases require further tests. The lab chain remains outside
+hand-off via local TCP, and reopening the receiving store. Competing
+blocks and mixed software releases require further tests. The lab chain remains outside
 the production CLI network selector.
 [Retained results](results.log.txt).
+
+The [cross-host follow-up](cross-host/README.md) exercised 60 load
+blocks, a 12-block communication outage and receiver storage reopen in
+three trials across distinct Windows and Linux processes.
 
 ## Linux RPC fixture
 

@@ -105,5 +105,7 @@ user-protected storage and restart recovery. A [portable backup
 trial](client/portable-backup/README.md) restored three Windows-exported
 wallets on Linux. The [two-node relay trial](native-relay/README.md)
 confirmed both signature types in one block on Windows and Linux.
-Cross-account storage isolation, block propagation under load across
-hosts and a deployed migration remain open.
+The [cross-host relay trial](native-relay/cross-host/README.md) carried
+60 mixed blocks per run between separate processes and verified catch-up
+after a 12-block partition. Cross-account storage isolation, larger and
+more varied network loads, and a deployed migration remain open.
