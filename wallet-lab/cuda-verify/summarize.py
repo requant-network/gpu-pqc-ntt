@@ -4,6 +4,7 @@ import collections
 import json
 import re
 import statistics
+import sys
 
 
 def main():
@@ -34,5 +35,45 @@ def main():
     ), indent=2))
 
 
+def summarize_mixed():
+    folder = Path(__file__).resolve().parent / "mixed"
+    samples = collections.defaultdict(dict)
+    cohorts = {"ed_only": 0, "pq25": 25, "pq50": 50, "pq50_dirty": 50, "pq100": 100}
+    pattern = re.compile(
+        r"mixed=(\S+) batch=(\d+) pass=(\d+) n=(\d+) rejected=(\d+) "
+        r"cuda_calls=(\d+) cpu_us=([0-9.]+) hybrid_us=([0-9.]+)"
+    )
+    for index in range(1, 4):
+        log = (folder / f"mixed-{index}.log.txt").read_text()
+        assert "test result: ok. 1 passed; 0 failed" in log
+        assert "backend=Cuda cases=9 rotations=9" in log
+        for cohort, batch, trial, count, rejected, calls, cpu, hybrid in pattern.findall(log):
+            batch, trial, count, rejected, calls = map(int, (batch, trial, count, rejected, calls))
+            assert cohort in cohorts and batch in (8, 32, 128)
+            assert count == 256 and 0 <= trial < 6
+            assert calls == (count // batch if cohorts[cohort] else 0)
+            assert rejected == (16 if cohort == "pq50_dirty" else 0)
+            key = (index, trial)
+            assert key not in samples[cohort, batch]
+            samples[cohort, batch][key] = float(cpu), float(hybrid)
+
+    records = []
+    for cohort in cohorts:
+        for batch in (8, 32, 128):
+            values = samples[cohort, batch].values()
+            assert len(values) == 18
+            cpu, hybrid = map(statistics.median, zip(*values))
+            records.append(dict(
+                cohort=cohort, ml_dsa_percent=cohorts[cohort], batch=batch, passes=len(values),
+                cpu_us=round(cpu, 3), hybrid_us=round(hybrid, 3), speedup=round(cpu / hybrid, 3),
+            ))
+    print(json.dumps(dict(wires_per_pass=256, compared_verdicts=256 * 18 * len(records), warm=records), indent=2))
+
+
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:] == ["--mixed"]:
+        summarize_mixed()
+    elif len(sys.argv) == 1:
+        main()
+    else:
+        raise SystemExit("usage: summarize.py [--mixed]")

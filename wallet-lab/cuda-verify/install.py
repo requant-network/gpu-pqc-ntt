@@ -93,14 +93,9 @@ pub fn check_cuda_batch(id: &Hash, txs: &[Tx]) -> Result<(), Error> {
         let Tx::Transfer { inputs, .. } = tx else { return Err(Error::Invalid("not a transfer")) };
         let [input] = inputs.as_slice() else { return Err(Error::Invalid("expected one ML-DSA input")) };
         let Unlock::MlDsa44(witness) = &input.unlock else { return Err(Error::Invalid("expected ML-DSA input")) };
-        check_encoding(id, input)?;
-        let key = VerifyingKey::<MlDsa44>::decode(&witness.public.into());
-        let sig = Signature::<MlDsa44>::decode(&witness.signature.into())
-            .ok_or(Error::Invalid("bad ML-DSA signature encoding"))?;
-        prepared.push((key, Tx::sighash(id, &tx.txid(), 0), sig));
+        prepared.push(mixed_cuda_lab::prepare(id, tx, input, witness)?);
     }
-    let batch = prepared.iter().map(|(key, message, sig)| (key, message.as_slice(), CONTEXT, sig)).collect::<Vec<_>>();
-    let checked = VerifyingKey::<MlDsa44>::verify_cuda_lab(&batch, cuda_reconstruct)
+    let checked = mixed_cuda_lab::verify_batch(prepared.iter())
         .map_err(|_| Error::Invalid("CUDA backend error"))?;
     if checked.into_iter().all(|valid| valid) {
         Ok(())
@@ -108,8 +103,14 @@ pub fn check_cuda_batch(id: &Hash, txs: &[Tx]) -> Result<(), Error> {
         Err(Error::Invalid("bad ML-DSA signature"))
     }
 }
+
+#[path = "mixed_cuda_lab.rs"]
+mod mixed_cuda_lab;
+pub use mixed_cuda_lab::{BatchBackend, check_mixed_batch};
 """,
     )
+    shutil.copyfile(here / "mixed_cuda_lab.rs", consensus / "src/mixed_cuda_lab.rs")
+    shutil.copyfile(here / "mixed_checks.rs", consensus / "tests/pqc_mixed_checks.inc")
     shutil.copyfile(here / "native_checks.rs", consensus / "tests/pqc_cuda_checks.inc")
     replace(
         consensus / "tests/pqc_wallet.rs",
@@ -118,6 +119,7 @@ pub fn check_cuda_batch(id: &Hash, txs: &[Tx]) -> Result<(), Error> {
     let recovered = Tx::decode_exact(&signed).unwrap();""",
     )
     append(consensus / "tests/pqc_wallet.rs", '\nmod cuda { include!("pqc_cuda_checks.inc"); }\n')
+    append(consensus / "tests/pqc_wallet.rs", '\nmod mixed { include!("pqc_mixed_checks.inc"); }\n')
 
     vectors = consensus / "tests/pqc_vectors.rs"
     replace(vectors, "    let mut counts = [0; 4];", "    let mut counts = [0; 4];\n    let mut dispatched = 0;")

@@ -62,10 +62,12 @@ backend error.
 [No CUDA device](unavailable.log.txt) · [Native CPU regressions](native-regressions.log.txt).
 
 The CPU remains the reference for general validation. Batch 32 is the
-measured throughput baseline for this CUDA backend. Production integration
-still needs queue latency, mixed transaction classes, invalid-batch recovery,
-GPU resource contention and a policy for device failure. This batch verifier
-is a separate wallet-lab path, outside native block acceptance or deployment.
+measured throughput baseline for this CUDA backend. A [follow-up trial](mixed/README.md)
+measures mixed signature classes, per-wire rejection and CPU fallback when
+the GPU is unavailable. Production integration still needs queue latency,
+resource-contention measurements and an operating policy for device failure.
+This batch verifier is a separate wallet-lab path, outside native block
+acceptance or deployment.
 
 ## Reproduce
 

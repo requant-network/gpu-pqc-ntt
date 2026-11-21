@@ -1,0 +1,14 @@
+rustc 1.98.1 (48a229cea 2026-09-01)
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2026 NVIDIA Corporation
+Built on Tue_Jun_09_02:43:40_PM_PDT_2026
+Cuda compilation tools, release 13.3, V13.3.73
+Build cuda_13.3.r13.3/compiler.38244171_0
+Model name:                              AMD Ryzen 5 5500
+NVIDIA GeForce RTX 5060 Ti, 610.43.03, 1, 8
+0 %, 279 MiB
+6a82ceea55a29bb7284888fa3c5a610d97328993712a9a9085244b0e30583b91  libpqc_verify_lab.so
+74689d1849715bec83640ed37f20fdc477425ccf8eedaaa152817bcdb91b3a61  install.py
+52d8373576d64ed7f130619861d6b630694fb1057dc5071cbd0e4c0fcf56a103  mixed_checks.rs
+0b323c4cb0200561f17c655128be8ccfea4ee22f8903189315f0631e7ac6a953  mixed_cuda_lab.rs
+ee2d4ba833d751bb279731bd63c6ca81abf10b95704d8f9cd3a609d4eef4326c  native-pqc-lab.patch
