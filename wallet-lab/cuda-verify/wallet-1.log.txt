@@ -1,0 +1,58 @@
+
+running 2 tests
+test cuda::missing_device_is_error ... ignored, run with CUDA_VISIBLE_DEVICES='' to test a failed backend
+native_size_bytes ed25519=179 ml_dsa_44=3924
+cuda_first_call_ms=164.631
+cuda_controls=native_valid,changed_output_in_batch,wrong_chain
+cohort=shared_key cuda_batch=1 pass=0 n=256 cpu_us=159.405 gpu_us=131.168
+cohort=shared_key cuda_batch=1 pass=1 n=256 cpu_us=157.387 gpu_us=130.161
+cohort=shared_key cuda_batch=1 pass=2 n=256 cpu_us=157.363 gpu_us=130.447
+cohort=shared_key cuda_batch=1 pass=3 n=256 cpu_us=157.208 gpu_us=130.054
+cohort=shared_key cuda_batch=1 pass=4 n=256 cpu_us=157.242 gpu_us=130.650
+cohort=shared_key cuda_batch=1 pass=5 n=256 cpu_us=157.307 gpu_us=130.065
+cohort=shared_key cuda_batch=8 pass=0 n=256 cpu_us=157.387 gpu_us=109.267
+cohort=shared_key cuda_batch=8 pass=1 n=256 cpu_us=157.450 gpu_us=108.098
+cohort=shared_key cuda_batch=8 pass=2 n=256 cpu_us=157.368 gpu_us=108.110
+cohort=shared_key cuda_batch=8 pass=3 n=256 cpu_us=157.386 gpu_us=108.453
+cohort=shared_key cuda_batch=8 pass=4 n=256 cpu_us=157.287 gpu_us=108.513
+cohort=shared_key cuda_batch=8 pass=5 n=256 cpu_us=157.340 gpu_us=108.335
+cohort=shared_key cuda_batch=32 pass=0 n=256 cpu_us=157.221 gpu_us=108.502
+cohort=shared_key cuda_batch=32 pass=1 n=256 cpu_us=157.399 gpu_us=104.545
+cohort=shared_key cuda_batch=32 pass=2 n=256 cpu_us=157.462 gpu_us=104.867
+cohort=shared_key cuda_batch=32 pass=3 n=256 cpu_us=157.407 gpu_us=104.643
+cohort=shared_key cuda_batch=32 pass=4 n=256 cpu_us=157.604 gpu_us=117.661
+cohort=shared_key cuda_batch=32 pass=5 n=256 cpu_us=157.457 gpu_us=105.999
+cohort=shared_key cuda_batch=128 pass=0 n=256 cpu_us=157.250 gpu_us=126.194
+cohort=shared_key cuda_batch=128 pass=1 n=256 cpu_us=157.901 gpu_us=104.309
+cohort=shared_key cuda_batch=128 pass=2 n=256 cpu_us=157.649 gpu_us=120.711
+cohort=shared_key cuda_batch=128 pass=3 n=256 cpu_us=158.410 gpu_us=107.053
+cohort=shared_key cuda_batch=128 pass=4 n=256 cpu_us=157.904 gpu_us=118.898
+cohort=shared_key cuda_batch=128 pass=5 n=256 cpu_us=157.927 gpu_us=104.350
+cohort=distinct_keys_and_utxos cuda_batch=1 pass=0 n=256 cpu_us=158.327 gpu_us=130.833
+cohort=distinct_keys_and_utxos cuda_batch=1 pass=1 n=256 cpu_us=157.263 gpu_us=130.003
+cohort=distinct_keys_and_utxos cuda_batch=1 pass=2 n=256 cpu_us=157.227 gpu_us=130.299
+cohort=distinct_keys_and_utxos cuda_batch=1 pass=3 n=256 cpu_us=157.150 gpu_us=130.553
+cohort=distinct_keys_and_utxos cuda_batch=1 pass=4 n=256 cpu_us=157.472 gpu_us=130.472
+cohort=distinct_keys_and_utxos cuda_batch=1 pass=5 n=256 cpu_us=157.936 gpu_us=130.073
+cohort=distinct_keys_and_utxos cuda_batch=8 pass=0 n=256 cpu_us=158.068 gpu_us=109.440
+cohort=distinct_keys_and_utxos cuda_batch=8 pass=1 n=256 cpu_us=157.438 gpu_us=107.930
+cohort=distinct_keys_and_utxos cuda_batch=8 pass=2 n=256 cpu_us=157.390 gpu_us=107.823
+cohort=distinct_keys_and_utxos cuda_batch=8 pass=3 n=256 cpu_us=157.337 gpu_us=107.926
+cohort=distinct_keys_and_utxos cuda_batch=8 pass=4 n=256 cpu_us=157.285 gpu_us=107.939
+cohort=distinct_keys_and_utxos cuda_batch=8 pass=5 n=256 cpu_us=157.403 gpu_us=107.743
+cohort=distinct_keys_and_utxos cuda_batch=32 pass=0 n=256 cpu_us=157.319 gpu_us=108.550
+cohort=distinct_keys_and_utxos cuda_batch=32 pass=1 n=256 cpu_us=157.388 gpu_us=104.526
+cohort=distinct_keys_and_utxos cuda_batch=32 pass=2 n=256 cpu_us=157.264 gpu_us=105.056
+cohort=distinct_keys_and_utxos cuda_batch=32 pass=3 n=256 cpu_us=157.365 gpu_us=104.718
+cohort=distinct_keys_and_utxos cuda_batch=32 pass=4 n=256 cpu_us=157.267 gpu_us=104.486
+cohort=distinct_keys_and_utxos cuda_batch=32 pass=5 n=256 cpu_us=157.306 gpu_us=104.580
+cohort=distinct_keys_and_utxos cuda_batch=128 pass=0 n=256 cpu_us=157.188 gpu_us=134.951
+cohort=distinct_keys_and_utxos cuda_batch=128 pass=1 n=256 cpu_us=157.932 gpu_us=131.174
+cohort=distinct_keys_and_utxos cuda_batch=128 pass=2 n=256 cpu_us=157.479 gpu_us=132.405
+cohort=distinct_keys_and_utxos cuda_batch=128 pass=3 n=256 cpu_us=158.137 gpu_us=131.544
+cohort=distinct_keys_and_utxos cuda_batch=128 pass=4 n=256 cpu_us=157.409 gpu_us=131.657
+cohort=distinct_keys_and_utxos cuda_batch=128 pass=5 n=256 cpu_us=157.744 gpu_us=136.458
+native_migration=accepted restored_spend=accepted same_block_legacy=accepted negative_controls=18
+test restored_wallet_spends_after_legacy_migration ... ok
+
+test result: ok. 1 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 3.98s

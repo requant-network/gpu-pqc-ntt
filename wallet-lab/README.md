@@ -91,12 +91,10 @@ The reported no-network runs invoked the compiled test binaries directly.
 
 ## Decision
 
-Keep the CPU path and this test fixture for pricing transaction-size and
-validation changes. The RTX 5060 Ti study measured the NTT separately at
-38.50 µs resident and 1,257.79 µs transfer-inclusive for 4,096 polynomials.
-A GPU path would need an end-to-end comparison at matched transaction batch size
-including transfers and non-NTT operations. The present runs establish the CPU
-baseline for that comparison. [NTT timings](../RESULTS.md#transfer-inclusive-pinned-h2d--pipeline--d2h-median-of-5-reps).
+Keep this fixture and its CPU path as the reference. A separate hybrid run
+now measures full validation at 104.97 µs per distinct-key transaction at
+batch 32, compared with 157.32 µs on the matched CPU path. Its timing includes
+transfers and CPU stages. [CUDA validation trial](cuda-verify/README.md).
 
 Key storage on client devices, a deployed migration and block propagation
 under load remain open. The source patch lives on the research branch for lab

@@ -1,0 +1,93 @@
+{
+  "rust": "1.98.1",
+  "cuda": "13.3.73",
+  "gpu": "GeForce RTX 5060 Ti",
+  "cpu": "Ryzen 5 5500",
+  "cold_first_call_ms": [
+    164.631,
+    125.837,
+    125.401
+  ],
+  "warm": [
+    {
+      "cohort": "distinct_keys_and_utxos",
+      "batch": 1,
+      "passes": 18,
+      "cpu_us": 157.319,
+      "cuda_us": 130.684,
+      "speedup": 1.204,
+      "cpu_tx_per_s": 6357,
+      "cuda_tx_per_s": 7652
+    },
+    {
+      "cohort": "distinct_keys_and_utxos",
+      "batch": 8,
+      "passes": 18,
+      "cpu_us": 157.415,
+      "cuda_us": 108.186,
+      "speedup": 1.455,
+      "cpu_tx_per_s": 6353,
+      "cuda_tx_per_s": 9243
+    },
+    {
+      "cohort": "distinct_keys_and_utxos",
+      "batch": 32,
+      "passes": 18,
+      "cpu_us": 157.32,
+      "cuda_us": 104.972,
+      "speedup": 1.499,
+      "cpu_tx_per_s": 6356,
+      "cuda_tx_per_s": 9526
+    },
+    {
+      "cohort": "distinct_keys_and_utxos",
+      "batch": 128,
+      "passes": 18,
+      "cpu_us": 157.577,
+      "cuda_us": 109.826,
+      "speedup": 1.435,
+      "cpu_tx_per_s": 6346,
+      "cuda_tx_per_s": 9105
+    },
+    {
+      "cohort": "shared_key",
+      "batch": 1,
+      "passes": 18,
+      "cpu_us": 157.435,
+      "cuda_us": 130.395,
+      "speedup": 1.207,
+      "cpu_tx_per_s": 6352,
+      "cuda_tx_per_s": 7669
+    },
+    {
+      "cohort": "shared_key",
+      "batch": 8,
+      "passes": 18,
+      "cpu_us": 157.451,
+      "cuda_us": 108.253,
+      "speedup": 1.454,
+      "cpu_tx_per_s": 6351,
+      "cuda_tx_per_s": 9238
+    },
+    {
+      "cohort": "shared_key",
+      "batch": 32,
+      "passes": 18,
+      "cpu_us": 157.452,
+      "cuda_us": 104.742,
+      "speedup": 1.503,
+      "cpu_tx_per_s": 6351,
+      "cuda_tx_per_s": 9547
+    },
+    {
+      "cohort": "shared_key",
+      "batch": 128,
+      "passes": 18,
+      "cpu_us": 157.767,
+      "cuda_us": 113.015,
+      "speedup": 1.396,
+      "cpu_tx_per_s": 6338,
+      "cuda_tx_per_s": 8848
+    }
+  ]
+}
