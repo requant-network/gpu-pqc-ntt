@@ -1,0 +1,16 @@
+running 1 test
+native_size_bytes ed25519=179 ml_dsa_44=3924
+bench scheme=ed25519 trial=0 n=128 sign_encode_us=16.860 decode_validate_us=35.759
+bench scheme=ed25519 trial=1 n=128 sign_encode_us=16.633 decode_validate_us=35.946
+bench scheme=ed25519 trial=2 n=128 sign_encode_us=16.675 decode_validate_us=36.205
+bench scheme=ed25519 trial=3 n=128 sign_encode_us=17.098 decode_validate_us=36.006
+bench scheme=ed25519 trial=4 n=128 sign_encode_us=16.748 decode_validate_us=36.081
+bench scheme=ml_dsa_44 trial=0 n=128 sign_encode_us=734.525 decode_validate_us=156.662
+bench scheme=ml_dsa_44 trial=1 n=128 sign_encode_us=628.610 decode_validate_us=156.649
+bench scheme=ml_dsa_44 trial=2 n=128 sign_encode_us=752.404 decode_validate_us=171.699
+bench scheme=ml_dsa_44 trial=3 n=128 sign_encode_us=797.028 decode_validate_us=157.778
+bench scheme=ml_dsa_44 trial=4 n=128 sign_encode_us=666.498 decode_validate_us=156.267
+native_migration=accepted restored_spend=accepted same_block_legacy=accepted negative_controls=18
+test restored_wallet_spends_after_legacy_migration ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.61s

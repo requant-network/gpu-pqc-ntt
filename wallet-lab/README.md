@@ -89,6 +89,10 @@ Pass a directory containing those files as the first argument to generate the
 TSV offline. Cargo dependencies must be fetched before offline execution.
 The reported no-network runs invoked the compiled test binaries directly.
 
+The [Windows client trial](client/README.md) repeated the migration,
+backup restore and pinned vectors and measured client-side signing on the
+workstation CPU.
+
 ## Decision
 
 Keep this fixture and its CPU path as the reference. A separate hybrid run

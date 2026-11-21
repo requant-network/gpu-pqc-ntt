@@ -39,8 +39,9 @@ reflect measured execution variation.
 
 Keep immediate dispatch as the latency baseline within these schedules.
 The experiment uses a single serial validator, fixed arrivals, intact
-transactions and measured warm service. An actual node needs measurements
-with its scheduler, traffic, cold initialization and GPU contention.
+transactions and measured warm service. The [contention trial](contention/README.md)
+repeats those schedules with a second CUDA process. An actual node needs
+measurements with its scheduler, traffic and cold initialization.
 [Median percentiles and service times](results.json) · [Run 1](queue-1.log.txt) ·
 [Run 2](queue-2.log.txt) · [Run 3](queue-3.log.txt).
 

@@ -1,0 +1,24 @@
+{
+  "ed25519": {
+    "bytes": 179,
+    "trials": 25,
+    "transactions": 3200,
+    "sign_encode_us": 16.449,
+    "sign_trial_range_us": [
+      16.098,
+      20.707
+    ],
+    "decode_validate_us": 36.081
+  },
+  "ml_dsa_44": {
+    "bytes": 3924,
+    "trials": 25,
+    "transactions": 3200,
+    "sign_encode_us": 741.139,
+    "sign_trial_range_us": [
+      628.61,
+      832.511
+    ],
+    "decode_validate_us": 157.424
+  }
+}

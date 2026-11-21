@@ -1,0 +1,538 @@
+{
+  "pairs": 4,
+  "arrivals_per_run": 1024,
+  "load": [
+    {
+      "calls": 17680,
+      "seconds": 3.681381,
+      "digest": "be926a94ed58595c57920b33e33c5848a480172eaae8185999b49e09fb960dfc"
+    },
+    {
+      "calls": 17728,
+      "seconds": 3.691003,
+      "digest": "be926a94ed58595c57920b33e33c5848a480172eaae8185999b49e09fb960dfc"
+    },
+    {
+      "calls": 15456,
+      "seconds": 3.211195,
+      "digest": "be926a94ed58595c57920b33e33c5848a480172eaae8185999b49e09fb960dfc"
+    },
+    {
+      "calls": 15520,
+      "seconds": 3.220667,
+      "digest": "be926a94ed58595c57920b33e33c5848a480172eaae8185999b49e09fb960dfc"
+    }
+  ],
+  "warm": [
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 25,
+      "policy": "cpu",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 77.491,
+        "p50_us": 45.817,
+        "p95_us": 196.119
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 76.2,
+        "p50_us": 47.319,
+        "p95_us": 192.069
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 25,
+      "policy": "ready",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 73.992,
+        "p50_us": 56.119,
+        "p95_us": 156.693
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 96.185,
+        "p50_us": 55.979,
+        "p95_us": 247.139
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 25,
+      "policy": "wait250",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 72.335,
+        "p50_us": 297.249,
+        "p95_us": 405.645
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 95.975,
+        "p50_us": 305.875,
+        "p95_us": 496.511
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 25,
+      "policy": "wait1000",
+      "idle": {
+        "groups": 512.0,
+        "service_us": 71.671,
+        "p50_us": 231.879,
+        "p95_us": 1210.437
+      },
+      "busy": {
+        "groups": 512.0,
+        "service_us": 89.809,
+        "p50_us": 343.383,
+        "p95_us": 1299.138
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 25,
+      "policy": "wait4000",
+      "idle": {
+        "groups": 205.0,
+        "service_us": 71.904,
+        "p50_us": 2343.662,
+        "p95_us": 4395.486
+      },
+      "busy": {
+        "groups": 205.0,
+        "service_us": 90.214,
+        "p50_us": 2439.767,
+        "p95_us": 4473.082
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 25,
+      "policy": "cpu",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 77.367,
+        "p50_us": 98.831,
+        "p95_us": 699.944
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 77.733,
+        "p50_us": 112.218,
+        "p95_us": 891.381
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 25,
+      "policy": "ready",
+      "idle": {
+        "groups": 1022.5,
+        "service_us": 72.695,
+        "p50_us": 68.769,
+        "p95_us": 155.75
+      },
+      "busy": {
+        "groups": 682.0,
+        "service_us": 92.022,
+        "p50_us": 247.748,
+        "p95_us": 1085.327
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 25,
+      "policy": "wait250",
+      "idle": {
+        "groups": 342.0,
+        "service_us": 73.129,
+        "p50_us": 375.942,
+        "p95_us": 524.821
+      },
+      "busy": {
+        "groups": 290.0,
+        "service_us": 87.566,
+        "p50_us": 478.072,
+        "p95_us": 1067.385
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 25,
+      "policy": "wait1000",
+      "idle": {
+        "groups": 94.0,
+        "service_us": 66.138,
+        "p50_us": 1227.512,
+        "p95_us": 1758.021
+      },
+      "busy": {
+        "groups": 93.0,
+        "service_us": 76.864,
+        "p50_us": 1368.96,
+        "p95_us": 1958.372
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 25,
+      "policy": "wait4000",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 66.918,
+        "p50_us": 3704.383,
+        "p95_us": 5272.749
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 67.593,
+        "p50_us": 3714.203,
+        "p95_us": 5168.416
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 25,
+      "policy": "cpu",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 72.029,
+        "p50_us": 1175.388,
+        "p95_us": 2259.841
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 75.678,
+        "p50_us": 1241.319,
+        "p95_us": 2525.94
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 25,
+      "policy": "ready",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 61.24,
+        "p50_us": 1959.201,
+        "p95_us": 1975.719
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 68.13,
+        "p50_us": 2074.267,
+        "p95_us": 2615.516
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 25,
+      "policy": "wait250",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 61.142,
+        "p50_us": 1956.407,
+        "p95_us": 1969.05
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 69.883,
+        "p50_us": 2089.144,
+        "p95_us": 2600.081
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 25,
+      "policy": "wait1000",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 61.346,
+        "p50_us": 1958.852,
+        "p95_us": 2013.365
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 71.416,
+        "p50_us": 2090.262,
+        "p95_us": 2591.944
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 25,
+      "policy": "wait4000",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 61.239,
+        "p50_us": 1959.305,
+        "p95_us": 1983.017
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 68.49,
+        "p50_us": 2078.947,
+        "p95_us": 2614.992
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 50,
+      "policy": "cpu",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 101.808,
+        "p50_us": 51.16,
+        "p95_us": 168.88
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 107.553,
+        "p50_us": 64.535,
+        "p95_us": 197.166
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 50,
+      "policy": "ready",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 89.488,
+        "p50_us": 64.15,
+        "p95_us": 137.207
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 134.408,
+        "p50_us": 69.668,
+        "p95_us": 259.187
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 50,
+      "policy": "wait250",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 90.91,
+        "p50_us": 330.494,
+        "p95_us": 390.07
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 137.423,
+        "p50_us": 323.16,
+        "p95_us": 511.772
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 50,
+      "policy": "wait1000",
+      "idle": {
+        "groups": 512.0,
+        "service_us": 81.906,
+        "p50_us": 299.033,
+        "p95_us": 1240.818
+      },
+      "busy": {
+        "groups": 512.0,
+        "service_us": 112.825,
+        "p50_us": 422.69,
+        "p95_us": 1373.101
+      }
+    },
+    {
+      "profile": "smooth_1000",
+      "ml_dsa_percent": 50,
+      "policy": "wait4000",
+      "idle": {
+        "groups": 205.0,
+        "service_us": 80.266,
+        "p50_us": 2407.395,
+        "p95_us": 4427.509
+      },
+      "busy": {
+        "groups": 205.0,
+        "service_us": 105.162,
+        "p50_us": 2481.183,
+        "p95_us": 4564.576
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 50,
+      "policy": "cpu",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 101.82,
+        "p50_us": 1125.703,
+        "p95_us": 1935.4
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 108.653,
+        "p50_us": 6177.216,
+        "p95_us": 7956.356
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 50,
+      "policy": "ready",
+      "idle": {
+        "groups": 1023.0,
+        "service_us": 89.157,
+        "p50_us": 122.959,
+        "p95_us": 166.975
+      },
+      "busy": {
+        "groups": 166.5,
+        "service_us": 101.553,
+        "p50_us": 1380.355,
+        "p95_us": 4867.739
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 50,
+      "policy": "wait250",
+      "idle": {
+        "groups": 342.0,
+        "service_us": 83.918,
+        "p50_us": 401.004,
+        "p95_us": 529.721
+      },
+      "busy": {
+        "groups": 174.0,
+        "service_us": 101.507,
+        "p50_us": 987.479,
+        "p95_us": 4391.096
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 50,
+      "policy": "wait1000",
+      "idle": {
+        "groups": 94.0,
+        "service_us": 77.964,
+        "p50_us": 1371.955,
+        "p95_us": 1837.243
+      },
+      "busy": {
+        "groups": 79.0,
+        "service_us": 91.148,
+        "p50_us": 1848.394,
+        "p95_us": 4447.935
+      }
+    },
+    {
+      "profile": "smooth_10000",
+      "ml_dsa_percent": 50,
+      "policy": "wait4000",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 76.178,
+        "p50_us": 4010.911,
+        "p95_us": 5425.892
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 85.916,
+        "p50_us": 4603.943,
+        "p95_us": 6893.73
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 50,
+      "policy": "cpu",
+      "idle": {
+        "groups": 1024.0,
+        "service_us": 102.103,
+        "p50_us": 1657.2,
+        "p95_us": 3223.467
+      },
+      "busy": {
+        "groups": 1024.0,
+        "service_us": 107.475,
+        "p50_us": 1774.641,
+        "p95_us": 3591.153
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 50,
+      "policy": "ready",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 75.825,
+        "p50_us": 2424.076,
+        "p95_us": 2446.601
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 86.508,
+        "p50_us": 2562.016,
+        "p95_us": 3182.292
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 50,
+      "policy": "wait250",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 75.666,
+        "p50_us": 2421.317,
+        "p95_us": 2444.994
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 86.808,
+        "p50_us": 2571.76,
+        "p95_us": 3201.289
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 50,
+      "policy": "wait1000",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 75.712,
+        "p50_us": 2420.34,
+        "p95_us": 2448.87
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 87.034,
+        "p50_us": 2576.264,
+        "p95_us": 3206.562
+      }
+    },
+    {
+      "profile": "burst_3200",
+      "ml_dsa_percent": 50,
+      "policy": "wait4000",
+      "idle": {
+        "groups": 32.0,
+        "service_us": 75.699,
+        "p50_us": 2420.584,
+        "p95_us": 2444.086
+      },
+      "busy": {
+        "groups": 32.0,
+        "service_us": 86.212,
+        "p50_us": 2557.476,
+        "p95_us": 3168.358
+      }
+    }
+  ]
+}

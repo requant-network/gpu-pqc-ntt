@@ -1,0 +1,6 @@
+AMD Ryzen 7 8745HS w/ Radeon 780M Graphics
+Microsoft Windows 10 Enterprise, build 19045
+rustc 1.98.1 (48a229cea 2026-09-01)
+296a7c91a5d11ec4c8509236f5301c2ad074c9790ee3ba0c86d65ccc2c0aebc5  group-1.tsv
+31e3157f50779cbbcd33bf990d55ff0a635a972ba5e729b522a67449650c246a  pqc_wallet-35e74a7604d0b37b.exe
+acf0830413c7c349b9ea1789a9678b08493d4e59eb39383638da05bac65e2595  pqc_vectors-7c6c2ecc69800fab.exe

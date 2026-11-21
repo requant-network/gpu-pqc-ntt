@@ -1,0 +1,5 @@
+Model name:                              AMD Ryzen 5 5500
+NVIDIA GeForce RTX 5060 Ti, 610.43.03, 0 %, 279 MiB
+validator_cpu=2 siblings=2,8 load_cpu=4 siblings=4,10
+43a432816bf27934df385f2a8914f94e54b4a1d169d3e938d65d5751518de8d5  pqc_wallet-7e9c1d9921233a6d
+6a82ceea55a29bb7284888fa3c5a610d97328993712a9a9085244b0e30583b91  libpqc_verify_lab.so

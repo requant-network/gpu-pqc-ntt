@@ -1,0 +1,35 @@
+
+running 1 test
+test mixed::virtual_arrival_queue ... queue=smooth_1000 ml_dsa=25 policy=cpu n=1024 groups=1024 cuda_calls=0 service_us=82.891 p50_us=49.938 p95_us=230.203 p99_us=239.911
+queue=smooth_1000 ml_dsa=25 policy=ready n=1024 groups=1024 cuda_calls=256 service_us=79.435 p50_us=65.373 p95_us=180.125 p99_us=189.904
+queue=smooth_1000 ml_dsa=25 policy=wait250 n=1024 groups=1024 cuda_calls=256 service_us=80.835 p50_us=315.862 p95_us=429.427 p99_us=438.786
+queue=smooth_1000 ml_dsa=25 policy=wait1000 n=1024 groups=512 cuda_calls=256 service_us=82.066 p50_us=265.613 p95_us=1244.730 p99_us=1255.486
+queue=smooth_1000 ml_dsa=25 policy=wait4000 n=1024 groups=205 cuda_calls=205 service_us=77.965 p50_us=2374.638 p95_us=4443.643 p99_us=4530.318
+queue=smooth_10000 ml_dsa=25 policy=cpu n=1024 groups=1024 cuda_calls=0 service_us=82.789 p50_us=135.891 p95_us=1238.132 p99_us=1430.518
+queue=smooth_10000 ml_dsa=25 policy=ready n=1024 groups=1020 cuda_calls=256 service_us=77.090 p50_us=80.056 p95_us=179.566 p99_us=191.989
+queue=smooth_10000 ml_dsa=25 policy=wait250 n=1024 groups=342 cuda_calls=256 service_us=78.732 p50_us=381.459 p95_us=573.769 p99_us=585.896
+queue=smooth_10000 ml_dsa=25 policy=wait1000 n=1024 groups=94 cuda_calls=93 service_us=77.695 p50_us=1335.897 p95_us=1920.895 p99_us=2020.127
+queue=smooth_10000 ml_dsa=25 policy=wait4000 n=1024 groups=32 cuda_calls=32 service_us=73.771 p50_us=3924.381 p95_us=5625.569 p99_us=5924.591
+queue=burst_3200 ml_dsa=25 policy=cpu n=1024 groups=1024 cuda_calls=0 service_us=72.040 p50_us=1165.960 p95_us=2259.561 p99_us=2308.168
+queue=burst_3200 ml_dsa=25 policy=ready n=1024 groups=32 cuda_calls=32 service_us=61.229 p50_us=1958.887 p95_us=1967.547 p99_us=2026.076
+queue=burst_3200 ml_dsa=25 policy=wait250 n=1024 groups=32 cuda_calls=32 service_us=61.106 p50_us=1953.648 p95_us=1967.408 p99_us=1994.926
+queue=burst_3200 ml_dsa=25 policy=wait1000 n=1024 groups=32 cuda_calls=32 service_us=61.054 p50_us=1955.604 p95_us=1962.658 p99_us=1972.507
+queue=burst_3200 ml_dsa=25 policy=wait4000 n=1024 groups=32 cuda_calls=32 service_us=61.137 p50_us=1956.582 p95_us=1962.099 p99_us=1999.606
+queue=smooth_1000 ml_dsa=50 policy=cpu n=1024 groups=1024 cuda_calls=0 service_us=101.730 p50_us=51.405 p95_us=168.810 p99_us=169.928
+queue=smooth_1000 ml_dsa=50 policy=ready n=1024 groups=1024 cuda_calls=512 service_us=89.544 p50_us=57.271 p95_us=136.264 p99_us=141.292
+queue=smooth_1000 ml_dsa=50 policy=wait250 n=1024 groups=1024 cuda_calls=512 service_us=89.823 p50_us=307.760 p95_us=388.079 p99_us=392.270
+queue=smooth_1000 ml_dsa=50 policy=wait1000 n=1024 groups=512 cuda_calls=256 service_us=81.743 p50_us=291.105 p95_us=1240.400 p99_us=1246.685
+queue=smooth_1000 ml_dsa=50 policy=wait4000 n=1024 groups=205 cuda_calls=205 service_us=80.145 p50_us=2417.103 p95_us=4427.719 p99_us=4439.802
+queue=smooth_10000 ml_dsa=50 policy=cpu n=1024 groups=1024 cuda_calls=0 service_us=101.666 p50_us=924.139 p95_us=1764.540 p99_us=1860.751
+queue=smooth_10000 ml_dsa=50 policy=ready n=1024 groups=1023 cuda_calls=512 service_us=90.092 p50_us=127.114 p95_us=170.851 p99_us=176.228
+queue=smooth_10000 ml_dsa=50 policy=wait250 n=1024 groups=342 cuda_calls=341 service_us=83.943 p50_us=399.829 p95_us=528.743 p99_us=539.150
+queue=smooth_10000 ml_dsa=50 policy=wait1000 n=1024 groups=94 cuda_calls=93 service_us=77.849 p50_us=1371.012 p95_us=1838.954 p99_us=1888.473
+queue=smooth_10000 ml_dsa=50 policy=wait4000 n=1024 groups=32 cuda_calls=32 service_us=76.100 p50_us=4012.517 p95_us=5419.012 p99_us=5532.143
+queue=burst_3200 ml_dsa=50 policy=cpu n=1024 groups=1024 cuda_calls=0 service_us=102.024 p50_us=1657.024 p95_us=3219.065 p99_us=3269.770
+queue=burst_3200 ml_dsa=50 policy=ready n=1024 groups=32 cuda_calls=32 service_us=75.634 p50_us=2419.292 p95_us=2436.613 p99_us=2462.455
+queue=burst_3200 ml_dsa=50 policy=wait250 n=1024 groups=32 cuda_calls=32 service_us=75.666 p50_us=2421.596 p95_us=2452.398 p99_us=2457.287
+queue=burst_3200 ml_dsa=50 policy=wait1000 n=1024 groups=32 cuda_calls=32 service_us=75.677 p50_us=2419.921 p95_us=2435.425 p99_us=2471.535
+queue=burst_3200 ml_dsa=50 policy=wait4000 n=1024 groups=32 cuda_calls=32 service_us=75.655 p50_us=2419.921 p95_us=2439.058 p99_us=2462.735
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 2.91s

@@ -70,46 +70,75 @@ def summarize_mixed():
     print(json.dumps(dict(wires_per_pass=256, compared_verdicts=256 * 18 * len(records), warm=records), indent=2))
 
 
+QUEUE_PROFILES = ("smooth_1000", "smooth_10000", "burst_3200")
+QUEUE_POLICIES = ("cpu", "ready", "wait250", "wait1000", "wait4000")
+QUEUE_METRICS = ("groups", "cuda_calls", "service_us", "p50_us", "p95_us", "p99_us")
+
+
+def queue_rows(path):
+    log = path.read_text()
+    assert "test result: ok. 1 passed; 0 failed" in log
+    run = {}
+    for line in log.splitlines():
+        prefix, separator, data = line.partition("queue=")
+        if not separator:
+            continue
+        assert prefix in ("", "test mixed::virtual_arrival_queue ... ")
+        row = dict(field.split("=", maxsplit=1) for field in (separator + data).split())
+        profile, share, policy = row["queue"], int(row["ml_dsa"]), row["policy"]
+        key = (profile, share, policy)
+        assert key not in run and int(row["n"]) == 1024
+        assert 0 <= int(row["cuda_calls"]) <= int(row["groups"]) <= 1024
+        assert (int(row["cuda_calls"]) == 0) == (policy == "cpu")
+        assert 0 < float(row["p50_us"]) <= float(row["p95_us"]) <= float(row["p99_us"])
+        run[key] = {name: float(row[name]) for name in QUEUE_METRICS}
+    assert set(run) == {(p, s, t) for p in QUEUE_PROFILES for s in (25, 50) for t in QUEUE_POLICIES}
+    return run
+
+
 def summarize_queue():
     folder = Path(__file__).resolve().parent / "queue"
-    profiles = ("smooth_1000", "smooth_10000", "burst_3200")
-    policies = ("cpu", "ready", "wait250", "wait1000", "wait4000")
-    runs = []
-    measurements = ("groups", "cuda_calls", "service_us", "p50_us", "p95_us", "p99_us")
-    for index in range(1, 4):
-        log = (folder / f"queue-{index}.log.txt").read_text()
-        assert "test result: ok. 1 passed; 0 failed" in log
-        run = {}
-        for line in log.splitlines():
-            if not line.startswith("queue="):
-                continue
-            row = dict(field.split("=", maxsplit=1) for field in line.split())
-            profile, share, policy = row["queue"], int(row["ml_dsa"]), row["policy"]
-            key = (profile, share, policy)
-            assert key not in run and int(row["n"]) == 1024
-            assert 0 <= int(row["cuda_calls"]) <= int(row["groups"]) <= 1024
-            assert (int(row["cuda_calls"]) == 0) == (policy == "cpu")
-            assert 0 < float(row["p50_us"]) <= float(row["p95_us"]) <= float(row["p99_us"])
-            run[key] = tuple(float(row[name]) for name in measurements)
-        assert len(run) == len(profiles) * 2 * len(policies)
-        runs.append(run)
+    runs = [queue_rows(folder / f"queue-{index}.log.txt") for index in range(1, 4)]
     records = []
-    for profile in profiles:
+    for profile in QUEUE_PROFILES:
         for share in (25, 50):
-            for policy in policies:
+            for policy in QUEUE_POLICIES:
                 samples = [run[profile, share, policy] for run in runs]
-                stats = {name: round(statistics.median(values), 3)
-                         for name, values in zip(measurements, zip(*samples))}
+                stats = {name: round(statistics.median(sample[name] for sample in samples), 3)
+                         for name in QUEUE_METRICS}
                 records.append(dict(profile=profile, ml_dsa_percent=share, policy=policy, **stats))
     print(json.dumps(dict(arrivals_per_run=1024, processes=3, warm=records), indent=2))
 
 
+def summarize_contention():
+    folder = Path(__file__).resolve().parent / "queue" / "contention"
+    idle, busy, load = [], [], []
+    for index in range(1, 5):
+        idle.append(queue_rows(folder / f"idle-{index}.log.txt"))
+        busy.append(queue_rows(folder / f"busy-{index}.log.txt"))
+        report = dict(field.split("=", maxsplit=1) for field in (folder / f"load-{index}.log.txt").read_text().split())
+        assert int(report["load_batch"]) == 32 and int(report["calls"]) > 0 and float(report["seconds"]) > 0
+        load.append(dict(calls=int(report["calls"]), seconds=float(report["seconds"]), digest=report["digest"]))
+    assert len({run["digest"] for run in load}) == 1
+    records = []
+    for profile, share, policy in idle[0]:
+        row = dict(profile=profile, ml_dsa_percent=share, policy=policy)
+        for mode, runs in (("idle", idle), ("busy", busy)):
+            stats = {name: round(statistics.median(run[profile, share, policy][name] for run in runs), 3)
+                     for name in ("groups", "service_us", "p50_us", "p95_us")}
+            row[mode] = stats
+        records.append(row)
+    print(json.dumps(dict(pairs=4, arrivals_per_run=1024, load=load, warm=records), indent=2))
+
+
 if __name__ == "__main__":
-    if sys.argv[1:] == ["--queue"]:
+    if sys.argv[1:] == ["--contention"]:
+        summarize_contention()
+    elif sys.argv[1:] == ["--queue"]:
         summarize_queue()
     elif sys.argv[1:] == ["--mixed"]:
         summarize_mixed()
     elif len(sys.argv) == 1:
         main()
     else:
-        raise SystemExit("usage: summarize.py [--mixed | --queue]")
+        raise SystemExit("usage: summarize.py [--mixed | --queue | --contention]")
