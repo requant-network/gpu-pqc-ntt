@@ -233,3 +233,104 @@ fn mixed_witness_batches() {
 fn mixed_witness_missing_device() {
     controls(BatchBackend::CpuFallback);
 }
+
+fn dispatch(
+    arrivals: &[u64],
+    head: usize,
+    available: u64,
+    cap: usize,
+    wait_ns: u64,
+) -> (u64, usize) {
+    let full = arrivals.get(head + cap - 1).copied().unwrap_or(u64::MAX);
+    let start = available.max(full.min(arrivals[head] + wait_ns));
+    let end = (head + cap).min(arrivals.partition_point(|&arrival| arrival <= start));
+    (start, end)
+}
+
+#[test]
+fn virtual_arrival_queue() {
+    assert_eq!(dispatch(&[0, 10, 20], 0, 0, 2, 100), (10, 2));
+    assert_eq!(dispatch(&[0, 10, 20], 2, 0, 2, 15), (35, 3));
+    assert_eq!(dispatch(&[0, 10, 20], 0, 25, 2, 15), (25, 2));
+    assert_eq!(dispatch(&[0, 0, 10], 0, 0, 32, 0), (0, 2));
+
+    const ARRIVALS: usize = 1024;
+    let (chain, ed, pq, _, _) = fixture();
+    let (warmup, backend) = check_mixed_batch(&chain, &pq[..1]).unwrap();
+    assert_eq!(warmup, [Ok(FEE)]);
+    assert_eq!(backend, BatchBackend::Cuda);
+
+    for share in [1, 2] {
+        let wires = (0..ARRIVALS)
+            .map(|i| {
+                let slot = i % COUNT;
+                if i % 4 < share {
+                    pq[slot].clone()
+                } else {
+                    ed[slot].clone()
+                }
+            })
+            .collect::<Vec<_>>();
+        for (profile, spacing_ns, burst) in [
+            ("smooth_1000", 1_000_000, 1),
+            ("smooth_10000", 100_000, 1),
+            ("burst_3200", 10_000_000, 32),
+        ] {
+            let arrivals = (0..ARRIVALS)
+                .map(|i| (i / burst) as u64 * spacing_ns)
+                .collect::<Vec<_>>();
+            for (policy, cap, wait_us) in [
+                ("cpu", 1, 0),
+                ("ready", 32, 0),
+                ("wait250", 32, 250),
+                ("wait1000", 32, 1000),
+                ("wait4000", 32, 4000),
+            ] {
+                let mut head = 0;
+                let mut available = 0;
+                let mut latency = Vec::with_capacity(ARRIVALS);
+                let mut groups = 0;
+                let mut cuda_calls = 0;
+                let mut service_ns = 0;
+                while head < ARRIVALS {
+                    let (start, end) = dispatch(&arrivals, head, available, cap, wait_us * 1000);
+                    let clock = Instant::now();
+                    if cap == 1 {
+                        let result = validate(&chain, black_box(&wires[head]));
+                        available = start + clock.elapsed().as_nanos() as u64;
+                        assert_eq!(result, Ok(FEE + (head % COUNT) as u64));
+                    } else {
+                        let (results, backend) =
+                            check_mixed_batch(&chain, black_box(&wires[head..end])).unwrap();
+                        available = start + clock.elapsed().as_nanos() as u64;
+                        cuda_calls += usize::from(backend == BatchBackend::Cuda);
+                        assert_ne!(backend, BatchBackend::CpuFallback);
+                        assert_eq!(results.len(), end - head);
+                        for (index, result) in (head..end).zip(results) {
+                            assert_eq!(result, Ok(FEE + (index % COUNT) as u64));
+                        }
+                    }
+                    latency.extend(
+                        arrivals[head..end]
+                            .iter()
+                            .map(|&arrival| available - arrival),
+                    );
+                    service_ns += available - start;
+                    groups += 1;
+                    head = end;
+                }
+                latency.sort_unstable();
+                let percentile =
+                    |p: usize| latency[(ARRIVALS * p).div_ceil(100) - 1] as f64 / 1000.0;
+                let service_us = service_ns as f64 / ARRIVALS as f64 / 1000.0;
+                println!(
+                    "queue={profile} ml_dsa={} policy={policy} n={ARRIVALS} groups={groups} cuda_calls={cuda_calls} service_us={service_us:.3} p50_us={:.3} p95_us={:.3} p99_us={:.3}",
+                    share * 25,
+                    percentile(50),
+                    percentile(95),
+                    percentile(99),
+                );
+            }
+        }
+    }
+}

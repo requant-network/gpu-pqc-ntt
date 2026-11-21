@@ -47,8 +47,9 @@ starting point for another warm queue experiment with this hardware. At 25%
 ML-DSA, batch 128 was about 0.29 µs per wire faster than batch 32. The
 measurements start with batches in memory and exclude arrival wait, cold
 CUDA startup, network relay, changes in chain state and deliberate GPU
-contention. Those costs determine whether grouping helps a live validator.
-No release or network activation decision follows from the lab.
+contention. The [queue follow-up](../queue/README.md) measures service time
+and models arrival wait for three synthetic schedules. No release or
+network activation decision follows from the lab.
 [All batch sizes and timing ratios](results.json) · [Environment and hashes](metadata.log.txt).
 
 ## Reproduce

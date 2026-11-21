@@ -70,10 +70,46 @@ def summarize_mixed():
     print(json.dumps(dict(wires_per_pass=256, compared_verdicts=256 * 18 * len(records), warm=records), indent=2))
 
 
+def summarize_queue():
+    folder = Path(__file__).resolve().parent / "queue"
+    profiles = ("smooth_1000", "smooth_10000", "burst_3200")
+    policies = ("cpu", "ready", "wait250", "wait1000", "wait4000")
+    runs = []
+    measurements = ("groups", "cuda_calls", "service_us", "p50_us", "p95_us", "p99_us")
+    for index in range(1, 4):
+        log = (folder / f"queue-{index}.log.txt").read_text()
+        assert "test result: ok. 1 passed; 0 failed" in log
+        run = {}
+        for line in log.splitlines():
+            if not line.startswith("queue="):
+                continue
+            row = dict(field.split("=", maxsplit=1) for field in line.split())
+            profile, share, policy = row["queue"], int(row["ml_dsa"]), row["policy"]
+            key = (profile, share, policy)
+            assert key not in run and int(row["n"]) == 1024
+            assert 0 <= int(row["cuda_calls"]) <= int(row["groups"]) <= 1024
+            assert (int(row["cuda_calls"]) == 0) == (policy == "cpu")
+            assert 0 < float(row["p50_us"]) <= float(row["p95_us"]) <= float(row["p99_us"])
+            run[key] = tuple(float(row[name]) for name in measurements)
+        assert len(run) == len(profiles) * 2 * len(policies)
+        runs.append(run)
+    records = []
+    for profile in profiles:
+        for share in (25, 50):
+            for policy in policies:
+                samples = [run[profile, share, policy] for run in runs]
+                stats = {name: round(statistics.median(values), 3)
+                         for name, values in zip(measurements, zip(*samples))}
+                records.append(dict(profile=profile, ml_dsa_percent=share, policy=policy, **stats))
+    print(json.dumps(dict(arrivals_per_run=1024, processes=3, warm=records), indent=2))
+
+
 if __name__ == "__main__":
-    if sys.argv[1:] == ["--mixed"]:
+    if sys.argv[1:] == ["--queue"]:
+        summarize_queue()
+    elif sys.argv[1:] == ["--mixed"]:
         summarize_mixed()
     elif len(sys.argv) == 1:
         main()
     else:
-        raise SystemExit("usage: summarize.py [--mixed]")
+        raise SystemExit("usage: summarize.py [--mixed | --queue]")
