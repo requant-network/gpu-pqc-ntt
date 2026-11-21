@@ -1,0 +1,93 @@
+    Finished `release` profile [optimized] target(s) in 0.08s
+     Running unittests src\lib.rs (native\target\release\deps\requant_consensus-63f87508452efcae.exe)
+
+running 24 tests
+test address::tests::amounts ... ok
+test codec::tests::varint_roundtrip_and_canonical ... ok
+test address::tests::addresses ... ok
+test block::tests::genesis_roundtrip_and_standalone ... ok
+test block::tests::standalone_rejections ... ok
+test chain::utxo_tests::the_owner_index_follows_every_change ... ok
+test block::tests::merkle_shapes ... ok
+test params::tests::networks_are_consistent ... ok
+test address::tests::bip350_vectors ... ok
+test pow::tests::a_stall_of_any_length_counts_one_half_life ... ok
+test pow::tests::never_easier_than_genesis_after_the_switch ... ok
+test pow::tests::on_schedule_keeps_the_target ... ok
+test pow::tests::clamps ... ok
+test pow::tests::fractional_steps_follow_the_bch_polynomial ... ok
+test pow::tests::relative_rule_steps_from_the_parent ... ok
+test tx::tests::roundtrip_and_hashes ... ok
+test tx::tests::shape_rules ... ok
+test pow::tests::one_half_life_doubles_or_halves ... ok
+test u256::tests::bytes_roundtrip_and_order ... ok
+test u256::tests::division_and_work ... ok
+test u256::tests::mul_shift ... ok
+test tx::tests::signatures_bind_chain_and_content ... ok
+test pow::tests::a_returning_miner_does_not_flood_the_chain ... ok
+test pow::tests::emission_schedule ... ok
+
+test result: ok. 24 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\chain.rs (native\target\release\deps\chain-6d9723c2cc91cd43.exe)
+
+running 17 tests
+test cheap_checks_come_first ... ok
+test double_spend_and_wrong_key ... ok
+test issuance_matches_the_formula ... ok
+test mine_and_spend ... ok
+test rejections ... ok
+test reorg_limit_waits_for_min_chain_work ... ok
+test undo_restores_exactly_after_reorg_and_failed_connect ... ok
+test reorg_to_more_work_and_back_on_invalid ... ok
+test reorg_limit_refuses_deep_forks ... ok
+test supply_audit_and_utxo_hash ... ok
+test trusted_replay_locator_and_spend_checks ... ok
+test development_fund_share_and_sunset ... ok
+test a_restored_snapshot_equals_the_chain_and_keeps_working ... ok
+test epochs_change_the_weights ... ok
+test upcoming_epochs_are_announced_after_the_anchor ... ok
+test old_bodies_leave_memory_and_a_deep_reorg_reads_them_back ... ok
+test headers_first ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\conditions.rs (native\target\release\deps\conditions-a1fed90132768e70.exe)
+
+running 6 tests
+test encodings_are_canonical_and_txids_exclude_signatures ... ok
+test one_way_payment_channel ... ok
+test two_of_two_needs_both_keys_in_order ... ok
+test relative_lock_counts_from_the_coins_block ... ok
+test htlc_claim_with_the_preimage_refund_after_the_timeout ... ok
+test kind_2_waits_for_the_activation_height ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\contracts.rs (native\target\release\deps\contracts-10432650f0073020.exe)
+
+running 5 tests
+test encodings_round_trip_and_flags_ride_in_the_unlock_byte ... ok
+test anyone_can_pay_lets_others_add_inputs_but_not_change_outputs ... ok
+test revocable_htlc_paths_and_their_delays ... ok
+test contracts_wait_for_their_activation_height ... ok
+test revocable_output_owner_waits_revoker_does_not ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\fuzz.rs (native\target\release\deps\fuzz-5040b0a890ecba62.exe)
+
+running 2 tests
+test mutated_blocks_are_refused_without_panicking ... ok
+test decoders_never_panic ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\pqc_wallet.rs (native\target\release\deps\pqc_wallet-35e74a7604d0b37b.exe)
+
+running 3 tests
+test windows_vault::dpapi_child ... ignored, called by the DPAPI wallet lab with disposable fixtures
+test restored_wallet_spends_after_legacy_migration ... ok
+test windows_vault::windows_vault_restarts_and_fails_closed ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.18s

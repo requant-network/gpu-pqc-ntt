@@ -1,0 +1,7 @@
+AMD Ryzen 7 8745HS w/ Radeon 780M Graphics
+Windows build 19045
+NTFS
+rustc 1.98.1 (48a229cea 2026-09-01)
+712dc4b4f5e23f81a401c99c7d3b125e485fe609a24aaa0a093a465402711dc5  dpapi.rs
+8115ff7ba4dc0f94171b87effed39327b1bdb0550897040eb018b4aad3828a27  windows_vault.rs
+25dcf17ef0074e798b431f2fb18af90e98367865f57435e817eba4baa08912f5  pqc_wallet-35e74a7604d0b37b.exe

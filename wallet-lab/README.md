@@ -100,6 +100,8 @@ now measures full validation at 104.97 µs per distinct-key transaction at
 batch 32, compared with 157.32 µs on the matched CPU path. Its timing includes
 transfers and CPU stages. [CUDA validation trial](cuda-verify/README.md).
 
-Key storage on client devices, a deployed migration and block propagation
-under load remain open. The source patch lives on the research branch for lab
-reproduction.
+The [Windows DPAPI lab](client/windows-vault/README.md) exercised
+user-protected storage and restart recovery. Cross-device backup and
+storage isolation need further device trials. A deployed migration and
+block propagation under load remain open. The source patch lives on
+the research branch for lab reproduction.

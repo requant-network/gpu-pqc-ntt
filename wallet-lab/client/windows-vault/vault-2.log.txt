@@ -1,0 +1,18 @@
+running 1 test
+sealed_bytes=270
+trial=1 wallet_open_us=1614.200 sign_encode_us=1189.300 process_ms=11.079 wire_bytes=3924
+trial=2 wallet_open_us=1940.600 sign_encode_us=1826.000 process_ms=13.103 wire_bytes=3924
+trial=3 wallet_open_us=1729.800 sign_encode_us=1793.900 process_ms=12.515 wire_bytes=3924
+trial=4 wallet_open_us=1287.000 sign_encode_us=1185.500 process_ms=12.926 wire_bytes=3924
+trial=5 wallet_open_us=1314.500 sign_encode_us=1176.900 process_ms=12.061 wire_bytes=3924
+refused=bit-flip signed_output=false
+refused=truncated signed_output=false
+refused=wrong-format signed_output=false
+refused=oversize signed_output=false
+refused=wrong-purpose signed_output=false
+refused=other-wallet signed_output=false
+refused=missing signed_output=false
+wallet_restarts=5 same_signed_bytes=true protected_copy=true no_overwrite=true confirmed=true altered_payment_refused=true
+test windows_vault::windows_vault_restarts_and_fails_closed ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.20s

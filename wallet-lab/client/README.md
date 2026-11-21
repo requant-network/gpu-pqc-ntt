@@ -29,6 +29,10 @@ wire in all 25 trial means. Key acquisition and storage, app startup,
 Android signing and network relay are outside this measurement.
 [Timing summary](results.json) · [First process log](wallet-1.log.txt).
 
+The [DPAPI follow-up](windows-vault/README.md) reopens a Windows
+user-protected seed file in new signer processes, measures recovery
+latency and exercises refusal cases on the lab chain.
+
 ## Reproduce
 
 Follow the [native fixture instructions](../README.md#reproduce) with the

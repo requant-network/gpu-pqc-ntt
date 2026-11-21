@@ -1,0 +1,27 @@
+{
+  "processes": 15,
+  "sealed_sizes": [
+    270,
+    270,
+    270
+  ],
+  "refused": 21,
+  "wire_bytes": 3924,
+  "timings": {
+    "wallet_open_us": {
+      "median": 1647.2,
+      "minimum": 1287.0,
+      "maximum": 2577.4
+    },
+    "sign_encode_us": {
+      "median": 991.5,
+      "minimum": 255.6,
+      "maximum": 1826.0
+    },
+    "process_ms": {
+      "median": 12.364,
+      "minimum": 10.06,
+      "maximum": 14.114
+    }
+  }
+}

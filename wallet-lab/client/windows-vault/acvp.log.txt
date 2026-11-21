@@ -1,0 +1,9 @@
+   Compiling requant-consensus v0.1.0 (native\crates\consensus)
+    Finished `release` profile [optimized] target(s) in 2.16s
+     Running tests\pqc_vectors.rs (native\target\release\deps\pqc_vectors-7c6c2ecc69800fab.exe)
+
+running 1 test
+NIST ACVP keyGen=25 sigGen=15 sigVer_valid=3 sigVer_invalid=12
+test nist_ml_dsa_44 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
