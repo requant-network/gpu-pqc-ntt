@@ -1,0 +1,24 @@
+Command: cargo test --locked --offline --release -p requant-node --test two_nodes -- --nocapture
+
+Windows x86-64, AMD Ryzen 7 8745HS, Rust 1.98.1
+replayed 5 blocks, height 5
+relay_transport=loopback_tcp nodes=2 ml_dsa_wire_bytes=3924 ed25519_wire_bytes=179 confirmed_height=5 refused=2 reopened_tip=matched
+test pqc_native_relay::pqc_mixed_block_relay ... ok
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+
+Linux x86-64, AMD Ryzen 5 5500, Rust 1.98.1
+replayed 5 blocks, height 5
+relay_transport=loopback_tcp nodes=2 ml_dsa_wire_bytes=3924 ed25519_wire_bytes=179 confirmed_height=5 refused=2 reopened_tip=matched
+test pqc_native_relay::pqc_mixed_block_relay ... ok
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.15s
+
+Linux RPC trial, existing rpc_formats_methods_long_poll_and_cookie
+Baseline test executable and portable overlay test executable SHA-256:
+5e3d5704428da1cdc8c4f616b31939e16b10c8cc055ac2ae968d54f1c6ff7e25
+Baseline: 7 connection resets in 8 trials
+Portable overlay: 8 connection resets in 8 trials
+Baseline with post() request buffered: 5 resets in 8 trials, all in the Origin case
+Baseline with both requests buffered: 0 resets in 8 trials
+Portable and relay overlays with both requests buffered: full Linux suite passed (134 passed, 2 ignored fixture entrypoints)
+Portable and relay overlays with both requests buffered: full Windows suite passed (134 passed, 2 ignored fixture entrypoints)
+Separate pinned ACVP run on both hosts: keyGen=25 sigGen=15 sigVer_valid=3 sigVer_invalid=12

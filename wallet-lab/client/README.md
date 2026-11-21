@@ -33,6 +33,11 @@ The [DPAPI follow-up](windows-vault/README.md) reopens a Windows
 user-protected seed file in new signer processes, measures recovery
 latency and exercises refusal cases on the lab chain.
 
+The [portable backup trial](portable-backup/README.md) restored three
+Windows-exported wallets on Linux and recreated their confirmed spends
+byte for byte.
+
+
 ## Reproduce
 
 Follow the [native fixture instructions](../README.md#reproduce) with the

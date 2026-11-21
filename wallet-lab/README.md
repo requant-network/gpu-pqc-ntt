@@ -101,7 +101,9 @@ batch 32, compared with 157.32 µs on the matched CPU path. Its timing includes
 transfers and CPU stages. [CUDA validation trial](cuda-verify/README.md).
 
 The [Windows DPAPI lab](client/windows-vault/README.md) exercised
-user-protected storage and restart recovery. Cross-device backup and
-storage isolation need further device trials. A deployed migration and
-block propagation under load remain open. The source patch lives on
-the research branch for lab reproduction.
+user-protected storage and restart recovery. A [portable backup
+trial](client/portable-backup/README.md) restored three Windows-exported
+wallets on Linux. The [two-node relay trial](native-relay/README.md)
+confirmed both signature types in one block on Windows and Linux.
+Cross-account storage isolation, block propagation under load across
+hosts and a deployed migration remain open.

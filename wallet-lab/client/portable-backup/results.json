@@ -1,0 +1,33 @@
+{
+  "trials": [
+    {
+      "envelope_bytes": 129,
+      "confirmed_wire_bytes": 3924,
+      "export_ms": 99.132,
+      "restore_ms": 120.097,
+      "wire_sha256": "76289e92f500abd2f79fea31fce75bda2c1bbc55e1937bf2452a8c361e2e69de",
+      "receiver_refusals_without_wire": [
+        "wrong_recovery_code",
+        "short_recovery_input"
+      ]
+    },
+    {
+      "envelope_bytes": 129,
+      "confirmed_wire_bytes": 3924,
+      "export_ms": 105.91,
+      "restore_ms": 118.144,
+      "wire_sha256": "577305f5456e4dab2d143fd562095dd56000067eafbdf2e83163494c2bafc875",
+      "receiver_refusals_without_wire": []
+    },
+    {
+      "envelope_bytes": 129,
+      "confirmed_wire_bytes": 3924,
+      "export_ms": 119.029,
+      "restore_ms": 120.749,
+      "wire_sha256": "091bf31e47f715be65ed4b9d7cf7dad03d14a06cc4111694b47667ecb278f480",
+      "receiver_refusals_without_wire": []
+    }
+  ],
+  "median_export_ms": 105.91,
+  "median_restore_ms": 120.097
+}

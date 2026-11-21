@@ -1,0 +1,31 @@
+diff --git a/Cargo.lock b/Cargo.lock
+index 6698edc..406431c 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -22,6 +22,7 @@ dependencies = [
+  "blake2",
+  "cpufeatures 0.2.17",
+  "password-hash",
++ "zeroize",
+ ]
+ 
+ [[package]]
+@@ -781,6 +782,8 @@ checksum = "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69"
+ name = "requant-consensus"
+ version = "0.1.0"
+ dependencies = [
++ "argon2",
++ "chacha20poly1305",
+  "ed25519-dalek",
+  "getrandom 0.4.3",
+  "hex",
+diff --git a/crates/consensus/Cargo.toml b/crates/consensus/Cargo.toml
+index db7b92e..e1d7f37 100644
+--- a/crates/consensus/Cargo.toml
++++ b/crates/consensus/Cargo.toml
+@@ -14,3 +14,5 @@ ml-dsa = { version = "=0.1.2", features = ["zeroize"] }
+ getrandom = "=0.4.3"
+ hex = "=0.4.3"
+ zeroize = "1"
++argon2 = { version = "=0.5.3", default-features = false, features = ["zeroize"] }
++chacha20poly1305 = { version = "=0.10.1", default-features = false }

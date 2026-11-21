@@ -1,0 +1,63 @@
+diff --git a/Cargo.lock b/Cargo.lock
+index 406431c..5a1f04f 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -798,6 +798,7 @@ version = "0.18.3"
+ dependencies = [
+  "ed25519-dalek",
+  "getrandom 0.2.15",
++ "ml-dsa",
+  "requant-consensus",
+  "serde_json",
+  "tnet",
+diff --git a/crates/node/Cargo.toml b/crates/node/Cargo.toml
+index 167fbd8..afdaa94 100644
+--- a/crates/node/Cargo.toml
++++ b/crates/node/Cargo.toml
+@@ -13,6 +13,7 @@ serde_json = "=1.0.140"
+ ed25519-dalek = "=2.2.0"
+ 
+ [dev-dependencies]
++ml-dsa = { version = "=0.1.2", features = ["zeroize"] }
+ 
+ [[bin]]
+ name = "requantd"
+diff --git a/crates/node/tests/two_nodes.rs b/crates/node/tests/two_nodes.rs
+index cd13100..850ccd4 100644
+--- a/crates/node/tests/two_nodes.rs
++++ b/crates/node/tests/two_nodes.rs
+@@ -27,8 +27,19 @@ fn node(dir: &Path, connect: Vec<String>, mine_to: Option<Hash>) -> Handle {
+ }
+ 
+ fn node_with(dir: &Path, connect: Vec<String>, mine_to: Option<Hash>, release_key: [u8; 32]) -> Handle {
++    node_on_network(dir, connect, mine_to, release_key, Network::regtest())
++}
++
++fn node_on_network(
++    dir: &Path,
++    connect: Vec<String>,
++    mine_to: Option<Hash>,
++    release_key: [u8; 32],
++    net: Network,
++) -> Handle {
++    let discover = net.name == "regtest";
+     start(Config {
+-        net: Network::regtest(),
++        net,
+         datadir: dir.to_path_buf(),
+         listen: "127.0.0.1:0".parse().unwrap(),
+         rpc: Some("127.0.0.1:0".parse().unwrap()),
+@@ -41,7 +52,7 @@ fn node_with(dir: &Path, connect: Vec<String>, mine_to: Option<Hash>, release_ke
+         rpc_cookie: false,
+         reject_dust_outputs: false,
+         peer_interval: Duration::from_millis(300),
+-        discover: true,
++        discover,
+         explorer: None,
+         pool: None,
+         auto_update: false,
+@@ -451,3 +462,4 @@ fn packages_relay_and_survive_a_restart() {
+     let st = b2.shared.lock().unwrap();
+     assert!(st.mempool.contains(&parent.txid()) && st.mempool.contains(&child.txid()));
+ }
++mod pqc_native_relay { include!("pqc_native_relay.inc"); }
