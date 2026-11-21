@@ -34,6 +34,10 @@ adds the older receiver that retries CUDA at every mixed block
 when no device is visible. Both binaries use the same CUDA
 library and native chain revision.
 
+The [two-machine follow-up](CROSS_HOST.md) checks the same
+receiver modes and recovery after losing a reverse SSH forward
+from a separate Windows producer.
+
 ## Initial results
 
 | Path | First mixed signature check | Warm signatures per block | Startup through exact tip |

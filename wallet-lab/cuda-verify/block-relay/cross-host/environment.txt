@@ -1,0 +1,12 @@
+Windows producer: Windows 10 Enterprise 10.0.19045, AMD Ryzen 7 8745HS
+Windows Python 3.12.10
+OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+Linux receiver: LAN Ryzen 5 5500 host, NVIDIA GeForce RTX 5060 Ti
+Native source base: 967ce1831a37b56832bda4d52ddd29c428a18f9b
+Linux lab source: 11394428fb46dddae96bf554f34e25d9db4dead2
+ce1637140f1a2da1a0a7b7facd62cdf2ff30346878e9f9aea0b3d3168b6292f1  relay_lab.exe
+e1b4ca3d35929de1ad99c73d7cd875c9e06847cde999e07455011cc5d0dc3090  relay_latched
+6a82ceea55a29bb7284888fa3c5a610d97328993712a9a9085244b0e30583b91  libpqc_verify_lab.so
+b7b78997c70b5595e61081930961278fcd9d2356424aba57820f13d258a7f106  wallet-lab/cuda-verify/block-relay/cross_host.py
+66644dd85accde08b4faf7568a07fba75085397fecc789b88444d93b74316519  wallet-lab/cuda-verify/block-relay/measure.py
+734a01deea33faca54f9270fc455db8ce33036c39b4ebdac67a88256ffd1d384  wallet-lab/native-relay/cross-host/run.py
