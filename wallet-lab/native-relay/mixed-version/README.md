@@ -47,9 +47,40 @@ format and prevents that node from accepting the block, even while
 it receives headers. Checking header progress or the node's version
 string alone would have missed this gap. For migration design, require
 evidence of spend support before moving funds to the new owner type.
-An in-place upgrade caught up in this fixture. Downgrading complete
-state with a newer snapshot, testing mixed production releases and
-choosing network activation rules require separate qualification.
+An in-place upgrade caught up in this fixture.
+
+## Windows upgrade and full-store rollback across hosts
+
+On November 22 the same trial ran with a Linux x86-64 producer
+(Ryzen 5 5500) and a Windows x86-64 receiver (Ryzen 7 8745HS).
+The physical LAN carried the P2P TCP stream inside a loopback-bound SSH
+forward. All three builds used Rust 1.98.1 release mode. The two Windows
+receivers shared one test directory in each trial, and the raw-store and
+full-store rollback probes used separate disposable copies.
+
+| Trial | Legacy header height | Accepted height before upgrade | Upgrade and sync to height 34 |
+| --- | ---: | ---: | ---: |
+| [1](cross-host-results-1.json) | 33 | 4 | 759.051 ms |
+| [2](cross-host-results-2.json) | 33 | 4 | 704.134 ms |
+| [3](cross-host-results-3.json) | 33 | 4 | 708.187 ms |
+
+The upgraded Windows node restored the height-4 snapshot and matched 64
+block encodings and the producer's supply and UTXO audit after a restart.
+The old node replayed the raw block log up to height 4. Given the
+complete upgraded directory, the old node instead reported height 64
+and returned the same audit after restoring the new snapshot.
+`getblock` failed for mixed blocks 5 and 64 with `block body not stored`.
+The same process could still read all four early blocks. A graceful
+shutdown rewrote `chainstate.bin` on the copied store and left
+`blocks.dat` byte-identical. The upgraded build reopened that same copy
+and matched all 64 block encodings and the full audit again.
+
+A snapshot-backed height and a matching UTXO audit are insufficient
+to qualify rollback. A rollout check should cover block-body decoding
+and replay with mixed spends. Keep an independent pre-upgrade copy
+before trying an older binary. The experiment did not test a rollback
+followed by additional blocks or a reorg. Mixed production releases and
+network activation remain separate qualification steps.
 
 ## Reproduce
 
@@ -67,4 +98,11 @@ Then run both binaries on the same Linux host from the research tree.
 
 ```text
 python3 compare.py /ABSOLUTE/UPGRADED/relay_lab /ABSOLUTE/BASELINE/legacy_observer
+```
+
+On Windows, add the SSH destination and paths to run the producer
+on Linux. The lab scratch directory must already exist there.
+
+```text
+python compare.py WINDOWS_UPGRADED_EXE WINDOWS_LEGACY_EXE --remote USER@HOST /ABSOLUTE/LINUX/relay_lab /ABSOLUTE/LINUX/SCRATCH SSH_IDENTITY_FILE
 ```

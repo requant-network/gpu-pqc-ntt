@@ -117,34 +117,42 @@ def verify_blocks(port, manifest):
         assert hashlib.sha256(wire).hexdigest() == row["block_sha256"]
 
 
-def run(args):
+@contextmanager
+def remote_producer(remote, linux_bin, remote_root, identity):
     ssh = [
-        "ssh", "-i", str(args.identity), "-o", "BatchMode=yes",
+        "ssh", "-i", str(identity), "-o", "BatchMode=yes",
         "-o", "StrictHostKeyChecking=yes",
     ]
     command = shlex.join([
-        "mktemp", "-d", "--", str(args.remote_root / "relay-run.XXXXXXXX")
+        "mktemp", "-d", "--", str(remote_root / "relay-run.XXXXXXXX")
     ])
     linux_dir = subprocess.check_output(
-        [*ssh, "-T", args.remote, command], text=True, timeout=10
+        [*ssh, "-T", remote, command], text=True, timeout=10
     ).strip()
     with socket.socket() as sock:
         sock.bind(("127.0.0.1", 0))
         forwarded = sock.getsockname()[1]
 
     pipes = dict(stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, bufsize=1)
-    linux_cmd = shlex.join([str(args.linux_bin), "produce", linux_dir])
+    linux_cmd = shlex.join([str(linux_bin), "produce", linux_dir])
+    with process([*ssh, "-T", remote, linux_cmd], **pipes) as linux:
+        producer = Session(linux)
+        ready = producer.receive()
+        assert ready["ready"] == "produce"
+        tunnel = [
+            *ssh, "-NT", "-o", "ExitOnForwardFailure=yes", "-L",
+            f"127.0.0.1:{forwarded}:127.0.0.1:{ready['p2p']}", remote,
+        ]
+        yield producer, tunnel, f"127.0.0.1:{forwarded}"
+
+
+def run(args):
+    pipes = dict(stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, bufsize=1)
     with tempfile.TemporaryDirectory(prefix="requant-relay-") as windows_dir:
-        with process([*ssh, "-T", args.remote, linux_cmd], **pipes) as linux:
-            producer = Session(linux)
-            ready = producer.receive()
-            assert ready["ready"] == "produce"
-            tunnel = [
-                *ssh, "-NT", "-o", "ExitOnForwardFailure=yes", "-L",
-                f"127.0.0.1:{forwarded}:127.0.0.1:{ready['p2p']}", args.remote,
-            ]
+        with remote_producer(args.remote, args.linux_bin, args.remote_root, args.identity) as link:
+            producer, tunnel, peer = link
             windows = [str(args.windows_bin), "receive", windows_dir]
-            with process([*windows, f"127.0.0.1:{forwarded}"], **pipes) as local:
+            with process([*windows, peer], **pipes) as local:
                 receiver = Session(local)
                 ready = receiver.receive()
                 assert ready["ready"] == "receive"

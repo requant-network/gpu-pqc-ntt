@@ -1,0 +1,55 @@
+{
+  "transport": "p2p_tcp_over_ssh_forward",
+  "legacy_accepted_prefix_height": 4,
+  "mixed_block_height": 5,
+  "first_mixed_block_sha256": "05bbbdd27d84096f25acd2ad41b30c487ec0b61aba1102cdcd382a395b56b67d",
+  "legacy_headers_height_before_upgrade": 33,
+  "legacy_peer_log_malformed_block_messages": 38,
+  "legacy_audit_unchanged_after_mixed_blocks": {
+    "height": 4,
+    "issued_atoms": 1599999426,
+    "ok": true,
+    "tip": "84025bf58fd2397f57da589912ab382016c446e6dc7730fe27c99cb1e87000c6",
+    "total_atoms": 1599999426,
+    "unclaimed_atoms": 0,
+    "utxo_hash": "a6572547b408d811d9d7ef57c3cad97f91076b8c7af8c9e617c56ce00e913b6a",
+    "utxos": 87
+  },
+  "upgrade_bootstrap_height": 4,
+  "upgrade_matched_tip_height": 34,
+  "upgrade_elapsed_ms": 759.051,
+  "legacy_raw_store_replay_height": 4,
+  "legacy_full_store_rollback": {
+    "reported_height": 64,
+    "restored_snapshot_height": 64,
+    "audit": {
+      "height": 64,
+      "issued_atoms": 25599807708,
+      "ok": true,
+      "tip": "6d281caccdcc033eda8978e7721731fd7440ceb5c75314621c2fa51444478d67",
+      "total_atoms": 25599807708,
+      "unclaimed_atoms": 0,
+      "utxo_hash": "b9d3a023c0567227252e52f7e411cfd9b0e5ee75447172f24a39c0f3c394a77e",
+      "utxos": 151
+    },
+    "getblock_errors": {
+      "5": "block body not stored",
+      "64": "block body not stored"
+    },
+    "changed_store_files": [
+      "chainstate.bin"
+    ],
+    "upgraded_wire_matches_after_reopen": 64
+  },
+  "upgraded_wire_matches": 64,
+  "upgraded_audit_after_reopen": {
+    "height": 64,
+    "issued_atoms": 25599807708,
+    "ok": true,
+    "tip": "6d281caccdcc033eda8978e7721731fd7440ceb5c75314621c2fa51444478d67",
+    "total_atoms": 25599807708,
+    "unclaimed_atoms": 0,
+    "utxo_hash": "b9d3a023c0567227252e52f7e411cfd9b0e5ee75447172f24a39c0f3c394a77e",
+    "utxos": 151
+  }
+}
