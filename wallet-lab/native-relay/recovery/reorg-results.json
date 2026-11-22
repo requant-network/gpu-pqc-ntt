@@ -1,0 +1,77 @@
+[
+  {
+    "backup_matched": true,
+    "checkpoint_height": 4,
+    "detached_blocks": [
+      "cb5fae40017435ba86cc48a032306ce66edf6bd7f1454bd65b0232a233d64778",
+      "8a6b494b878a41ea17e5c452a58b65b6d1d12dd81d1213af6783b662a5e9af23"
+    ],
+    "detached_height": 6,
+    "detached_spend": "3bfd89292f6e985d9d26289a00e5d1c57d1634c10332e2518f5e998e03013d0e",
+    "final_audit": {
+      "height": 8,
+      "issued_atoms": 3199997326,
+      "ok": true,
+      "tip": "6ba1040bd5b7414d24efa73a54c81b7043bf8b2f6f483418cba7c8499c97f1b1",
+      "total_atoms": 3199997326,
+      "unclaimed_atoms": 0,
+      "utxo_hash": "6a770b973fb39c745985c5575fb7434b6fd16f2b3dceac011a8f9ad5725924ff",
+      "utxos": 16
+    },
+    "final_height": 8,
+    "matched_bodies_after_reopen": 8,
+    "reorg_ms": 20.234807,
+    "replacement_spend": "5d66adb9c6178d2f136b2427b0bef18816e8c4d2d26a8cc03560c01654d1eb18",
+    "winning_height": 7
+  },
+  {
+    "backup_matched": true,
+    "checkpoint_height": 4,
+    "detached_blocks": [
+      "cb5fae40017435ba86cc48a032306ce66edf6bd7f1454bd65b0232a233d64778",
+      "8a6b494b878a41ea17e5c452a58b65b6d1d12dd81d1213af6783b662a5e9af23"
+    ],
+    "detached_height": 6,
+    "detached_spend": "3bfd89292f6e985d9d26289a00e5d1c57d1634c10332e2518f5e998e03013d0e",
+    "final_audit": {
+      "height": 8,
+      "issued_atoms": 3199997326,
+      "ok": true,
+      "tip": "6ba1040bd5b7414d24efa73a54c81b7043bf8b2f6f483418cba7c8499c97f1b1",
+      "total_atoms": 3199997326,
+      "unclaimed_atoms": 0,
+      "utxo_hash": "6a770b973fb39c745985c5575fb7434b6fd16f2b3dceac011a8f9ad5725924ff",
+      "utxos": 16
+    },
+    "final_height": 8,
+    "matched_bodies_after_reopen": 8,
+    "reorg_ms": 20.22908,
+    "replacement_spend": "5d66adb9c6178d2f136b2427b0bef18816e8c4d2d26a8cc03560c01654d1eb18",
+    "winning_height": 7
+  },
+  {
+    "backup_matched": true,
+    "checkpoint_height": 4,
+    "detached_blocks": [
+      "56d3351db3a2197bc3f70de1e2b6f581847634f55c0d2bc8bd8664e5c2b2ea4c",
+      "9abcca8a62b2d1132c07d5c148413a596ccba91974964d2a48fa28ac95309df8"
+    ],
+    "detached_height": 6,
+    "detached_spend": "3bfd89292f6e985d9d26289a00e5d1c57d1634c10332e2518f5e998e03013d0e",
+    "final_audit": {
+      "height": 8,
+      "issued_atoms": 3199997326,
+      "ok": true,
+      "tip": "cf4292d80cba6d8b734a8b0347737e0db3f77f65beddf9398a2fa48e344e7792",
+      "total_atoms": 3199997326,
+      "unclaimed_atoms": 0,
+      "utxo_hash": "6a770b973fb39c745985c5575fb7434b6fd16f2b3dceac011a8f9ad5725924ff",
+      "utxos": 16
+    },
+    "final_height": 8,
+    "matched_bodies_after_reopen": 8,
+    "reorg_ms": 20.213016,
+    "replacement_spend": "5d66adb9c6178d2f136b2427b0bef18816e8c4d2d26a8cc03560c01654d1eb18",
+    "winning_height": 7
+  }
+]
