@@ -26,11 +26,9 @@ signing key uses the existing zeroization-enabled `ml-dsa` build.
 
 The tested protection boundary is the Windows user profile. The lab
 keeps private seed bytes in process memory, and another process under
-that same user can reopen the protected file. Account separation,
-cross-machine backup recovery and hardware-backed non-exportable keys
-need independent evidence. The chain and signing files are confined to
-disposable lab state. Crash or power-loss durability of a deployed
-wallet filesystem is outside the fixture.
+that same user can reopen the protected file. The chain and signing
+files are confined to disposable lab state. Crash or power-loss
+durability of a deployed wallet filesystem is outside the fixture.
 
 ## Measured result
 
@@ -60,6 +58,25 @@ the output. The test removed its fixture directories after completion.
 [Regressions](regressions.log.txt) · [ACVP](acvp.log.txt) ·
 [Environment and source hashes](environment.log.txt).
 
+## Account boundary
+
+On November 22, three fresh wallets produced by the Rust fixture opened
+under the owner account. A process running as the built-in Windows
+LocalService account with a limited token read each intact encrypted
+file and attempted current-user DPAPI recovery using the same wallet
+entropy. Windows refused all three with `0x8009000b`. The second
+principal successfully protected and reopened its own control bytes
+in each process. SHA-256 confirmed that both principals read the same
+ciphertext and the original file stayed intact. The probe used the
+Windows .NET DPAPI wrapper for recovery and wrote only diagnostics.
+
+This tests the boundary between one interactive user and one existing
+service account on a single Windows machine. Cross-machine DPAPI
+recovery, shared or roaming user profiles, and privileged compromise
+are outside the trial.
+[Trial 1](account-boundary-1.json) · [Trial 2](account-boundary-2.json) ·
+[Trial 3](account-boundary-3.json).
+
 ## Reproduce
 
 Apply the [native wallet fixture patch](../../README.md#reproduce) to
@@ -83,3 +100,12 @@ cargo test --manifest-path (Join-Path $Native 'Cargo.toml') --offline --locked -
 Repeat the test in three fresh processes, saving the outputs as
 `vault-1.log.txt` through `vault-3.log.txt`. Run `python summarize.py`
 from this directory to rebuild the summary.
+
+For the account boundary, use the compiled `pqc_wallet` test binary
+from that build. Run the following from this directory in an elevated
+Windows PowerShell session. The one-shot task runs only the inspection
+under LocalService and is removed with its disposable directory.
+
+```powershell
+.\check-account-boundary.ps1 -WalletTest 'C:\absolute\target\release\deps\pqc_wallet-HASH.exe'
+```

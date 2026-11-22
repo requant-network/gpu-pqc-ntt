@@ -1,0 +1,7 @@
+{
+    "foreign_principal":  "LocalService",
+    "foreign_own_dpapi_roundtrip":  true,
+    "foreign_wallet_ciphertext_sha256":  "285aa920ff98e0041a13d0b238b3bdbff40f11657e3bfd5fcb5dd5e7d0756656",
+    "foreign_unprotect_hresult":  "8009000b",
+    "owner_unprotect_succeeded":  true
+}
