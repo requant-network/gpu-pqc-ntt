@@ -1,0 +1,16 @@
+[
+  {
+    "version": "0.18.2",
+    "manifest_sha256": "7f59af723646ba24e613ee3c8ca19d357d7df2fef3fe12db288a48fd93eadbba",
+    "signature_sha256": "77e9164f26af36295fa38c711e48ba41718c8de8368f4c808b60deb1c3284af2",
+    "linux_sha256": "510b30c46cd32f41987d1ee778c0fc4bf365d958ad5bebad6863b05188a63d8e",
+    "modified_manifest_refused": true
+  },
+  {
+    "version": "0.18.3",
+    "manifest_sha256": "e3908460f09f77455d9e2f05ad2d0c4b5972a5cec0d55c499ef30b0d3fdeae6e",
+    "signature_sha256": "b437b9f51033290d45c48c2cbb57bea7468fa827496a67e4ce42a844ff869810",
+    "linux_sha256": "f369a427e5930fc4002c18f199b87b321f1299ccef65d21097ff7b33edc55c1c",
+    "modified_manifest_refused": true
+  }
+]

@@ -51,6 +51,10 @@ after verifying the checkpoint, full UTXO audit and all 46 block
 encodings. These times describe one short loopback chain. The two
 paths took about the same time at this checkpoint.
 
+The [published Linux release rehearsal](RELEASED_NODES.md) tested the
+verified pre-upgrade backup path with signed release binaries and an
+ordinary Ed25519 chain.
+
 ## Reproduce
 
 Use the [native relay fixture](../cross-host/README.md#reproduce) and the
